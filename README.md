@@ -36,4 +36,5 @@ This site is maintained by Paata Ivanisvili and Terence Tao.
 - [RakeSearch](https://github.com/sirzooro/RakeSearch) - searching for diagonal Latin squares
 - [CayleyPy Pancake sorting](https://www.kaggle.com/competitions/CayleyPy-pancake/overview) - efficient sorting algorithms, corresponding to finding efficient paths in a Cayley graph
 - [Al Zimmerman's programming challenges](http://azspcs.com/) - a repository of programming challenges, some of which have a mathematical flavor
+- [Erich's packing center](https://erich-friedman.github.io/packing/) - a repository of packing problems in various geometries
 - [Index of Mathematical Databases](https://mathbases.org/) - a large collection of mathematical databases

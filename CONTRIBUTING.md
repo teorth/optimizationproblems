@@ -9,7 +9,10 @@ There are of course an infinite number of optimization problems one could pose i
 - are at least somewhat amenable to computational approaches for either upper or lower bounds; and
 - do not depend on additional parameters (such as dimension, or number of objects in a configuration), or have such parameters set to "canonical" or particularly well studied choices for which significant literature exists.
 
-However, exceptions could be made for constants of particular mathematical interest for reasons other than those listed above.  There is no restriction on the field of mathematics from which the constant arises.  
+However, exceptions could be made for constants of particular mathematical interest for reasons other than those listed above.  There is no restriction on the field of mathematics from which the constant arises.
+
+If a constant has a large number of variants, I would prefer that a single page be created for a "quintessential" representative of this family of constants (which will most likely be the one with the most existing literature), with brief mention of the variants in the "Additional comments and links" section.  In some cases, if there are two equally important members of the family, it may be appropriate to create two separate entries.
+
 
 ## How to Contribute
 
