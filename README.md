@@ -26,6 +26,7 @@ We are arbitrarily numbering the constants as $C_1$, $C_2$, etc. based on the or
 | [14](https://teorth.github.io/optimizationproblems/constants/14.html) | Smallest $n$ for which the value of $BB(n)$ is undecidable | 6 | 432 |
 | [15](https://teorth.github.io/optimizationproblems/constants/15.html) | Matrix multiplication exponent | 2 | < 2.3728596 |
 | [16](https://teorth.github.io/optimizationproblems/constants/16.html) | Brezis–Gallouet–Wainger remainder constant on the 2D torus | $\frac{\beta + \pi}{\pi} \approx 1.82283$ | $\approx 2.15627$ |
+| [17](https://teorth.github.io/optimizationproblems/constants/17.html) | Exponential growth constant of diagonal Ramsey numbers | $\sqrt{2}$ | 3.7992027396 |
 
 
 ## Maintainers
