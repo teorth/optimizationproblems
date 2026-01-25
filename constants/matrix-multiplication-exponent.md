@@ -12,7 +12,7 @@ $$
 $$
 
 where $f_1, \dots, f_r \in U^{\ast}$, $g_1, \dots, g_r \in V^{\ast}$, and $w_1, \dots, w_r \in W$.
-Equivalently, this is the minimal number of summands in the decomposition of the structure tensor of $\varphi$ in $U^* \otimes V^* \otimes W$ into elementary tensors.
+Equivalently, this is the minimal number of summands in the decomposition of the structure tensor of $\varphi$ in $U^* \otimes V^* \otimes W$ into a sum of elementary tensors.
 
 The matrix multiplication exponent is defined as
 
@@ -20,7 +20,7 @@ $$
 C = \lim_{n \to \infty} \log_n R(MM_n)
 $$
 
-where $MM_n$ denotes $n \times n$ matrix multiplication over $\mathbb{C}$.
+where $MM_n$ denotes the multiplication of $n \times n$ matrices over $\mathbb{C}$.
 
 ## Known upper bounds
 
