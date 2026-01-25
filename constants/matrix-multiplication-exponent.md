@@ -6,16 +6,20 @@ $C$, usually denoted by $\omega$, can be defined in terms of ranks of certain te
 
 Let $U$, $V$, $W$ be vector spaces over a field $k$.
 The tensor rank $R(\varphi)$ of a bilinear map $\varphi \colon U \times V \to W$ is the minimal number of summands in the decomposition of the form
+
 $$
 \varphi(x, y) = \sum_{k = 1}^r f_k(x) g_k(y) w_k
 $$
-where $f_1, \dots, f_r \in U^{*}$, $g_1, \dots, g_r \in V^*$, and $w_1, \dots, w_r \in W$.
+
+where $f_1, \dots, f_r \in U^{\ast}$, $g_1, \dots, g_r \in V^{\ast}$, and $w_1, \dots, w_r \in W$.
 Equivalently, this is the minimal number of summands in the decomposition of the structure tensor of $\varphi$ in $U^* \otimes V^* \otimes W$ into elementary tensors.
 
 The matrix multiplication exponent is defined as
+
 $$
-C = \lim_{n \to \infty} R(MM_n)
+C = \lim_{n \to \infty} \log_n R(MM_n)
 $$
+
 where $MM_n$ denotes $n \times n$ matrix multiplication over $\mathbb{C}$.
 
 ## Known upper bounds
