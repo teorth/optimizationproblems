@@ -30,7 +30,7 @@ We are arbitrarily numbering the constants as $C_1$, $C_2$, etc. based on the or
 
 ## Maintainers
 
-This site is maintained by Paata Ivanisvili and Terence Tao.
+This site is maintained by Damek Davis, Paata Ivanisvili and Terence Tao.
 
 ## Related sites
 
