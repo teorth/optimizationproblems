@@ -12,18 +12,18 @@ We are arbitrarily numbering the constants as $C_1$, $C_2$, etc., mostly based o
 | ------ | ----------- | ---------------- | ---------------- |
 | [1a](https://teorth.github.io/optimizationproblems/constants/1a.html) | Sidon set autocorrelation constant | 1.2802 | 1.5029 |
 | [1b](https://teorth.github.io/optimizationproblems/constants/1b.html) | Erdős minimum overlap constant | 0.379005 | 0.380876 |
-| [2](https://teorth.github.io/optimizationproblems/constants/2.html) | The Crouzeix constant | 2 | $1+\sqrt{2} \approx 2.4142$ |
+| [2](https://teorth.github.io/optimizationproblems/constants/2.html) | Crouzeix constant | 2 | $1+\sqrt{2} \approx 2.4142$ |
 | [3a](https://teorth.github.io/optimizationproblems/constants/3a.html) | Gyamarti-Hennecart-Ruzsa sum-difference constant | 1.173077 | 1.33333 |
-| [3b](https://teorth.github.io/optimizationproblems/constants/3b.html) | The Kakeya sums-differences constant | >1.77898 | 1.83333 |
+| [3b](https://teorth.github.io/optimizationproblems/constants/3b.html) | Kakeya sums-differences constant | >1.77898 | 1.83333 |
 | [4](https://teorth.github.io/optimizationproblems/constants/4.html) | Cap set constant | 0.724851 | 0.782597 |
-| [5](https://teorth.github.io/optimizationproblems/constants/5.html) | A Sidon set constant | 0 | 0.97633 |
+| [5](https://teorth.github.io/optimizationproblems/constants/5.html) | Sidon set size constant | 0 | 0.97633 |
 | [6](https://teorth.github.io/optimizationproblems/constants/6.html) | Union-closed sets conjecture constant | 0.38271 | 0.5 |
-| [7](https://teorth.github.io/optimizationproblems/constants/7.html) | The irrationality measure of $\pi$ | 2 | 7.103205334137 |
+| [7](https://teorth.github.io/optimizationproblems/constants/7.html) | Irrationality measure of $\pi$ | 2 | 7.103205334137 |
 | [8](https://teorth.github.io/optimizationproblems/constants/8.html) | Classical zero-free region constant | 0.755106 | 5.558691 |
 | [9](https://teorth.github.io/optimizationproblems/constants/9.html) | Shannon capacity of the 7-cycle | 3.2578 | 3.3177 |
-| [10](https://teorth.github.io/optimizationproblems/constants/10.html) | The real Grothendieck constant | 1.67696 | 1.782214 |
-| [11a](https://teorth.github.io/optimizationproblems/constants/11a.html) | The $L^1$ Poincaré constant on the Hamming cube | $\sqrt{\pi/2} \approx 1.2533$ | $\pi/2 - 0.00013 \approx 1.5707$ |
-| [11b](https://teorth.github.io/optimizationproblems/constants/11b.html) | The critical exponent for isoperimetric inequality on the Hamming cube | 0.5 | 0.50057 |
+| [10](https://teorth.github.io/optimizationproblems/constants/10.html) | Real Grothendieck constant | 1.67696 | 1.782214 |
+| [11a](https://teorth.github.io/optimizationproblems/constants/11a.html) | $L^1$ Poincaré constant on the Hamming cube | $\sqrt{\pi/2} \approx 1.2533$ | $\pi/2 - 0.00013 \approx 1.5707$ |
+| [11b](https://teorth.github.io/optimizationproblems/constants/11b.html) | Critical exponent for isoperimetric inequality on the Hamming cube | 0.5 | 0.50057 |
 | [12](https://teorth.github.io/optimizationproblems/constants/12.html) | The Beardwood–Halton–Hammersley constant | 0.6277 | 0.90304 |
 | [13a](https://teorth.github.io/optimizationproblems/constants/13a.html) | Moser's convex worm cover constant | 0.232239 | 0.2617993878 |
 | [13b](https://teorth.github.io/optimizationproblems/constants/13b.html) | Lebesgue's convex universal cover constant | 0.832 | 0.8440935944 |
@@ -32,7 +32,7 @@ We are arbitrarily numbering the constants as $C_1$, $C_2$, etc., mostly based o
 | [16](https://teorth.github.io/optimizationproblems/constants/16.html) | Brezis–Gallouet–Wainger remainder constant on the 2D torus | $\frac{\beta + \pi}{\pi} \approx 1.82283$ | $\approx 2.15627$ |
 | [17](https://teorth.github.io/optimizationproblems/constants/17.html) | Exponential growth constant of diagonal Ramsey numbers | $\sqrt{2} \approx 1.4142$ | 3.7992027396 |
 | [18](https://teorth.github.io/optimizationproblems/constants/18.html) | Marton's conjecture constant (PFR) | 1 | 9 |
-| [19](https://teorth.github.io/optimizationproblems/constants/19.html) | The Berry–Esseen constant | 0.4097321837 | 0.4690 |
+| [19](https://teorth.github.io/optimizationproblems/constants/19.html) | Berry–Esseen constant | 0.4097321837 | 0.4690 |
 
 
 ## Maintainers
