@@ -12,7 +12,8 @@ We are arbitrarily numbering the constants as $C_1$, $C_2$, etc. based on the or
 | ------ | ----------- | ---------------- | ---------------- |
 | [1](https://teorth.github.io/optimizationproblems/constants/1.html) | Sidon set autocorrelation constant | 1.2802 | 1.5029 |
 | [2](https://teorth.github.io/optimizationproblems/constants/2.html) | Erdős minimum overlap constant | 0.379005 | 0.380876 |
-| [3](https://teorth.github.io/optimizationproblems/constants/3.html) | Gyamarti-Hennecart-Ruzsa sum-difference constant | 1.173077 | 1.33333 |
+| [3a](https://teorth.github.io/optimizationproblems/constants/3a.html) | Gyamarti-Hennecart-Ruzsa sum-difference constant | 1.173077 | 1.33333 |
+| [3b](https://teorth.github.io/optimizationproblems/constants/3b.html) | The arithmetic sums-differences constant | >1.77898 | 1.83333 |
 | [4](https://teorth.github.io/optimizationproblems/constants/4.html) | Cap set constant | 0.724851 | 0.782597 |
 | [5](https://teorth.github.io/optimizationproblems/constants/5.html) | A Sidon set constant | 0 | 0.97633 |
 | [6](https://teorth.github.io/optimizationproblems/constants/6.html) | Union-closed sets conjecture constant | 0.38271 | 0.5 |
@@ -22,7 +23,8 @@ We are arbitrarily numbering the constants as $C_1$, $C_2$, etc. based on the or
 | [10](https://teorth.github.io/optimizationproblems/constants/10.html) | The real Grothendieck constant | 1.67696 | 1.782214 |
 | [11](https://teorth.github.io/optimizationproblems/constants/11.html) | The $L^1$ Poincaré constant on the Hamming cube | $\sqrt{\pi/2} \approx 1.2533$ | $\pi/2 - 0.00013 \approx 1.5707$ |
 | [12](https://teorth.github.io/optimizationproblems/constants/12.html) | The Beardwood–Halton–Hammersley constant | 0.6277 | 0.90304 |
-| [13](https://teorth.github.io/optimizationproblems/constants/13.html) | The arithmetic sums-differences constant | >1.77898 | 1.83333 |
+| [13a](https://teorth.github.io/optimizationproblems/constants/13a.html) | Moser's convex worm cover constant | 0.232239 | 0.2617993878 |
+| [13b](https://teorth.github.io/optimizationproblems/constants/13b.html) | Lebesgue's convex universal cover constant | 0.832 | 0.8440935944 |
 | [14](https://teorth.github.io/optimizationproblems/constants/14.html) | Smallest $n$ for which the value of $BB(n)$ is undecidable | 6 | 432 |
 | [15](https://teorth.github.io/optimizationproblems/constants/15.html) | Matrix multiplication exponent | 2 | < 2.3728596 |
 | [16](https://teorth.github.io/optimizationproblems/constants/16.html) | Brezis–Gallouet–Wainger remainder constant on the 2D torus | $\frac{\beta + \pi}{\pi} \approx 1.82283$ | $\approx 2.15627$ |
@@ -31,8 +33,6 @@ We are arbitrarily numbering the constants as $C_1$, $C_2$, etc. based on the or
 | [19](https://teorth.github.io/optimizationproblems/constants/19.html) | The critical exponent for isoperimetric inequality on the Hamming cube | 0.5 | 0.50057 |
 | [20](https://teorth.github.io/optimizationproblems/constants/20.html) | The Crouzeix constant | 2 | $1+\sqrt{2} \approx 2.4142$ |
 | [21](https://teorth.github.io/optimizationproblems/constants/21.html) | The Berry–Esseen constant | 0.4097321837 | 0.4690 |
-| [22a](https://teorth.github.io/optimizationproblems/constants/22a.html) | Moser's convex worm cover constant | 0.232239 | 0.2617993878 |
-| [22b](https://teorth.github.io/optimizationproblems/constants/22b.html) | Lebesgue's convex universal cover constant | 0.832 | 0.8440935944 |
 
 ## Maintainers
 
