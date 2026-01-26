@@ -21,8 +21,8 @@ If a constant has been worked out exactly, this site may not be the most appropr
 
 1. **Fork the repository** and create a new branch for your contribution.
 2. **Create a new file** in the `constants/` directory as `Nx.md`, where `N` and `x` are selected as follows:
-    - If the constant does not belong to any existing family of constants already recorded in the repository, set `N` to be the smallest positive integer not yet used for any constant in the repository, and `x` to be `a`.  For intsance, if the largest existing constant is $C_{19}$, set `N=20` and use the file `20a.md`.
-    - If the constant is part of an existing family associated to the number `N`, set `N` to be this number, and `x` to be the first unclaimed letter.  For instance, if the constant is in the `N=3` family, and the existing constants in that family are $C_{3a}$ and $C_{3b}$, set `x=c` and use the file `3c.md`.
+    - If the constant does not belong to any existing family of constants already recorded in the repository, set `N` to be the smallest positive integer not yet used for any constant in the repository, and `x` to be `a`.  For instance, if the largest existing constant is $C_{19d}$, set `N=20` and use the file `20a.md`; the constant can be referred to as $C_{20}$.
+    - If the constant is part of an existing family associated to the number `N`, set `N` to be this number, and `x` to be the first unclaimed letter.  For instance, if the constant is in the `N=3` family, and the existing constants in that family are $C_{3a}$ and $C_{3b}$, set `x=c` and use the file `3c.md`; the constant should be referred to as $C_{3c}$.
     - In the event of a collision due to near-simultaneous updates, I will ask for `Nx` to be updated and the file to be renamed.
 3. **Use the template**: Copy the structure from [template.md](template.md).
 4. **Fill in sections**:
