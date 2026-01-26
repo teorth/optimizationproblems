@@ -38,7 +38,7 @@ We are arbitrarily numbering the constants as $C\_{1}$, $C\_{2}$, etc., mostly b
 | [22](https://teorth.github.io/optimizationproblems/constants/22a.html) | de Bruijn–Newman constant | 0 | 0.2 |
 | [23a](https://teorth.github.io/optimizationproblems/constants/23a.html) | Tight knot constant | 1.2802 | 10.76 |
 | [23b](https://teorth.github.io/optimizationproblems/constants/23b.html) | Tight alternating knot constant | 0.017 | 7.31 |
-| [24](https://teorth.github.io/optimizationproblems/constants/24.html) | Hadamard conjecture constant | 688 | $\infty$ |
+| [24](https://teorth.github.io/optimizationproblems/constants/24.html) | Smallest unsolved instance of the Hadamard conjecture | 688 | $\infty$ |
 
 ## Maintainers
 
