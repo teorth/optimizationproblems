@@ -2,7 +2,7 @@
 
 ## Description of constant
 
-[Clear mathematical description of the constant $C_N$ one wishes to bound, where $N$ is the number of the file.]
+[Clear mathematical description of the constant $C\_N$ one wishes to bound, where $N$ is the number of the file.]
 
 ## Known upper bounds
 
