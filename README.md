@@ -2,7 +2,7 @@
 
 A curated collection of optimization constants $C$ in mathematics, often arising from solving a variational problem, or finding the best constant in a functional inequality.  This repository is focused on recording the best known upper and lower bounds on constants that have an active literature, and encourages crowdsourced contributions and updates (see [here](CONTRIBUTING.md) for instructions on how to contribute).
 
-- Here is an initial blog post introducing the project: [A crowdsourced repository for optimization constants?](https://terrytao.wordpress.com/2026/01/22/a-crowdsourced-repository-for-optimization-constants/), 22 Terence Tao, January 2026.
+- Here is an initial blog post introducing the project: [A crowdsourced repository for optimization constants?](https://terrytao.wordpress.com/2026/01/22/a-crowdsourced-repository-for-optimization-constants/), Terence Tao, 22 January 2026.
 
 ## Table of Constants
 
