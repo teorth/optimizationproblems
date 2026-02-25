@@ -28,7 +28,7 @@ We are arbitrarily numbering the constants as $C_{1}$, $C_{2}$, etc., mostly bas
 | [10b](https://teorth.github.io/optimizationproblems/constants/10b.html) | The complex Grothendieck constant | 1.338 | 1.40491 |
 | [10c](https://teorth.github.io/optimizationproblems/constants/10c.html) | Spencer discrepancy constant (“six standard deviations suffice”) | 1.414214 | 3.674235 (3.65 unpublished) |
 | [11a](https://teorth.github.io/optimizationproblems/constants/11a.html) | $L^1$ Poincaré constant on the Hamming cube | $\sqrt{\pi/2} \approx 1.2533$ | $\pi/2 - 0.00013 \approx 1.5707$ |
-| [11b](https://teorth.github.io/optimizationproblems/constants/11b.html) | Critical exponent for isoperimetric inequality on the Hamming cube | 0.5 | 0.50057 |
+| [11b](https://teorth.github.io/optimizationproblems/constants/11b.html) | Critical exponent for isoperimetric inequality on the Hamming cube | 0.5 | 0.5 |
 | [12](https://teorth.github.io/optimizationproblems/constants/12a.html) | The Beardwood–Halton–Hammersley constant | 0.6277 | 0.90304 |
 | [13a](https://teorth.github.io/optimizationproblems/constants/13a.html) | Moser's convex worm cover constant | 0.232239 | 0.2617993878 |
 | [13b](https://teorth.github.io/optimizationproblems/constants/13b.html) | Lebesgue's convex universal cover constant | 0.832 | 0.8440935944 |
@@ -105,7 +105,7 @@ We are arbitrarily numbering the constants as $C_{1}$, $C_{2}$, etc., mostly bas
 
 ## Recent progress
 
-- [11b](https://teorth.github.io/optimizationproblems/constants/11b.html) **solved:** $C_{11b} = 0.5$ by P. Durcik, P. Ivanisvili, J. Roos, and X. Xie (paper coming soon).
+- [11b](https://teorth.github.io/optimizationproblems/constants/11b.html) **solved:** $C_{11b} = 0.5$ by  [P. Durcik, P. Ivanisvili, J. Roos, X. Xie](https://arxiv.org/abs/2602.20462).
 - [3c](https://teorth.github.io/optimizationproblems/constants/3c.html) **improved lower bound:** $C_{3c} \geq 1.67471$ by T. Astor (paper coming soon).
 - [51](https://teorth.github.io/optimizationproblems/constants/51a.html) **improved lower bound:** $C_{51} \geq 0.58507$ by [Y. He and Q. Tang](https://arxiv.org/abs/2602.12217), 12 Feb 2026.
 
