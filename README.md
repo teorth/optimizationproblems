@@ -29,7 +29,7 @@ We are arbitrarily numbering the constants as $C_{1}$, $C_{2}$, etc., mostly bas
 | [10b](https://teorth.github.io/optimizationproblems/constants/10b.html) | The complex Grothendieck constant | 1.338 | 1.40491 |
 | [10c](https://teorth.github.io/optimizationproblems/constants/10c.html) | Spencer discrepancy constant (“six standard deviations suffice”) | 1.414214 | 3.674235 (3.65 unpublished) |
 | [11a](https://teorth.github.io/optimizationproblems/constants/11a.html) | $L^1$ Poincaré constant on the Hamming cube | $\sqrt{\pi/2} \approx 1.2533$ | $\pi/2 - 0.00013 \approx 1.5707$ |
-| [11b](https://teorth.github.io/optimizationproblems/constants/11b.html) | Critical exponent for isoperimetric inequality on the Hamming cube | 0.5 | 0.50057 |
+| [11b](https://teorth.github.io/optimizationproblems/constants/11b.html) | Critical exponent for isoperimetric inequality on the Hamming cube | 0.5 | 0.5 |
 | [12](https://teorth.github.io/optimizationproblems/constants/12a.html) | The Beardwood–Halton–Hammersley constant | 0.6277 | 0.90304 |
 | [13a](https://teorth.github.io/optimizationproblems/constants/13a.html) | Moser's convex worm cover constant | 0.232239 | 0.2617993878 |
 | [13b](https://teorth.github.io/optimizationproblems/constants/13b.html) | Lebesgue's convex universal cover constant | 0.832 | 0.8440935944 |
@@ -83,11 +83,30 @@ We are arbitrarily numbering the constants as $C_{1}$, $C_{2}$, etc., mostly bas
 | [54](https://teorth.github.io/optimizationproblems/constants/54a.html) | Beurling–Ahlfors transform constant | 1 | 1.575 |
 | [55](https://teorth.github.io/optimizationproblems/constants/55a.html) | Coefficient of the acyclic chromatic index | 1 | 3.142 |
 | [56](https://teorth.github.io/optimizationproblems/constants/56a.html) | $\mathrm{GL}_2$ Ramanujan conjecture exponent | 0 | $\tfrac{7}{64}=0.109375$ |
+| [57a](https://teorth.github.io/optimizationproblems/constants/57a.html) | Bloch’s constant | $\frac{\sqrt{3}}{4}+2\times 10^{-4}$ | $\dfrac{1}{\sqrt{1+\sqrt{3}}}\,\dfrac{\Gamma(1/3)\Gamma(11/12)}{\Gamma(1/4)}\approx 0.4719$ |
+| [57b](https://teorth.github.io/optimizationproblems/constants/57b.html) | Landau's constant | $\frac{1}{2}+10^{-335}$ | $\dfrac{\Gamma(1/3)\Gamma(5/6)}{\Gamma(1/6)}\approx 0.5433$ |
+| [57c](https://teorth.github.io/optimizationproblems/constants/57c.html) | Univalent Bloch constant | 0.5708858 | 1 |
+| [58](https://teorth.github.io/optimizationproblems/constants/58a.html) | Zaremba’s conjecture constant | 5 | $\infty$ |
+| [59](https://teorth.github.io/optimizationproblems/constants/59a.html) | Bohr radius for the bidisc | 0.3006 | 0.3177 |
+| [60](https://teorth.github.io/optimizationproblems/constants/60a.html) | Favard-length decay exponent | $\frac{1}{6}$ | 1 |
+| [61](https://teorth.github.io/optimizationproblems/constants/61a.html) | Selberg congruence spectral-gap constant | 0 | $\frac{7}{64}$ |
+| [62a](https://teorth.github.io/optimizationproblems/constants/62a.html) | Lindelof (pointwise growth) exponent for the Riemann zeta function | 0 | $\frac{13}{84}$ |
+| [62b](https://teorth.github.io/optimizationproblems/constants/62b.html) | Burgess-quality subconvexity exponent for Dirichlet $L$-functions | 0 | $\frac{3}{16}$ |
+| [63](https://teorth.github.io/optimizationproblems/constants/63a.html) | Dirichlet divisor problem exponent | $1/4$ | $\frac{131}{416}$ |
+| [64](https://teorth.github.io/optimizationproblems/constants/64a.html) | Gauss circle problem exponent | 0 | $\frac{131}{208}$ |
+| [65](https://teorth.github.io/optimizationproblems/constants/65a.html) | Linnik's constant | 1 | 5 |
+| [66](https://teorth.github.io/optimizationproblems/constants/66a.html) | Elliott-Halberstam level-of-distribution exponent | $1/2$ | 1 |
+| [67](https://teorth.github.io/optimizationproblems/constants/67a.html) | Brennan's conjecture exponent | 3.422 | 4 |
+| [68](https://teorth.github.io/optimizationproblems/constants/68a.html) | Korenblum's constant | 0.28185 | 0.6778994 |
+| [69](https://teorth.github.io/optimizationproblems/constants/69a.html) | Sendov radius constant | 1 | 2 |
+| [70](https://teorth.github.io/optimizationproblems/constants/70a.html) | Reverse Brunn-Minkowski constant | 1 | $<\infty$ |
+| [71](https://teorth.github.io/optimizationproblems/constants/71a.html) | Fourier Entropy-Influence constant | 6.278 | $\infty$ |
+| [72](https://teorth.github.io/optimizationproblems/constants/72a.html) | Polya-Vinogradov best constant (squarefree asymptotic) | 0 | $\frac{1}{4\pi}\approx 0.07958$ |
 
 
 ## Recent progress
 
-- [11b](https://teorth.github.io/optimizationproblems/constants/11b.html) **solved:** $C_{11b} = 0.5$ by P. Durcik, P. Ivanisvili, J. Roos, and X. Xie (paper coming soon).
+- [11b](https://teorth.github.io/optimizationproblems/constants/11b.html) **solved:** $C_{11b} = 0.5$ by  [P. Durcik, P. Ivanisvili, J. Roos, X. Xie](https://arxiv.org/abs/2602.20462), 24 Feb 2026.
 - [3c](https://teorth.github.io/optimizationproblems/constants/3c.html) **improved lower bound:** $C_{3c} \geq 1.67471$ by T. Astor (paper coming soon).
 - [51](https://teorth.github.io/optimizationproblems/constants/51a.html) **improved lower bound:** $C_{51} \geq 0.58507$ by [Y. He and Q. Tang](https://arxiv.org/abs/2602.12217), 12 Feb 2026.
 
