@@ -77,7 +77,7 @@ We are arbitrarily numbering the constants as $C_{1}$, $C_{2}$, etc., mostly bas
 | [48](https://teorth.github.io/optimizationproblems/constants/48a.html) | Convex sub-Gaussian comparison constant | 1 | $<\infty$ |
 | [49](https://teorth.github.io/optimizationproblems/constants/49a.html) | Erdős–Szemerédi $3$-sunflower-free capacity | >1.551 (>=1.554 unpublished) | $\frac{3}{2^{2/3}} \approx 1.88988$ |
 | [50](https://teorth.github.io/optimizationproblems/constants/50a.html) | Approximation ratio for quantum Max Cut | 0.611 | $<1$ (0.5 for product states) |
-| [51](https://teorth.github.io/optimizationproblems/constants/51a.html) | Erdős maximum term problem | 0.58507 | $\frac{2}{\pi}\approx 0.63662$ |
+| [51](https://teorth.github.io/optimizationproblems/constants/51a.html) | Erdős maximum term problem | 0.5850788 | $\frac{2}{\pi}\approx 0.63662$ |
 | [52](https://teorth.github.io/optimizationproblems/constants/52a.html) | Satisfiability threshold for random 3-SAT | 3.52 | 4.490 |
 | [53](https://teorth.github.io/optimizationproblems/constants/53a.html) | Davenport constant for $C_n^3$ | 3 | 20369 |
 | [54](https://teorth.github.io/optimizationproblems/constants/54a.html) | Beurling–Ahlfors transform constant | 1 | 1.575 |
@@ -109,7 +109,10 @@ We are arbitrarily numbering the constants as $C_{1}$, $C_{2}$, etc., mostly bas
 
 - [11b](https://teorth.github.io/optimizationproblems/constants/11b.html) **solved:** $C_{11b} = 0.5$ by  [P. Durcik, P. Ivanisvili, J. Roos, X. Xie](https://arxiv.org/abs/2602.20462), 24 Feb 2026.
 - [3c](https://teorth.github.io/optimizationproblems/constants/3c.html) **improved lower bound:** $C_{3c} \geq 1.67471$ by T. Astor (paper coming soon).
-- [51](https://teorth.github.io/optimizationproblems/constants/51a.html) **improved lower bound:** $C_{51} \geq 0.58507$ by [Y. He and Q. Tang](https://arxiv.org/abs/2602.12217), 12 Feb 2026.
+- [51](https://teorth.github.io/optimizationproblems/constants/51a.html) **improved lower bound:** $C_{51} \geq 0.5850724$ by [Y. He and Q. Tang](https://arxiv.org/abs/2602.12217), 12 Feb 2026.
+- [5b](https://teorth.github.io/optimizationproblems/constants/5b.html) **improved upper and lower bounds:** $\frac{9}{17} \leq C_{5b} \leq \frac{4}{7}$ by [J. Ma and Q. Tang](https://arxiv.org/abs/2602.23282), 26 Feb 2026.
+- [51](https://teorth.github.io/optimizationproblems/constants/51a.html) **improved lower bound:** $C_{51} \geq 0.5850788$ by [N. Sothanaphan](https://drive.google.com/file/d/1wZnzui_eeBE32HnkrnSB7YhfcTOiYolp/view), 1 Mar 2026.
+
 
 ## Maintainers
 
