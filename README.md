@@ -8,7 +8,9 @@ A curated collection of optimization constants $C$ in mathematics, often arising
 
 We are arbitrarily numbering the constants as $C_{1}$, $C_{2}$, etc., mostly based on the order in which the constants were added to the repository.  Constants that are in a family of similar constants will also be given letter suffixes (e.g. $C_{1a}$, $C_{1b}$).
 
-**IMPORTANT NOTE**: while submissions to this site are reviewed to meet minimal standards of plausibility and replicability, they are not certified by this site for correctness, and may be subject to future revision, for instance due to errors in the associated preprint or paper.  Thus, readers should exercise their own judgement when assessing the validity of the bounds reported on this site, particularly if their source is not yet published by a peer-reviewed journal. Bounds for which the level of available verification is currently at minimal levels will be marked with an asterisk in the table below. 
+**IMPORTANT NOTE**: while submissions to this site are reviewed to meet minimal standards of plausibility and replicability, they are not certified by this site for correctness, and may be subject to future revision, for instance due to errors in the associated preprint or paper.  Thus, readers should exercise their own judgement when assessing the validity of the bounds reported on this site, particularly if their source is not yet published by a peer-reviewed journal. **In particular, one should not blindly use the results on this site for any research-level publication, without first checking the cited sources**.
+
+Bounds for which the level of available verification is currently at minimal levels will be marked with an asterisk in the table below.  (This status may be updated if the verification status of the bound changes in the future, for instance if the preprint establishing the bound is published in a peer-reviewed journal.)
 
 | Number | Description | Best lower bound | Best upper bound |
 | ------ | ----------- | ---------------- | ---------------- |
