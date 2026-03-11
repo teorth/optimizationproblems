@@ -114,6 +114,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [77](https://teorth.github.io/optimizationproblems/constants/77a.html) | 3D critical Bochner–Riesz exponent | 3 | $\frac{13}{4}$ |
 | [78](https://teorth.github.io/optimizationproblems/constants/78a.html) | Conway thrackle constant | 1 | 1.393 |
 | [79](https://teorth.github.io/optimizationproblems/constants/79a.html) | Asymptotic essential-dimension ratio of the symmetric groups | $\frac{1}{2}$ | 1 |
+| [80](https://teorth.github.io/optimizationproblems/constants/80a.html) | Ising perceptron capacity threshold | >0 (0.833*) | 0.847 (0.833*) |
 
 
 ## Recent progress
