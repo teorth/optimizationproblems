@@ -80,7 +80,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [45](https://teorth.github.io/optimizationproblems/constants/45a.html) | Density of odd integers that are the sum of a prime and a power of two | 0.107648 | 0.490341088858244 |
 | [46](https://teorth.github.io/optimizationproblems/constants/46a.html) | Fourier restriction constant for the 2-sphere | 3 |  $\frac{22}{7}\approx 3.142857$  |
 | [47](https://teorth.github.io/optimizationproblems/constants/47a.html) | Centered Hardy-Littlewood maximal constant in dimension $2$ | $\frac{11+\sqrt{61}}{12}\approx 1.5675208$ | 9 |
-| [48](https://teorth.github.io/optimizationproblems/constants/48a.html) | Convex sub-Gaussian comparison constant | 1 | $<\infty$ |
+| [48](https://teorth.github.io/optimizationproblems/constants/48a.html) | One-dimensional convex sub-Gaussian comparison constant | $\approx 5.33386$ | $\approx 5.33386$ |
 | [49](https://teorth.github.io/optimizationproblems/constants/49a.html) | Erdős–Szemerédi $3$-sunflower-free capacity | >1.551 ($\geq 1.554*$) | $\frac{3}{2^{2/3}} \approx 1.88988$ |
 | [50](https://teorth.github.io/optimizationproblems/constants/50a.html) | Approximation ratio for quantum Max Cut | 0.611 | $<1$ (0.5 for product states) |
 | [51](https://teorth.github.io/optimizationproblems/constants/51a.html) | Erdős maximum term problem | 0.5850788 | $\frac{2}{\pi}\approx 0.63662$ |
@@ -131,6 +131,7 @@ Bounds for which the level of available verification is currently at minimal lev
 - [22](https://teorth.github.io/optimizationproblems/constants/22a.html) **improved upper bound (unverified):** $C_{22} \leq 10.02*$ by [A. Klotz](https://arxiv.org/abs/2603.02416), 2 Mar 2026.
 - [31](https://teorth.github.io/optimizationproblems/constants/31a.html) **improved lower bound (unverified):** $C_{31} \geq 0.79970*$ by [Archivara](https://archivara.org/paper/1a5c6a48-a106-40e4-a5f0-97833f3a25a7), 4 Mar 2026.
 - [10a](https://teorth.github.io/optimizationproblems/constants/10a.html) **improved lower bound:** $C_{10} \geq 1.67696 + 10^{-26}$ by [S. Heilman](https://arxiv.org/abs/2603.22616), 23 Mar 2026.
+- [48](https://teorth.github.io/optimizationproblems/constants/48a.html) **solved:** $C_{48} = c_\star^2 \approx 5.33386$ by [Damek Davis and Sam Power](https://arxiv.org/abs/2604.03170), 3 Apr 2026.
 
 
 ## Maintainers
