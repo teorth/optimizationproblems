@@ -130,7 +130,7 @@ Bounds for which the level of available verification is currently at minimal lev
 - [51](https://teorth.github.io/optimizationproblems/constants/51a.html) **improved lower bound:** $C_{51} \geq 0.5850788$ by [N. Sothanaphan](https://drive.google.com/file/d/1wZnzui_eeBE32HnkrnSB7YhfcTOiYolp/view), 1 Mar 2026.
 - [22](https://teorth.github.io/optimizationproblems/constants/22a.html) **improved upper bound (unverified):** $C_{22} \leq 10.02*$ by [A. Klotz](https://arxiv.org/abs/2603.02416), 2 Mar 2026.
 - [31](https://teorth.github.io/optimizationproblems/constants/31a.html) **improved lower bound (unverified):** $C_{31} \geq 0.79970*$ by [Archivara](https://archivara.org/paper/1a5c6a48-a106-40e4-a5f0-97833f3a25a7), 4 Mar 2026.
-- [10a](https://teorth.github.io/optimizationproblems/constants/10a.html) **improved lower bound:** $C_{10} \geq 1.67696 + 10^{-26}$ by [S. Heilman](https://arxiv.org/abs/2603.22616), 23 Mar 2026.
+- [10a](https://teorth.github.io/optimizationproblems/constants/10a.html) **improved lower bound:** $C_{10} \geq 1.67696 + 10^{-12}$ by [Chris Jones and Giulio Malavolta](https://arxiv.org/pdf/2603.30039), 31 Mar 2026.
 - [48](https://teorth.github.io/optimizationproblems/constants/48a.html) **solved:** $C_{48} = c_\star^2 \approx 5.33386$ by [Damek Davis and Sam Power](https://arxiv.org/abs/2604.03170), 3 Apr 2026.
 
 
