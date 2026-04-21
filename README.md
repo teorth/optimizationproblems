@@ -52,6 +52,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [22b](https://teorth.github.io/optimizationproblems/constants/22b.html) | Tight alternating knot constant | 0.017 | 7.31 |
 | [23a](https://teorth.github.io/optimizationproblems/constants/23a.html) | Smallest unsolved instance of the Hadamard conjecture | 668 | $\infty$ |
 | [23b](https://teorth.github.io/optimizationproblems/constants/23b.html) | Minimal condition number decay for sign matrices | $\frac{17}{92}$ | 1 |
+| [23c](https://teorth.github.io/optimizationproblems/constants/23c.html) | Asymptotic counting exponent for partial Hadamard matrices | 1 | 3 |
 | [24](https://teorth.github.io/optimizationproblems/constants/24a.html) | Komlós discrepancy constant | $1+\sqrt{2}$ | $\infty$ |
 | [25](https://teorth.github.io/optimizationproblems/constants/25a.html) | Mahler volume product constant | $\pi$ | 4 |
 | [26a](https://teorth.github.io/optimizationproblems/constants/26a.html) | Bohnenblust--Hille constant on the Boolean cube | $2$ | $\infty$ |
@@ -79,7 +80,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [45](https://teorth.github.io/optimizationproblems/constants/45a.html) | Density of odd integers that are the sum of a prime and a power of two | 0.107648 | 0.490341088858244 |
 | [46](https://teorth.github.io/optimizationproblems/constants/46a.html) | Fourier restriction constant for the 2-sphere | 3 |  $\frac{22}{7}\approx 3.142857$  |
 | [47](https://teorth.github.io/optimizationproblems/constants/47a.html) | Centered Hardy-Littlewood maximal constant in dimension $2$ | $\frac{11+\sqrt{61}}{12}\approx 1.5675208$ | 9 |
-| [48](https://teorth.github.io/optimizationproblems/constants/48a.html) | Convex sub-Gaussian comparison constant | 1 | $<\infty$ |
+| [48](https://teorth.github.io/optimizationproblems/constants/48a.html) | One-dimensional convex sub-Gaussian comparison constant | $\approx 5.33386$ | $\approx 5.33386$ |
 | [49](https://teorth.github.io/optimizationproblems/constants/49a.html) | Erdős–Szemerédi $3$-sunflower-free capacity | >1.551 ($\geq 1.554*$) | $\frac{3}{2^{2/3}} \approx 1.88988$ |
 | [50](https://teorth.github.io/optimizationproblems/constants/50a.html) | Approximation ratio for quantum Max Cut | 0.611 | $<1$ (0.5 for product states) |
 | [51](https://teorth.github.io/optimizationproblems/constants/51a.html) | Erdős maximum term problem | 0.5850788 | $\frac{2}{\pi}\approx 0.63662$ |
@@ -129,7 +130,8 @@ Bounds for which the level of available verification is currently at minimal lev
 - [51](https://teorth.github.io/optimizationproblems/constants/51a.html) **improved lower bound:** $C_{51} \geq 0.5850788$ by [N. Sothanaphan](https://drive.google.com/file/d/1wZnzui_eeBE32HnkrnSB7YhfcTOiYolp/view), 1 Mar 2026.
 - [22](https://teorth.github.io/optimizationproblems/constants/22a.html) **improved upper bound (unverified):** $C_{22} \leq 10.02*$ by [A. Klotz](https://arxiv.org/abs/2603.02416), 2 Mar 2026.
 - [31](https://teorth.github.io/optimizationproblems/constants/31a.html) **improved lower bound (unverified):** $C_{31} \geq 0.79970*$ by [Archivara](https://archivara.org/paper/1a5c6a48-a106-40e4-a5f0-97833f3a25a7), 4 Mar 2026.
-- [10a](https://teorth.github.io/optimizationproblems/constants/10a.html) **improved lower bound:** $C_{10} \geq 1.67696 + 10^{-26}$ by [S. Heilman](https://arxiv.org/abs/2603.22616), 23 Mar 2026.
+- [10a](https://teorth.github.io/optimizationproblems/constants/10a.html) **improved lower bound:** $C_{10} \geq 1.67696 + 10^{-12}$ by [Chris Jones and Giulio Malavolta](https://arxiv.org/pdf/2603.30039), 31 Mar 2026.
+- [48](https://teorth.github.io/optimizationproblems/constants/48a.html) **solved:** $C_{48} = c_\star^2 \approx 5.33386$ by [Damek Davis and Sam Power](https://arxiv.org/abs/2604.03170), 3 Apr 2026.
 
 
 ## Maintainers
