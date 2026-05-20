@@ -85,7 +85,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [50](https://teorth.github.io/optimizationproblems/constants/50a.html) | Approximation ratio for quantum Max Cut | 0.611 | $<1$ (0.5 for product states) |
 | [51](https://teorth.github.io/optimizationproblems/constants/51a.html) | Erdős maximum term problem | 0.5850788 | $\frac{2}{\pi}\approx 0.63662$ |
 | [52](https://teorth.github.io/optimizationproblems/constants/52a.html) | Satisfiability threshold for random 3-SAT | 3.52 | 4.490 |
-| [53](https://teorth.github.io/optimizationproblems/constants/53a.html) | Davenport constant for $C_n^3$ | 3 | 20369 |
+| [53](https://teorth.github.io/optimizationproblems/constants/53a.html) | Davenport constant for $C_n^3$ | 3 | 4 |
 | [54](https://teorth.github.io/optimizationproblems/constants/54a.html) | Beurling–Ahlfors transform constant | 1 | 1.575 |
 | [55](https://teorth.github.io/optimizationproblems/constants/55a.html) | Coefficient of the acyclic chromatic index | 1 | 3.142 |
 | [56](https://teorth.github.io/optimizationproblems/constants/56a.html) | $\mathrm{GL}_2$ Ramanujan conjecture exponent | 0 | $\tfrac{7}{64}=0.109375$ |
