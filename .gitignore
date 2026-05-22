@@ -2,3 +2,4 @@
 /drafts
 .DS_store
 /tmp
+.claude/
