@@ -14,7 +14,7 @@ Bounds for which the level of available verification is currently at minimal lev
 
 | Number | Description | Best lower bound | Best upper bound |
 | ------ | ----------- | ---------------- | ---------------- |
-| [1a](https://teorth.github.io/optimizationproblems/constants/1a.html) | Sidon set autocorrelation constant | 1.2802 | 1.502862 |
+| [1a](https://teorth.github.io/optimizationproblems/constants/1a.html) | Sidon set autocorrelation constant | 1.2802 (1.292*) | 1.502862 |
 | [1b](https://teorth.github.io/optimizationproblems/constants/1b.html) | Erdős minimum overlap constant | 0.379005 | 0.380868 |
 | [2](https://teorth.github.io/optimizationproblems/constants/2a.html) | Crouzeix constant | 2 | $1+\sqrt{2} \approx 2.4142$ |
 | [3a](https://teorth.github.io/optimizationproblems/constants/3a.html) | Gyamarti-Hennecart-Ruzsa sum-difference constant | 1.1740744 | 1.33333 |
@@ -138,6 +138,7 @@ Bounds for which the level of available verification is currently at minimal lev
 - [3a](https://teorth.github.io/optimizationproblems/constants/3a.html), [3c](https://teorth.github.io/optimizationproblems/constants/3c.html) **improved upper bounds:** $C_{3a} \leq 1.1740744$ and $C_{3c} \leq 1.67473389$ by S. Griego, 13 May 2026.
 - [84a](https://teorth.github.io/optimizationproblems/constants/84a.html) **improved lower bound (unverified):** $C_{84a} \geq 1.03583*$ by [E. Naslund](https://mathoverflow.net/q/511514), 25 May 2026.
 - [84b](https://teorth.github.io/optimizationproblems/constants/84b.html) **improved upper bound (unverified):** $C_{84b} \leq 1.999281*$ by [I. Althoefer](https://www.erdosproblems.com/forum/thread/52), 28 May 2026.
+- [1a](https://teorth.github.io/optimizationproblems/constants/1a.html) **improved lower bound (unverified):** $C_{1a} \geq 1.292*$ by [A. Piterbarg, J. Bajaj, D. Vincent](https://github.com/AndreiPiterbarg/sidon-autocorrelation), 3 Jun 2026.
 
 
 ## Maintainers
