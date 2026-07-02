@@ -77,7 +77,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [42](https://teorth.github.io/optimizationproblems/constants/42a.html) | Turan's pure power sum constant | 0.5 | 0.69368 |
 | [43](https://teorth.github.io/optimizationproblems/constants/43a.html) | Gilbert-Pollak conjecture (Steiner ratio) | 0.8559 | 0.86602540378 |
 | [44](https://teorth.github.io/optimizationproblems/constants/44a.html) | Maximal number of relevant variables in degree-$d$ Boolean functions | 1.5 | 4.394 |
-| [45](https://teorth.github.io/optimizationproblems/constants/45a.html) | Density of odd integers that are the sum of a prime and a power of two | 0.107648 | <0.490248930138966 |
+| [45](https://teorth.github.io/optimizationproblems/constants/45a.html) | Density of odd integers that are the sum of a prime and a power of two | 0.107648 | 0.490180063290061 |
 | [46](https://teorth.github.io/optimizationproblems/constants/46a.html) | Fourier restriction constant for the 2-sphere | 3 |  $\frac{22}{7}\approx 3.142857$  |
 | [47](https://teorth.github.io/optimizationproblems/constants/47a.html) | Centered Hardy-Littlewood maximal constant in dimension $2$ | $\frac{11+\sqrt{61}}{12}\approx 1.5675208$ | 4 |
 | [48](https://teorth.github.io/optimizationproblems/constants/48a.html) | One-dimensional convex sub-Gaussian comparison constant | $\approx 5.33386$ | $\approx 5.33386$ |
