@@ -27,7 +27,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [6](https://teorth.github.io/optimizationproblems/constants/6a.html) | Union-closed sets conjecture constant | 0.38271 | 0.5 |
 | [7a](https://teorth.github.io/optimizationproblems/constants/7a.html) | Irrationality measure of $\pi$ | 2 | 7.103205334137 |
 | [7b](https://teorth.github.io/optimizationproblems/constants/7b.html) | Irrationality measure of $\Gamma(1/4)$ | 2 | $10^{143}$ |
-| [8](https://teorth.github.io/optimizationproblems/constants/8a.html) | Classical zero-free region constant | 0.755106 | 5.558691 |
+| [8](https://teorth.github.io/optimizationproblems/constants/8a.html) | Classical zero-free region constant | 0.755106 | 4.896 |
 | [9](https://teorth.github.io/optimizationproblems/constants/9a.html) | Shannon capacity of the 7-cycle | 3.2578 | 3.3177 |
 | [10a](https://teorth.github.io/optimizationproblems/constants/10a.html) | The real Grothendieck constant | $1.67696 + 10^{-26}$ | 1.78215358819137 |
 | [10b](https://teorth.github.io/optimizationproblems/constants/10b.html) | The complex Grothendieck constant | 1.338 | 1.40491 |
@@ -141,6 +141,7 @@ Bounds for which the level of available verification is currently at minimal lev
 - [84a](https://teorth.github.io/optimizationproblems/constants/84a.html) **improved lower bound (unverified):** $C_{84a} \geq 1.03583*$ by [E. Naslund](https://mathoverflow.net/q/511514), 25 May 2026.
 - [84b](https://teorth.github.io/optimizationproblems/constants/84b.html) **improved upper bound (unverified):** $C_{84b} \leq 1.999281*$ by [I. Althoefer](https://www.erdosproblems.com/forum/thread/52), 28 May 2026.
 - [1a](https://teorth.github.io/optimizationproblems/constants/1a.html) **improved lower bound (unverified):** $C_{1a} \geq 1.292*$ by [A. Piterbarg, J. Bajaj, D. Vincent](https://github.com/AndreiPiterbarg/sidon-autocorrelation), 3 Jun 2026.
+- [8](https://teorth.github.io/optimizationproblems/constants/8a.html) **improved upper bound:** $C_{8} \leq 4.896$ by [C. Bellotti, T. Trudgian, A. Yang](https://arxiv.org/abs/2603.21490), 23 Mar 2026.
 
 
 ## Maintainers
