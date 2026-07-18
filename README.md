@@ -31,7 +31,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [9](https://teorth.github.io/optimizationproblems/constants/9a.html) | Shannon capacity of the 7-cycle | 3.2578 | 3.3177 |
 | [10a](https://teorth.github.io/optimizationproblems/constants/10a.html) | The real Grothendieck constant | $1.67696 + 10^{-26}$ | 1.78215358819137 |
 | [10b](https://teorth.github.io/optimizationproblems/constants/10b.html) | The complex Grothendieck constant | 1.338 | 1.40491 |
-| [10c](https://teorth.github.io/optimizationproblems/constants/10c.html) | Spencer discrepancy constant (“six standard deviations suffice”) | 1.414214 | 3.674235 (3.65*) |
+| [10c](https://teorth.github.io/optimizationproblems/constants/10c.html) | Spencer discrepancy constant (“six standard deviations suffice”) | 1.697749 | 3.674235 (3.65*) |
 | [11a](https://teorth.github.io/optimizationproblems/constants/11a.html) | $L^1$ Poincaré constant on the Hamming cube | $\sqrt{\pi/2} \approx 1.2533$ | $\pi/2 - 0.00013 \approx 1.5707$ |
 | [11b](https://teorth.github.io/optimizationproblems/constants/11b.html) | Critical exponent for isoperimetric inequality on the Hamming cube | 0.5 | 0.5 |
 | [12](https://teorth.github.io/optimizationproblems/constants/12a.html) | The Beardwood–Halton–Hammersley constant | 0.6277 | 0.90304 |
@@ -142,7 +142,6 @@ Bounds for which the level of available verification is currently at minimal lev
 - [84b](https://teorth.github.io/optimizationproblems/constants/84b.html) **improved upper bound (unverified):** $C_{84b} \leq 1.999281*$ by [I. Althoefer](https://www.erdosproblems.com/forum/thread/52), 28 May 2026.
 - [1a](https://teorth.github.io/optimizationproblems/constants/1a.html) **improved lower bound (unverified):** $C_{1a} \geq 1.292*$ by [A. Piterbarg, J. Bajaj, D. Vincent](https://github.com/AndreiPiterbarg/sidon-autocorrelation), 3 Jun 2026.
 - [8](https://teorth.github.io/optimizationproblems/constants/8a.html) **improved upper bound:** $C_{8} \leq 4.896$ by [C. Bellotti, T. Trudgian, A. Yang](https://arxiv.org/abs/2603.21490), 23 Mar 2026.
-
 
 ## Maintainers
 
