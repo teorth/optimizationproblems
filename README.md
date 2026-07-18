@@ -47,7 +47,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [20a](https://teorth.github.io/optimizationproblems/constants/20a.html) | Thin shell conjecture constant | 2 | $< \infty$ |
 | [20b](https://teorth.github.io/optimizationproblems/constants/20b.html) | Isotropic constant of a log-concave probability measure | $1/e$ | $< \infty$ |
 | [20c](https://teorth.github.io/optimizationproblems/constants/20c.html) | KLS constant for log-concave probability measures | $\sqrt{\pi/2} \approx 1.25331$ | $\infty$ |
-| [21](https://teorth.github.io/optimizationproblems/constants/21a.html) | de Bruijn–Newman constant | 0 | 0.2 |
+| [21](https://teorth.github.io/optimizationproblems/constants/21a.html) | de Bruijn–Newman constant | 0 | 0.2 (0.1875*) |
 | [22a](https://teorth.github.io/optimizationproblems/constants/22a.html) | Tight knot constant | 1.105 | 10.76 (10.02*) |
 | [22b](https://teorth.github.io/optimizationproblems/constants/22b.html) | Tight alternating knot constant | 0.017 | 7.31 |
 | [23a](https://teorth.github.io/optimizationproblems/constants/23a.html) | Smallest unsolved instance of the Hadamard conjecture | 668 | $\infty$ |
@@ -107,7 +107,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [68](https://teorth.github.io/optimizationproblems/constants/68a.html) | Korenblum's constant | 0.3554 | 0.6778994 |
 | [69](https://teorth.github.io/optimizationproblems/constants/69a.html) | Sendov radius constant | 1 | 2 |
 | [70](https://teorth.github.io/optimizationproblems/constants/70a.html) | Reverse Brunn-Minkowski constant | 1 | $<\infty$ |
-| [71](https://teorth.github.io/optimizationproblems/constants/71a.html) | Fourier Entropy-Influence constant | 6.278 | $\infty$ |
+| [71](https://teorth.github.io/optimizationproblems/constants/71a.html) | Fourier Entropy-Influence constant | 6.278 (6.514326913930565372*) | $\infty$ |
 | [72](https://teorth.github.io/optimizationproblems/constants/72a.html) | Polya-Vinogradov best constant (squarefree asymptotic) | 0 | $\frac{1}{4\pi}\approx 0.07958$ |
 | [73](https://teorth.github.io/optimizationproblems/constants/73a.html) | Flatness constant in dimension 3 | $2+\sqrt{2}$ | $<3.972$ |
 | [74](https://teorth.github.io/optimizationproblems/constants/74a.html) | 10-point multi-point Seshadri constant on $\mathbb{P}^2$ | $\frac{117}{370}$ | $\frac{1}{\sqrt{10}}$ |
