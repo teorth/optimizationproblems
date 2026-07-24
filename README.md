@@ -29,7 +29,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [7b](https://teorth.github.io/optimizationproblems/constants/7b.html) | Irrationality measure of $\Gamma(1/4)$ | 2 | $10^{143}$ |
 | [8](https://teorth.github.io/optimizationproblems/constants/8a.html) | Classical zero-free region constant | 0.755106 | 4.896 |
 | [9](https://teorth.github.io/optimizationproblems/constants/9a.html) | Shannon capacity of the 7-cycle | 3.2578 | 3.3177 |
-| [10a](https://teorth.github.io/optimizationproblems/constants/10a.html) | The real Grothendieck constant | $1.67696 + 10^{-26}$ | 1.78215358819137 |
+| [10a](https://teorth.github.io/optimizationproblems/constants/10a.html) | The real Grothendieck constant | $1.67696 + 10^{-12}$ | 1.78215358819137 |
 | [10b](https://teorth.github.io/optimizationproblems/constants/10b.html) | The complex Grothendieck constant | 1.338 | 1.40491 |
 | [10c](https://teorth.github.io/optimizationproblems/constants/10c.html) | Spencer discrepancy constant (“six standard deviations suffice”) | 1.414214 | 3.674235 (3.65*) |
 | [11a](https://teorth.github.io/optimizationproblems/constants/11a.html) | $L^1$ Poincaré constant on the Hamming cube | $\sqrt{\pi/2} \approx 1.2533$ | $\pi/2 - 0.00013 \approx 1.5707$ |
