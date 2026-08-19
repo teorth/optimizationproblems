@@ -17,7 +17,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [1a](https://teorth.github.io/optimizationproblems/constants/1a.html) | Sidon set autocorrelation constant | 1.2802 (1.292*) | 1.502862 |
 | [1b](https://teorth.github.io/optimizationproblems/constants/1b.html) | Erdős minimum overlap constant | 0.379005 | 0.380868 |
 | [2](https://teorth.github.io/optimizationproblems/constants/2a.html) | Crouzeix constant | 2 | 2 |
-| [3a](https://teorth.github.io/optimizationproblems/constants/3a.html) | Gyarmati-Hennecart-Ruzsa sum-difference constant | 1.19102809 (1.19519192*) | 1.33333 |
+| [3a](https://teorth.github.io/optimizationproblems/constants/3a.html) | Gyarmati-Hennecart-Ruzsa sum-difference constant | 1.19102809 (1.21418*) | 1.33333 |
 | [3b](https://teorth.github.io/optimizationproblems/constants/3b.html) | Kakeya sums-differences constant | 1.77898 (1.77898884*) | 1.83333 |
 | [3c](https://teorth.github.io/optimizationproblems/constants/3c.html) | 4-slope Kakeya-type sum-difference constant | 1.67473389 | 1.75 |
 | [3d](https://teorth.github.io/optimizationproblems/constants/3d.html) | Single-set sum-difference exponent | 2 | 2 |
@@ -153,6 +153,7 @@ Bounds for which the level of available verification is currently at minimal lev
 - [2](https://teorth.github.io/optimizationproblems/constants/2a.html) **solved:** $C_2 = 2$ — Crouzeix's conjecture, by [Jin](https://www.preprints.org/manuscript/202607.1919) (July 2026); a second proof followed shortly after in [E. Lorist and F. L. Schwenninger](https://arxiv.org/abs/2608.03841), 4 Aug 2026, which acknowledges Jin.
 - [3a](https://teorth.github.io/optimizationproblems/constants/3a.html) **improved lower bound (limit value):** $C_{3a} \geq 1.19519192*$ by [L. Kleinwaks](https://github.com/kleinwaks/masked-digit-sum-difference-bound), 14 Aug 2026.
 - [15a](https://teorth.github.io/optimizationproblems/constants/15a.html) **improved upper bound:** $C_{15a} \leq 2.371177$ by [E. Dupont, M. Eisenberger, B. Kozlovskii, A. Mehrabian, F. J. R. Ruiz, A. See, R. Zhou, J. Alman, V. Vassilevska Williams, M. Balog](https://arxiv.org/abs/2608.16884), 17 Aug 2026.
+- [3a](https://teorth.github.io/optimizationproblems/constants/3a.html) **improved lower bound (limit value):** $C_{3a} \geq 1.21418*$ by [C. Olafson](https://github.com/carcango), 19 Aug 2026.
 
 ## Maintainers
 
