@@ -39,7 +39,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [13a](https://teorth.github.io/optimizationproblems/constants/13a.html) | Moser's convex worm cover constant | 0.232239 | 0.2617993878 |
 | [13b](https://teorth.github.io/optimizationproblems/constants/13b.html) | Lebesgue's convex universal cover constant | 0.832 | 0.8440935944 |
 | [14](https://teorth.github.io/optimizationproblems/constants/14a.html) | Smallest $n$ for which the value of $BB(n)$ is undecidable | 6 | 432 |
-| [15a](https://teorth.github.io/optimizationproblems/constants/15a.html) | Matrix multiplication exponent | 2 | 2.371339 |
+| [15a](https://teorth.github.io/optimizationproblems/constants/15a.html) | Matrix multiplication exponent | 2 | 2.371177 |
 | [15b](https://teorth.github.io/optimizationproblems/constants/15b.html) | Dual matrix multiplication exponent | >0.321334 | 1 |
 | [16](https://teorth.github.io/optimizationproblems/constants/16a.html) | Brezis–Gallouet–Wainger remainder constant on the 2D torus | $\frac{\beta + \pi}{\pi} \approx 1.82283$ | $\approx 2.15627$ |
 | [17](https://teorth.github.io/optimizationproblems/constants/17a.html) | Exponential growth constant of diagonal Ramsey numbers | $\sqrt{2} \approx 1.4142$ | 3.7919936995 |
