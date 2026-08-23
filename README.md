@@ -17,7 +17,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [1a](https://teorth.github.io/optimizationproblems/constants/1a.html) | Sidon set autocorrelation constant | 1.2802 (1.292*) | 1.502862 |
 | [1b](https://teorth.github.io/optimizationproblems/constants/1b.html) | Erdős minimum overlap constant | 0.379005 | 0.380868 |
 | [2](https://teorth.github.io/optimizationproblems/constants/2a.html) | Crouzeix constant | 2 | 2 |
-| [3a](https://teorth.github.io/optimizationproblems/constants/3a.html) | Gyarmati-Hennecart-Ruzsa sum-difference constant | 1.1835129324 (1.19102809*) | 1.33333 |
+| [3a](https://teorth.github.io/optimizationproblems/constants/3a.html) | Gyarmati-Hennecart-Ruzsa sum-difference constant | 1.19102809 (1.19519192*) | 1.33333 |
 | [3b](https://teorth.github.io/optimizationproblems/constants/3b.html) | Kakeya sums-differences constant | 1.77898 (1.77898884*) | 1.83333 |
 | [3c](https://teorth.github.io/optimizationproblems/constants/3c.html) | 4-slope Kakeya-type sum-difference constant | 1.67473389 | 1.75 |
 | [3d](https://teorth.github.io/optimizationproblems/constants/3d.html) | Single-set sum-difference exponent | 2 | 2 |
@@ -151,6 +151,7 @@ Bounds for which the level of available verification is currently at minimal lev
 - [3b](https://teorth.github.io/optimizationproblems/constants/3b.html) **improved lower bound:** $C_{3b} \geq 1.77898884$ by Mosaic Intelligence, [entropy certificate](https://doi.org/10.5281/zenodo.20794135) on a 13-point support.
 - [10a](https://teorth.github.io/optimizationproblems/constants/10a.html) **improved upper and lower bounds:** $\frac{6\pi}{11} \leq C_{10a} \leq \frac{\pi}{2\log(1+\sqrt{2})} - 10^{-4}$ by [R. Saha, A. Li, A. Xue, S. Chaudhuri, A. Klivans, P. K. Kothari, R. Meka](https://arxiv.org/abs/2608.11158), 11 Aug 2026 — determines the tenths digit of $C_{10a}$ to be $7$.
 - [2](https://teorth.github.io/optimizationproblems/constants/2a.html) **solved:** $C_2 = 2$ — Crouzeix's conjecture, by [Jin](https://www.preprints.org/manuscript/202607.1919) (July 2026); a second proof followed shortly after in [E. Lorist and F. L. Schwenninger](https://arxiv.org/abs/2608.03841), 4 Aug 2026, which acknowledges Jin.
+- [3a](https://teorth.github.io/optimizationproblems/constants/3a.html) **improved lower bound (limit value):** $C_{3a} \geq 1.19519192*$ by [L. Kleinwaks](https://github.com/kleinwaks/masked-digit-sum-difference-bound), 14 Aug 2026.
 
 ## Maintainers
 
