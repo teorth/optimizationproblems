@@ -51,9 +51,44 @@ If a constant has been worked out exactly, this site may not be the most appropr
 Each constant will be assigned a number $N$, indicating the family of constants it belongs to, and a letter $x$ to indicate its assigned label within that family, with $x$ defaulting to "a"; the constant will then be labeled $C_{Nx}$, and stored in the file `Nx.md`.  If a family has only one constant in it, one can abbreviate $C_{Na}$ as $C_N$, but we will keep the filename as `Na.md` rather than `N.md` so that the filename remains stable in the event that new constants in this family are added to the repository.  This is so that external references to these files remain static.
 
 
-## LaTeX rendering issues
+## Rendering
 
-Due to the way Markdown is converted to HTML on this site, underscores in *inline* LaTeX can be misread as emphasis.  The safest fix is to avoid patterns like `\mathbb{F}_{3}` in inline math and instead write `\mathbb{F}\_{3}`, which renders correctly.  For similar reasons, pipes `|` should be avoided; one can use `\lvert` and `\rvert` instead.
+Pages are served by GitHub Pages, which converts this Markdown to HTML with kramdown; the resulting page then loads MathJax 3, configured in `_layouts/default.html`.  Nearly every rendering defect reported here follows from one fact about that pipeline:
+
+- **`$$…$$` is handled by kramdown.**  It recognises the delimiters and passes everything between them through to MathJax verbatim.
+- **`$…$` is not.**  kramdown has no notion of single-dollar math, so that text is ordinary Markdown; it is only MathJax, running in the browser afterwards, that turns it into mathematics.
+
+Inline math is therefore parsed as Markdown *first*, and anything Markdown finds meaningful inside it — underscores, asterisks, braces, pipes — is consumed before MathJax ever sees it.  **The escaping rule is thus the opposite in the two contexts:**
+
+| | inline `$…$` | display `$$…$$` |
+| --- | --- | --- |
+| subscript | `C\_{86}` | `C_{86}` |
+| superscript star | `W^\*` | `W^*` |
+| set braces | `\\{ x \\}` | `\{ x \}` |
+| absolute value | `\lvert x \rvert` | `\lvert x \rvert` or `\|x\|` |
+
+In inline math the backslash is eaten by kramdown and MathJax receives the bare character, which is what you want.  **Do not escape inside `$$…$$`**: there the backslash survives, so `\_` reaches MathJax as a literal underscore instead of a subscript, and `\\{` as a line break followed by a brace.
+
+Two symbols account for most of the breakage:
+
+- **Underscores.**  Two unescaped `_` on one line of inline math pair into an `<em>` span and the math breaks.  A lone `_` with no partner usually survives, which is why plenty of pages get away with `$B_u$` — but escape it anyway.  It always works, and the next edit may supply the partner.
+- **Asterisks.**  Exactly the same failure, and easier to miss, because `$C^*$`, `$d^*(G)$` and this repository's own `*` marker for unverified bounds all look harmless.  A lone `$*$` will even pair with the next `*emphasis*` later in the line.
+
+Avoid a bare `|` in inline math as well: inside a table it ends the cell.  Write `\lvert` and `\rvert`.
+
+### Look at the rendered page
+
+Source that reads correctly can still render wrong, so check the output rather than only the diff.  Once a page is live:
+
+```
+curl -s https://teorth.github.io/optimizationproblems/constants/86a.html | grep '<em>'
+```
+
+An `<em>` or `<strong>` sitting between two `$` on the same line is math that kramdown has eaten.  Before that, the cheap local checks are table arity — constant pages have three columns, so four `|` per row, while the README has four columns and five — and a look at each `$$` block for stray `\_` or `\\{`.
+
+### The README table is rendered twice
+
+The README is rendered by kramdown with MathJax on the site, and separately by GitHub's own Markdown renderer on the repository front page.  GitHub's inline-math extension will not open a `$` span when a word character immediately precedes the dollar sign, so `degree-$d$` renders as literal `degree-$d$` there while rendering correctly on the site.  Leave a space before the opening `$`, or reword — `Boolean functions of degree $d$` — rather than leaving a hyphen adjacent to it.
 
 ## AI use policy
 
