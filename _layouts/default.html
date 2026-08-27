@@ -22,5 +22,9 @@
   <body>
     <article class="markdown-body">
     {{ content }}
+    {% if page.path contains "constants/" %}
+    <p class="home-link"><a href="../">&larr; Back to the table of constants</a></p>
+    {% endif %}
+    </article>
   </body>
 </html>
