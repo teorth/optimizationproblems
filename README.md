@@ -96,7 +96,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [57b](https://teorth.github.io/optimizationproblems/constants/57b.html) | Landau's constant | $\frac{1}{2}+10^{-335}$ | $\dfrac{\Gamma(1/3)\Gamma(5/6)}{\Gamma(1/6)}\approx 0.5433$ |
 | [57c](https://teorth.github.io/optimizationproblems/constants/57c.html) | Univalent Bloch constant | 0.5708858 | 1 |
 | [58](https://teorth.github.io/optimizationproblems/constants/58a.html) | Zaremba’s conjecture constant | 5 | $\infty$ |
-| [59](https://teorth.github.io/optimizationproblems/constants/59a.html) | Bohr radius for the bidisc | 0.3006 | 0.3174541 |
+| [59](https://teorth.github.io/optimizationproblems/constants/59a.html) | Bohr radius for the bidisc | 0.3006 | 0.302825279492 |
 | [60](https://teorth.github.io/optimizationproblems/constants/60a.html) | Favard-length decay exponent | $\frac{1}{6}$ | 1 |
 | [61](https://teorth.github.io/optimizationproblems/constants/61a.html) | Selberg congruence spectral-gap constant | 0 | $\frac{7}{64}$ |
 | [62a](https://teorth.github.io/optimizationproblems/constants/62a.html) | Lindelof (pointwise growth) exponent for the Riemann zeta function | 0 | $\frac{13}{84}$ |
@@ -156,6 +156,7 @@ Bounds for which the level of available verification is currently at minimal lev
 - [2](https://teorth.github.io/optimizationproblems/constants/2a.html) **solved:** $C_2 = 2$ — Crouzeix's conjecture, by [S. Jin](https://www.preprints.org/manuscript/202607.1919), 27 Jul 2026; an independent proof by a different route followed in [E. Lorist and F. L. Schwenninger](https://arxiv.org/abs/2608.03841), 4 Aug 2026.
 - [3a](https://teorth.github.io/optimizationproblems/constants/3a.html) **improved lower bound (limit value):** $C_{3a} \geq 1.19519192*$ by [L. Kleinwaks](https://github.com/kleinwaks/masked-digit-sum-difference-bound), 14 Aug 2026.
 - [15a](https://teorth.github.io/optimizationproblems/constants/15a.html) **improved upper bound:** $C_{15a} \leq 2.371177$ by [E. Dupont, M. Eisenberger, B. Kozlovskii, A. Mehrabian, F. J. R. Ruiz, A. See, R. Zhou, J. Alman, V. Vassilevska Williams, M. Balog](https://arxiv.org/abs/2608.16884), 17 Aug 2026.
+- [59](https://teorth.github.io/optimizationproblems/constants/59a.html) **improved upper bound:** $C\_{59}=K\_2<0.302825279492$ by [Shivam Patel](https://mathdb.com/p/392062/exact-value-of-the-bohr-radius-of-the-bidisc#s2), 26 Aug 2026.
 - [43](https://teorth.github.io/optimizationproblems/constants/43a.html) **improved lower bound (unverified):** $C_{43} \geq 0.860*$ (exact $43/50$; certificate-layer result conditional on the lemma set of [KHSHGW2026](https://arxiv.org/abs/2601.22365)) by [J. Savva](https://doi.org/10.5281/zenodo.22223485), 1 Sep 2026.
 - [88a](https://teorth.github.io/optimizationproblems/constants/88a.html) **improved upper bound:** $C_{88a} \leq 186$ via $\mathrm{DHL}[40,2]$, by [OpenAI](https://cdn.openai.com/pdf/51126fac-1b68-4128-9666-c908bcc16033/short_gaps.pdf), 30 Aug 2026, with a Lean 4 formalization conditional on three declared axioms.
 
