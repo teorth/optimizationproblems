@@ -18,7 +18,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [1b](https://teorth.github.io/optimizationproblems/constants/1b.html) | Erdős minimum overlap constant | 0.379005 | 0.380868 |
 | [2](https://teorth.github.io/optimizationproblems/constants/2a.html) | Crouzeix constant | 2 | 2 |
 | [3a](https://teorth.github.io/optimizationproblems/constants/3a.html) | Gyarmati-Hennecart-Ruzsa sum-difference constant | 1.19102809 (1.19519192*) | 1.33333 |
-| [3b](https://teorth.github.io/optimizationproblems/constants/3b.html) | Kakeya sums-differences constant | 1.77898 (1.77898884*) | 1.83333 |
+| [3b](https://teorth.github.io/optimizationproblems/constants/3b.html) | Kakeya sums-differences constant | 1.77898884 | 1.83333 |
 | [3c](https://teorth.github.io/optimizationproblems/constants/3c.html) | 4-slope Kakeya-type sum-difference constant | 1.67473389 | 1.75 |
 | [3d](https://teorth.github.io/optimizationproblems/constants/3d.html) | Single-set sum-difference exponent | 2 | 2 |
 | [3e](https://teorth.github.io/optimizationproblems/constants/3e.html) | Unnormalized single-set sum-difference exponent | 1.27155 | 1.33333 |
@@ -158,6 +158,7 @@ Bounds for which the level of available verification is currently at minimal lev
 - [15a](https://teorth.github.io/optimizationproblems/constants/15a.html) **improved upper bound:** $C_{15a} \leq 2.371177$ by [E. Dupont, M. Eisenberger, B. Kozlovskii, A. Mehrabian, F. J. R. Ruiz, A. See, R. Zhou, J. Alman, V. Vassilevska Williams, M. Balog](https://arxiv.org/abs/2608.16884), 17 Aug 2026.
 - [43](https://teorth.github.io/optimizationproblems/constants/43a.html) **improved lower bound (unverified):** $C_{43} \geq 0.860*$ (exact $43/50$; certificate-layer result conditional on the lemma set of [KHSHGW2026](https://arxiv.org/abs/2601.22365)) by [J. Savva](https://doi.org/10.5281/zenodo.22223485), 1 Sep 2026.
 - [88a](https://teorth.github.io/optimizationproblems/constants/88a.html) **improved upper bound:** $C_{88a} \leq 186$ via $\mathrm{DHL}[40,2]$, by [OpenAI](https://cdn.openai.com/pdf/51126fac-1b68-4128-9666-c908bcc16033/short_gaps.pdf), 30 Aug 2026, with a Lean 4 formalization conditional on three declared axioms.
+- [3b](https://teorth.github.io/optimizationproblems/constants/3b.html) **record marking:** drop the asterisk on $1.77898884$; the constant page and the zenodo entropy certificate already treat it as the verified record, matching the README convention that `*` is for minimally verified claims.
 
 ## Maintainers
 
