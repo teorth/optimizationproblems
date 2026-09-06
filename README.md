@@ -33,7 +33,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [9](https://teorth.github.io/optimizationproblems/constants/9a.html) | Shannon capacity of the 7-cycle | 3.2578 | 3.3177 |
 | [10a](https://teorth.github.io/optimizationproblems/constants/10a.html) | The real Grothendieck constant | $\frac{6\pi}{11}\approx 1.71360$ | $\frac{\pi}{2\log(1+\sqrt{2})} - 10^{-4} \approx 1.78211$ |
 | [10b](https://teorth.github.io/optimizationproblems/constants/10b.html) | The complex Grothendieck constant | 1.338 | 1.40491 |
-| [10c](https://teorth.github.io/optimizationproblems/constants/10c.html) | Spencer discrepancy constant (“six standard deviations suffice”) | 1.697749 | 3.674235 (3.65*) |
+| [10c](https://teorth.github.io/optimizationproblems/constants/10c.html) | Spencer discrepancy constant (“six standard deviations suffice”) | 1.697749 | 4.1 (3.65*) |
 | [11a](https://teorth.github.io/optimizationproblems/constants/11a.html) | $L^1$ Poincaré constant on the Hamming cube | $\sqrt{\pi/2} \approx 1.2533$ | $\pi/2 - 0.00013 \approx 1.5707$ |
 | [11b](https://teorth.github.io/optimizationproblems/constants/11b.html) | Critical exponent for isoperimetric inequality on the Hamming cube | 0.5 | 0.5 |
 | [12](https://teorth.github.io/optimizationproblems/constants/12a.html) | The Beardwood–Halton–Hammersley constant | 0.6277 | 0.90304 |
