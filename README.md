@@ -159,6 +159,8 @@ Bounds for which the level of available verification is currently at minimal lev
 - [43](https://teorth.github.io/optimizationproblems/constants/43a.html) **improved lower bound (unverified):** $C_{43} \geq 0.860*$ (exact $43/50$; certificate-layer result conditional on the lemma set of [KHSHGW2026](https://arxiv.org/abs/2601.22365)) by [J. Savva](https://doi.org/10.5281/zenodo.22223485), 1 Sep 2026.
 - [88a](https://teorth.github.io/optimizationproblems/constants/88a.html) **improved upper bound:** $C_{88a} \leq 186$ via $\mathrm{DHL}[40,2]$, by [OpenAI](https://cdn.openai.com/pdf/51126fac-1b68-4128-9666-c908bcc16033/short_gaps.pdf), 30 Aug 2026, with a Lean 4 formalization conditional on three declared axioms.
 
+- [47](https://teorth.github.io/optimizationproblems/constants/47a.html) **presentation:** put Aldaz's $1.6211915$ last in the lower-bound table so the last row is the record.
+
 ## Maintainers
 
 This site is maintained by Damek Davis, Paata Ivanisvili and Terence Tao.
