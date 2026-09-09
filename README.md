@@ -77,7 +77,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [40b](https://teorth.github.io/optimizationproblems/constants/40b.html) | Asymptotic Dobrowolski constant for Lehmer’s problem | $9/4$ | $\infty$ |
 | [41a](https://teorth.github.io/optimizationproblems/constants/41a.html) | Moving sofa constant | 2.2195 | 2.37 (2.2195*)|
 | [41b](https://teorth.github.io/optimizationproblems/constants/41b.html) | Ambidextrous moving sofa constant | 1.64495521 | 2.2195 |
-| [42](https://teorth.github.io/optimizationproblems/constants/42a.html) | Turan's pure power sum constant | >0.5 | 0.69368 (0.6906538*) |
+| [42](https://teorth.github.io/optimizationproblems/constants/42a.html) | Turan's pure power sum constant | >0.5 | 0.69368 (0.688983\*) |
 | [43](https://teorth.github.io/optimizationproblems/constants/43a.html) | Gilbert-Pollak conjecture (Steiner ratio) | 0.8559 (0.860*) | 0.86602540378 |
 | [44](https://teorth.github.io/optimizationproblems/constants/44a.html) | Maximal number of relevant variables in Boolean functions of degree $d$ | 1.5 | 4.394 |
 | [45](https://teorth.github.io/optimizationproblems/constants/45a.html) | Density of odd integers that are the sum of a prime and a power of two | 0.107648 | 0.490180063290061 |
@@ -86,7 +86,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [48](https://teorth.github.io/optimizationproblems/constants/48a.html) | One-dimensional convex sub-Gaussian comparison constant | $\approx 5.33386$ | $\approx 5.33386$ |
 | [49](https://teorth.github.io/optimizationproblems/constants/49a.html) | Erdős–Szemerédi $3$-sunflower-free capacity | >1.551 ($\geq 1.554*$) | $\frac{3}{2^{2/3}} \approx 1.88988$ |
 | [50](https://teorth.github.io/optimizationproblems/constants/50a.html) | Approximation ratio for quantum Max Cut | 0.614 | $<1$ (0.5 for product states) |
-| [51](https://teorth.github.io/optimizationproblems/constants/51a.html) | Erdős maximum term problem | 0.5850788 | $\frac{2}{\pi}\approx 0.63662$ |
+| [51](https://teorth.github.io/optimizationproblems/constants/51a.html) | Erdős maximum term problem | 0.5850788 (0.5850788196744\*) | $\frac{2}{\pi}\approx 0.63662$ |
 | [52](https://teorth.github.io/optimizationproblems/constants/52a.html) | Satisfiability threshold for random 3-SAT | 3.52 | 4.490 |
 | [53](https://teorth.github.io/optimizationproblems/constants/53a.html) | Davenport constant for $C_n^3$ | 3 | 4 |
 | [54](https://teorth.github.io/optimizationproblems/constants/54a.html) | Beurling–Ahlfors transform constant | 1 | 1.575 |
@@ -158,6 +158,8 @@ Bounds for which the level of available verification is currently at minimal lev
 - [15a](https://teorth.github.io/optimizationproblems/constants/15a.html) **improved upper bound:** $C_{15a} \leq 2.371177$ by [E. Dupont, M. Eisenberger, B. Kozlovskii, A. Mehrabian, F. J. R. Ruiz, A. See, R. Zhou, J. Alman, V. Vassilevska Williams, M. Balog](https://arxiv.org/abs/2608.16884), 17 Aug 2026.
 - [43](https://teorth.github.io/optimizationproblems/constants/43a.html) **improved lower bound (unverified):** $C_{43} \geq 0.860*$ (exact $43/50$; certificate-layer result conditional on the lemma set of [KHSHGW2026](https://arxiv.org/abs/2601.22365)) by [J. Savva](https://doi.org/10.5281/zenodo.22223485), 1 Sep 2026.
 - [88a](https://teorth.github.io/optimizationproblems/constants/88a.html) **improved upper bound:** $C_{88a} \leq 186$ via $\mathrm{DHL}[40,2]$, by [OpenAI](https://cdn.openai.com/pdf/51126fac-1b68-4128-9666-c908bcc16033/short_gaps.pdf), 30 Aug 2026, with a Lean 4 formalization conditional on three declared axioms.
+- [42](https://teorth.github.io/optimizationproblems/constants/42a.html) **improved upper bound (computer-assisted):** $C\_{42}\leq0.688983$\* by [André Röhrig](https://github.com/AndreRoehrig/optimization-constants-certificates/blob/ed6387399cf6de02eaa4cf10c43787633496619a/notes/turan.md), 9 Sep 2026. Eight-step profile with exact rational interval verification of the limiting criterion; no explicit finite threshold is supplied.
+- [51](https://teorth.github.io/optimizationproblems/constants/51a.html) **improved lower bound (computer-assisted):** $C\_{51}\geq0.5850788196744$\* by [André Röhrig](https://github.com/AndreRoehrig/optimization-constants-certificates/blob/ed6387399cf6de02eaa4cf10c43787633496619a/notes/maximum_term.md), 9 Sep 2026. Exact parameters in the He–Tang family, with a polynomial bound on the whole circle and an explicit infinite-series tail; improves on the full prior paper value $0.585078819653$.
 
 ## Maintainers
 
