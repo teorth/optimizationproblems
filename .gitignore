@@ -3,3 +3,5 @@
 .DS_store
 /tmp
 .claude/
+__pycache__/
+*.pyc
