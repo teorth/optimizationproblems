@@ -32,7 +32,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [8](https://teorth.github.io/optimizationproblems/constants/8a.html) | Classical zero-free region constant | 0.755106 | 4.896 |
 | [9](https://teorth.github.io/optimizationproblems/constants/9a.html) | Shannon capacity of the 7-cycle | 3.2578 | 3.3177 |
 | [10a](https://teorth.github.io/optimizationproblems/constants/10a.html) | The real Grothendieck constant | $\frac{6\pi}{11}\approx 1.71360$ | $\frac{\pi}{2\log(1+\sqrt{2})} - 10^{-4} \approx 1.78211$ |
-| [10b](https://teorth.github.io/optimizationproblems/constants/10b.html) | The complex Grothendieck constant | 1.338 | 1.40491 |
+| [10b](https://teorth.github.io/optimizationproblems/constants/10b.html) | The complex Grothendieck constant | 1.4 | 1.404898554746 |
 | [10c](https://teorth.github.io/optimizationproblems/constants/10c.html) | Spencer discrepancy constant (“six standard deviations suffice”) | 1.697749 | 3.674235 (3.65*) |
 | [11a](https://teorth.github.io/optimizationproblems/constants/11a.html) | $L^1$ Poincaré constant on the Hamming cube | $\sqrt{\pi/2} \approx 1.2533$ | $\pi/2 - 0.00013 \approx 1.5707$ |
 | [11b](https://teorth.github.io/optimizationproblems/constants/11b.html) | Critical exponent for isoperimetric inequality on the Hamming cube | 0.5 | 0.5 |
@@ -158,6 +158,7 @@ Bounds for which the level of available verification is currently at minimal lev
 - [15a](https://teorth.github.io/optimizationproblems/constants/15a.html) **improved upper bound:** $C_{15a} \leq 2.371177$ by [E. Dupont, M. Eisenberger, B. Kozlovskii, A. Mehrabian, F. J. R. Ruiz, A. See, R. Zhou, J. Alman, V. Vassilevska Williams, M. Balog](https://arxiv.org/abs/2608.16884), 17 Aug 2026.
 - [43](https://teorth.github.io/optimizationproblems/constants/43a.html) **improved lower bound (unverified):** $C_{43} \geq 0.860*$ (exact $43/50$; certificate-layer result conditional on the lemma set of [KHSHGW2026](https://arxiv.org/abs/2601.22365)) by [J. Savva](https://doi.org/10.5281/zenodo.22223485), 1 Sep 2026.
 - [88a](https://teorth.github.io/optimizationproblems/constants/88a.html) **improved upper bound:** $C_{88a} \leq 186$ via $\mathrm{DHL}[40,2]$, by [OpenAI](https://cdn.openai.com/pdf/51126fac-1b68-4128-9666-c908bcc16033/short_gaps.pdf), 30 Aug 2026, with a Lean 4 formalization conditional on three declared axioms.
+- [10b](https://teorth.github.io/optimizationproblems/constants/10b.html) **improved upper and lower bounds** $1.4\leq C_{10b}\leq 1.404898554746$ by [S. Heilman, C. Jones, G. Malavolta](https://arxiv.org/abs/2609.25462), 21 Sep 2026.
 
 ## Maintainers
 
