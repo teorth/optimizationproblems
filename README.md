@@ -49,7 +49,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [20a](https://teorth.github.io/optimizationproblems/constants/20a.html) | Thin shell conjecture constant | 2 | $< \infty$ |
 | [20b](https://teorth.github.io/optimizationproblems/constants/20b.html) | Isotropic constant of a log-concave probability measure | $1/e$ | $< \infty$ |
 | [20c](https://teorth.github.io/optimizationproblems/constants/20c.html) | KLS constant for log-concave probability measures | $\sqrt{\pi/2} \approx 1.25331$ | $\infty$ |
-| [21](https://teorth.github.io/optimizationproblems/constants/21a.html) | de Bruijn–Newman constant | 0 | 0.2 (0.1875*) |
+| [21](https://teorth.github.io/optimizationproblems/constants/21a.html) | de Bruijn–Newman constant | 0 | 0.2 (0.172422*) |
 | [22a](https://teorth.github.io/optimizationproblems/constants/22a.html) | Tight knot constant | 1.105 | 10.76 (10.02*) |
 | [22b](https://teorth.github.io/optimizationproblems/constants/22b.html) | Tight alternating knot constant | 0.017 | 7.31 |
 | [23a](https://teorth.github.io/optimizationproblems/constants/23a.html) | Smallest unsolved instance of the Hadamard conjecture | 668 | $\infty$ |
@@ -132,6 +132,7 @@ Bounds for which the level of available verification is currently at minimal lev
 
 
 ## Recent progress
+  * [21](https://teorth.github.io/optimizationproblems/constants/21a.html) improved upper bound (unverified): $C_{21} < 0.172422*$ by Daniel Martin Kornaus, 5 Sep 2026; paper, theorem certificate, and full replay bundle: https://zenodo.org/records/22337308
 
 - [10c](https://teorth.github.io/optimizationproblems/constants/10c.html) **improved lower bound:** $C_{10c} \geq 5/\sqrt{8} \approx 1.767767$ by Y. H., submitted to this repository, 5 Sep 2026.
 - [51](https://teorth.github.io/optimizationproblems/constants/51a.html) **improved lower bound:** $C_{51} \geq 0.5850724$ by [Y. He and Q. Tang](https://arxiv.org/abs/2602.12217), 12 Feb 2026.
