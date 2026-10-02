@@ -103,7 +103,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [62b](https://teorth.github.io/optimizationproblems/constants/62b.html) | Burgess-quality subconvexity exponent for Dirichlet $L$-functions | 0 | $\frac{3}{16}$ |
 | [63](https://teorth.github.io/optimizationproblems/constants/63a.html) | Dirichlet divisor problem exponent | $\frac{1}{4}$ | $\frac{131}{416}$ |
 | [64](https://teorth.github.io/optimizationproblems/constants/64a.html) | Gauss circle problem exponent | 0 | $\frac{131}{208}$ |
-| [65](https://teorth.github.io/optimizationproblems/constants/65a.html) | Linnik's constant | 1 | 5 |
+| [65](https://teorth.github.io/optimizationproblems/constants/65a.html) | Linnik's constant | 1 | 3.99 |
 | [66](https://teorth.github.io/optimizationproblems/constants/66a.html) | Elliott-Halberstam level-of-distribution exponent | $\frac{1}{2}$ | 1 |
 | [67](https://teorth.github.io/optimizationproblems/constants/67a.html) | Brennan's conjecture exponent | 3.422 | 4 |
 | [68](https://teorth.github.io/optimizationproblems/constants/68a.html) | Korenblum's constant | 0.3554 | 0.6778994 |
@@ -176,6 +176,7 @@ Bounds for which the level of available verification is currently at minimal lev
 - [47](https://teorth.github.io/optimizationproblems/constants/47a.html) **improved upper bound:** $C_{47} \leq 3.879$ by [Y. Lin](https://github.com/CoolRmal/centered-maximal-constant), 20 Sep 2026, formalized in Lean 4.
 - [45](https://teorth.github.io/optimizationproblems/constants/45a.html) **presentation:** the printed certificate is Griego's $0.490249407811155$, not Yoo's record $0.490180063290061$.
 - [10c](https://teorth.github.io/optimizationproblems/constants/10c.html) **upper bound correction:** $C_{10c}\le 4.1$ by [Pesenti–Vladu](https://arxiv.org/abs/2211.05509) v2 (14 Apr 2026), replacing the withdrawn $3\sqrt{3/2}$ constant in Theorem 4.5.
+- [65](https://teorth.github.io/optimizationproblems/constants/65a.html) **improved upper bound:** $C\_{65} \leq 3.99$ by [E. Naslund](https://hexagonmath.org/2610.00018v1), 2 Oct 2026, with public computational certificates and a partial Lean formalization.
 
 ## Maintainers
 
