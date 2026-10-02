@@ -84,7 +84,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [46](https://teorth.github.io/optimizationproblems/constants/46a.html) | Fourier restriction constant for the 2-sphere | 3 |  $\frac{22}{7}\approx 3.142857$  |
 | [47](https://teorth.github.io/optimizationproblems/constants/47a.html) | Centered Hardy-Littlewood maximal constant in dimension $2$ | 1.68550999 | 3.879 |
 | [48](https://teorth.github.io/optimizationproblems/constants/48a.html) | One-dimensional convex sub-Gaussian comparison constant | $\approx 5.33386$ | $\approx 5.33386$ |
-| [49](https://teorth.github.io/optimizationproblems/constants/49a.html) | Erdős–Szemerédi $3$-sunflower-free capacity | >1.551 ($\geq 1.554*$) | $\frac{3}{2^{2/3}} \approx 1.88988$ |
+| [49](https://teorth.github.io/optimizationproblems/constants/49a.html) | Erdős–Szemerédi $3$-sunflower-free capacity | >1.551 ($\geq 1.5621220*$) | $\frac{3}{2^{2/3}} \approx 1.88988$ |
 | [50](https://teorth.github.io/optimizationproblems/constants/50a.html) | Approximation ratio for quantum Max Cut | 0.614 | $<1$ (0.5 for product states) |
 | [51](https://teorth.github.io/optimizationproblems/constants/51a.html) | Erdős maximum term problem | 0.5850788 | $\frac{2}{\pi}\approx 0.63662$ |
 | [52](https://teorth.github.io/optimizationproblems/constants/52a.html) | Satisfiability threshold for random 3-SAT | 3.52 | 4.490 |
@@ -133,6 +133,7 @@ Bounds for which the level of available verification is currently at minimal lev
 
 ## Recent progress
 
+- [49](https://teorth.github.io/optimizationproblems/constants/49a.html) **improved lower bound:** $C_{49} \geq 1.5621220$ by IRSI ([certificate and checkers](https://github.com/Aspect5/sunflower-free-capacity/tree/v1.1)), submitted to this repository, 30 Sep 2026 (1.5617847) and 2 Oct 2026 (1.5621220).
 - [10c](https://teorth.github.io/optimizationproblems/constants/10c.html) **improved lower bound:** $C_{10c} \geq 5/\sqrt{8} \approx 1.767767$ by Y. H., submitted to this repository, 5 Sep 2026.
 - [51](https://teorth.github.io/optimizationproblems/constants/51a.html) **improved lower bound:** $C_{51} \geq 0.5850724$ by [Y. He and Q. Tang](https://arxiv.org/abs/2602.12217), 12 Feb 2026.
 - [11b](https://teorth.github.io/optimizationproblems/constants/11b.html) **solved:** $C_{11b} = 0.5$ by  [P. Durcik, P. Ivanisvili, J. Roos, X. Xie](https://arxiv.org/abs/2602.20462), 24 Feb 2026.
