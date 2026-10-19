@@ -108,7 +108,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [65](https://teorth.github.io/optimizationproblems/constants/65a.html) | Linnik's constant | 1 | 5 |
 | [66](https://teorth.github.io/optimizationproblems/constants/66a.html) | Elliott-Halberstam level-of-distribution exponent | $\frac{1}{2}$ | 1 |
 | [67](https://teorth.github.io/optimizationproblems/constants/67a.html) | Brennan's conjecture exponent | 3.422 | 4 |
-| [68](https://teorth.github.io/optimizationproblems/constants/68a.html) | Korenblum's constant | 0.3554 | 0.6778994 |
+| [68](https://teorth.github.io/optimizationproblems/constants/68a.html) | Korenblum's constant | 0.4263 (0.432*) | 0.6778994 |
 | [69](https://teorth.github.io/optimizationproblems/constants/69a.html) | Sendov radius constant | 1 | 2 |
 | [70](https://teorth.github.io/optimizationproblems/constants/70a.html) | Reverse Brunn-Minkowski constant | 1 | $<\infty$ |
 | [71](https://teorth.github.io/optimizationproblems/constants/71a.html) | Fourier Entropy-Influence constant | 6.521845710923046575 | $\infty$ |
@@ -135,6 +135,7 @@ Bounds for which the level of available verification is currently at minimal lev
 
 ## Recent progress
 
+- [68](https://teorth.github.io/optimizationproblems/constants/68a.html) **improved lower bound (unrefereed):** $C\_{68} \geq 0.432$* by [R. Pinho](https://github.com/rpinho/korenblum-c68-certificate), 19 Oct 2026: covering-strip Schwarz estimate, classical hyperbolic Jung, and Wikström’s moment criterion, with a twelve-atom rational certificate and two exact checkers. Also records Wikström’s preceding 0.4263 bound.
 
 - [84a](https://teorth.github.io/optimizationproblems/constants/84a.html) **improved lower bound (unverified):** $C\_{84a} \geq 1.04317$* by [E. Naslund](https://hexagonmath.org/2610.00016v2), 10 Oct 2026. Version 2 of the [Palomar-registered Lean formalization](https://palomar-registry.org/entry?id=PALOMAR-2026-10-01-000018&version=2) proves the exponent $1.04315$ conditional on one explicit zeta inequality, established separately by [interval certificates](https://github.com/enaslund/unit-distance-bound-0.0427/tree/b43f0c5bfd7a3276597c6a47ad99b9e5b8d3d21f/papers/0.043171/certificates).
 - [84a](https://teorth.github.io/optimizationproblems/constants/84a.html) **improved lower bound (unverified):** $C\_{84a} \geq 1.0427$* by [E. Naslund](https://hexagonmath.org/2610.00016v1), 2 Oct 2026. The [Palomar-registered Lean theorem](https://palomar-registry.org/entry?id=PALOMAR-2026-10-01-000018&version=1) is conditional on one explicit zeta inequality, established separately by [interval certificates](https://github.com/enaslund/unit-distance-bound-0.0427/tree/14289d9d528881efef7db051f0078f519d470c68/papers/0.04273/certificates).
