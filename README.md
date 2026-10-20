@@ -96,7 +96,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [56](https://teorth.github.io/optimizationproblems/constants/56a.html) | $\mathrm{GL}_2$ Ramanujan conjecture exponent | 0 | $\tfrac{7}{64}=0.109375$ |
 | [57a](https://teorth.github.io/optimizationproblems/constants/57a.html) | Bloch’s constant | $\frac{\sqrt{3}}{4}+2\times 10^{-4}$ | $\dfrac{1}{\sqrt{1+\sqrt{3}}}\,\dfrac{\Gamma(1/3)\Gamma(11/12)}{\Gamma(1/4)}\approx 0.4719$ |
 | [57b](https://teorth.github.io/optimizationproblems/constants/57b.html) | Landau's constant | $\frac{1}{2}+10^{-335}$ | $\dfrac{\Gamma(1/3)\Gamma(5/6)}{\Gamma(1/6)}\approx 0.5433$ |
-| [57c](https://teorth.github.io/optimizationproblems/constants/57c.html) | Univalent Bloch constant | 0.5708858 | 1 |
+| [57c](https://teorth.github.io/optimizationproblems/constants/57c.html) | Univalent Bloch constant | 0.5708858 | 0.6563937 (0.65628589*) |
 | [58](https://teorth.github.io/optimizationproblems/constants/58a.html) | Zaremba’s conjecture constant | 5 | $\infty$ |
 | [59](https://teorth.github.io/optimizationproblems/constants/59a.html) | Bohr radius for the bidisc | 0.3006 | 0.302825279492 |
 | [60](https://teorth.github.io/optimizationproblems/constants/60a.html) | Favard-length decay exponent | $\frac{1}{6}$ | 1 |
@@ -207,6 +207,7 @@ Bounds for which the level of available verification is currently at minimal lev
 - [82](https://teorth.github.io/optimizationproblems/constants/82a.html) **improved upper bound (unverified):** $C_{82} < 0.2534449*$ by [R. Pinho](https://github.com/rpinho/c82-height-certificate), 16 Oct 2026, building on the September 2026 Épi construction (0.2535744749): Doche's limit-point method with $P\_7$ and 25 lattice-found numerator factors, certified by two independently written Arb checkers.
 - [31](https://teorth.github.io/optimizationproblems/constants/31a.html) **improved upper bound (unverified):** $C_{31} \leq 0.824120*$ by [L. Jack](https://github.com/leandrejack-afk/chvatal-sankoff-bound), 17 Oct 2026: Lueker's 2009 automaton method run at $h = 10$ (and $h = 9$, giving $0.825101$).
 - [1a](https://teorth.github.io/optimizationproblems/constants/1a.html), [1b](https://teorth.github.io/optimizationproblems/constants/1b.html) **improved upper bounds (unverified):** $C\_{1a} \leq 1.5027435$* and $C\_{1b} \leq 0.38085856$* by [Atris](https://github.com/atrislabs/records), 13 Oct 2026.
+- [57c](https://teorth.github.io/optimizationproblems/constants/57c.html) **improved upper bound (unverified):** $C\_{57c} \leq 0.65628589^\*$ by [W. van Staden](https://www.preprints.org/manuscript/202610.1936/v1), 20 Oct 2026 (DOI 10.20944/preprints202610.1936.v1); computer-assisted proof (exact covering for the inradius, Arb ball arithmetic for the conformal radius), [code and certificates](https://github.com/WynandVStaden/bloch-landau-slit-discs). The page now also records the earlier upper bounds, including $0.6563937$ (Carroll and Ortega-Cerdà, 2009) and $0.656319277272^\*$ (Ortega-Cerdà and Pridhnani, 2010).
 
 ## Maintainers
 
