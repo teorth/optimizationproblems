@@ -19,7 +19,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [1c](https://teorth.github.io/optimizationproblems/constants/1c.html) | Barnard–Steinerberger autocorrelation constant | 0.4103287* | 0.4107675 |
 | [1d](https://teorth.github.io/optimizationproblems/constants/1d.html) | Signed third autocorrelation constant | 1 | 1.463071582607559* |
 | [2](https://teorth.github.io/optimizationproblems/constants/2a.html) | Crouzeix constant | 2 | 2 |
-| [3a](https://teorth.github.io/optimizationproblems/constants/3a.html) | Gyarmati-Hennecart-Ruzsa sum-difference constant | 1.19102809 (1.19519192*) | 1.33333 (1.31237330*) |
+| [3a](https://teorth.github.io/optimizationproblems/constants/3a.html) | Gyarmati-Hennecart-Ruzsa sum-difference constant | 1.19359680* (1.19519192*) | 1.33333 (1.31237330*) |
 | [3b](https://teorth.github.io/optimizationproblems/constants/3b.html) | Kakeya sums-differences constant | 1.77898884 | 1.83333 |
 | [3c](https://teorth.github.io/optimizationproblems/constants/3c.html) | 4-slope Kakeya-type sum-difference constant | 1.674894211307116 | 1.75 |
 | [3d](https://teorth.github.io/optimizationproblems/constants/3d.html) | Single-set sum-difference exponent | 2 | 2 |
@@ -207,6 +207,7 @@ Bounds for which the level of available verification is currently at minimal lev
 - [82](https://teorth.github.io/optimizationproblems/constants/82a.html) **improved upper bound (unverified):** $C_{82} < 0.2534449*$ by [R. Pinho](https://github.com/rpinho/c82-height-certificate), 16 Oct 2026, building on the September 2026 Épi construction (0.2535744749): Doche's limit-point method with $P\_7$ and 25 lattice-found numerator factors, certified by two independently written Arb checkers.
 - [31](https://teorth.github.io/optimizationproblems/constants/31a.html) **improved upper bound (unverified):** $C_{31} \leq 0.824120*$ by [L. Jack](https://github.com/leandrejack-afk/chvatal-sankoff-bound), 17 Oct 2026: Lueker's 2009 automaton method run at $h = 10$ (and $h = 9$, giving $0.825101$).
 - [1a](https://teorth.github.io/optimizationproblems/constants/1a.html), [1b](https://teorth.github.io/optimizationproblems/constants/1b.html) **improved upper bounds (unverified):** $C\_{1a} \leq 1.5027435$* and $C\_{1b} \leq 0.38085856$* by [Atris](https://github.com/atrislabs/records), 13 Oct 2026.
+- [3a](https://teorth.github.io/optimizationproblems/constants/3a.html) **improved lower bound (unverified):** $C\_{3a} \geq 1.19359680$* by [Sylla](https://github.com/xSyllaa/c3a-controlled-carry-k2/tree/5ca7cb88820995bf7666096773fd3799f5714b18), finite $k=3$ instance of the controlled-carry construction of [L. Kleinwaks](https://github.com/kleinwaks/masked-digit-sum-difference-bound), submitted to this repository, 20 Oct 2026.
 
 ## Maintainers
 
