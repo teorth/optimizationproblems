@@ -57,7 +57,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [23a](https://teorth.github.io/optimizationproblems/constants/23a.html) | Smallest unsolved instance of the Hadamard conjecture | 668 | $\infty$ |
 | [23b](https://teorth.github.io/optimizationproblems/constants/23b.html) | Minimal condition number decay for sign matrices | $\frac{17}{92}$ | 1 |
 | [23c](https://teorth.github.io/optimizationproblems/constants/23c.html) | Asymptotic counting exponent for partial Hadamard matrices | 1 | 3 |
-| [24](https://teorth.github.io/optimizationproblems/constants/24a.html) | Komlós discrepancy constant | $1+\sqrt{2}$ | $\infty$ |
+| [24](https://teorth.github.io/optimizationproblems/constants/24a.html) | Komlós discrepancy constant | $1+\sqrt{2}$ | 36 (6.9013*) |
 | [25](https://teorth.github.io/optimizationproblems/constants/25a.html) | Mahler volume product constant | $\pi$ | 4 |
 | [26a](https://teorth.github.io/optimizationproblems/constants/26a.html) | Bohnenblust--Hille constant on the Boolean cube | $2$ | $\infty$ |
 | [26b](https://teorth.github.io/optimizationproblems/constants/26b.html) | Multilinear Bohnenblust--Hille constant (real) | $2$ | $\infty$ |
@@ -207,6 +207,9 @@ Bounds for which the level of available verification is currently at minimal lev
 - [82](https://teorth.github.io/optimizationproblems/constants/82a.html) **improved upper bound (unverified):** $C_{82} < 0.2534449*$ by [R. Pinho](https://github.com/rpinho/c82-height-certificate), 16 Oct 2026, building on the September 2026 Épi construction (0.2535744749): Doche's limit-point method with $P\_7$ and 25 lattice-found numerator factors, certified by two independently written Arb checkers.
 - [31](https://teorth.github.io/optimizationproblems/constants/31a.html) **improved upper bound (unverified):** $C_{31} \leq 0.824120*$ by [L. Jack](https://github.com/leandrejack-afk/chvatal-sankoff-bound), 17 Oct 2026: Lueker's 2009 automaton method run at $h = 10$ (and $h = 9$, giving $0.825101$).
 - [1a](https://teorth.github.io/optimizationproblems/constants/1a.html), [1b](https://teorth.github.io/optimizationproblems/constants/1b.html) **improved upper bounds (unverified):** $C\_{1a} \leq 1.5027435$* and $C\_{1b} \leq 0.38085856$* by [Atris](https://github.com/atrislabs/records), 13 Oct 2026.
+- [24](https://teorth.github.io/optimizationproblems/constants/24a.html) **Komlós conjecture proved (unverified):** $C\_{24} \leq 3\sqrt{2\pi} \approx 7.5199$* by [S. Guo, E. X. Fang, J. Lu](https://arxiv.org/abs/2609.11189), 10 Sep 2026.
+- [24](https://teorth.github.io/optimizationproblems/constants/24a.html) **Komlós conjecture proved:** $C\_{24} \leq 36$ by [S. R. Karingula and S. Lovett](https://arxiv.org/abs/2609.20979), 17 Sep 2026, formalized in Lean 4 by G. Dahia ([PALOMAR-2026-09-18-000003](https://palomar-registry.org/entry?id=PALOMAR-2026-09-18-000003&version=1)).
+- [24](https://teorth.github.io/optimizationproblems/constants/24a.html) **improved upper bound (unverified):** $C\_{24} < 6.9013$* by [E. Akbas and S. Sra](https://arxiv.org/abs/2609.27172v2), 29 Sep 2026.
 
 ## Maintainers
 
