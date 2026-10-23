@@ -125,7 +125,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [82](https://teorth.github.io/optimizationproblems/constants/82a.html) | Essential minimum of the Zhang-Zagier height | 0.24874 | 0.2536331090204145 (0.2534449*) |
 | [83](https://teorth.github.io/optimizationproblems/constants/83a.html) | Wirsing Constant | 0.30366300 | 0.30366300 |
 | [84a](https://teorth.github.io/optimizationproblems/constants/84a.html) | Erdős unit distance exponent | 1.014 (1.04317*) | $\frac{4}{3}-\varepsilon$ |
-| [84b](https://teorth.github.io/optimizationproblems/constants/84b.html) | Sum-product exponent for the reals | $\frac{4}{3}+\frac{10}{4407}\approx 1.3356$ | $<2$ (1.999281*) |
+| [84b](https://teorth.github.io/optimizationproblems/constants/84b.html) | Sum-product exponent for the reals | $\frac{4}{3}+\frac{10}{4407}\approx 1.3356$ | $<2$ (1.9993*) |
 | [85](https://teorth.github.io/optimizationproblems/constants/85a.html) | Exponent for commutators close to the identity | 1 | 4 |
 | [86](https://teorth.github.io/optimizationproblems/constants/86a.html) | Schur–Siegel–Smyth trace constant | 1.80203 | 1.8216 (1.8117251*) |
 | [87](https://teorth.github.io/optimizationproblems/constants/87a.html) | Martinet's constant for totally real number fields | 60.8395 | 857.567 |
@@ -155,7 +155,7 @@ Bounds for which the level of available verification is currently at minimal lev
 - [1a](https://teorth.github.io/optimizationproblems/constants/1a.html), [1b](https://teorth.github.io/optimizationproblems/constants/1b.html) **improved upper bounds:** $C_{1a} \leq 1.503871$ and $C_{1b} \leq 0.380868$ by [YLTLYSTYLLGDHZSWZSHMELCZX2026](https://arxiv.org/abs/2604.19341), 21 Apr 2026.
 - [3a](https://teorth.github.io/optimizationproblems/constants/3a.html), [3c](https://teorth.github.io/optimizationproblems/constants/3c.html) **improved lower bounds:** $C_{3a} \geq 1.1740744$ and $C_{3c} \geq 1.67473389$ by S. Griego, 13 May 2026.
 - [84a](https://teorth.github.io/optimizationproblems/constants/84a.html) **improved lower bound (unverified):** $C_{84a} \geq 1.03583*$ by [E. Naslund](https://mathoverflow.net/q/511514), 25 May 2026.
-- [84b](https://teorth.github.io/optimizationproblems/constants/84b.html) **improved upper bound (unverified):** $C_{84b} \leq 1.999281*$ by [I. Althoefer](https://www.erdosproblems.com/forum/thread/52), 28 May 2026.
+- [84b](https://teorth.github.io/optimizationproblems/constants/84b.html) **improved upper bound (unverified):** $C_{84b} \leq 1.9993*$ by [I. Althoefer](https://www.erdosproblems.com/forum/thread/52), 28 May 2026, the constant his [note](https://althofer.de/improved_constant_052.pdf) states as its theorem (corrected 23 Oct 2026 from $1.999281$, the note's "suggested" value $c \approx 0.000719$, which its calculation does not reach; checked by [C. Toledo](https://carlostoledo.co/reports/optimization-constants.html)).
 - [1a](https://teorth.github.io/optimizationproblems/constants/1a.html) **improved lower bound (unverified):** $C_{1a} \geq 1.292*$ by [A. Piterbarg, J. Bajaj, D. Vincent](https://github.com/AndreiPiterbarg/sidon-autocorrelation), 3 Jun 2026.
 - [8](https://teorth.github.io/optimizationproblems/constants/8a.html) **improved upper bound:** $C_{8} \leq 4.896$ by [C. Bellotti, T. Trudgian, A. Yang](https://arxiv.org/abs/2603.21490), 23 Mar 2026.
 - [3a](https://teorth.github.io/optimizationproblems/constants/3a.html) **improved lower bound (limit value):** $C_{3a} \geq 1.187326127925948*$ by [Numaro](https://numaro.tech), 23 Jul 2026.
