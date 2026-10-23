@@ -46,6 +46,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [15b](https://teorth.github.io/optimizationproblems/constants/15b.html) | Dual matrix multiplication exponent | >0.321334 | 1 |
 | [16](https://teorth.github.io/optimizationproblems/constants/16a.html) | Brezis–Gallouet–Wainger remainder constant on the 2D torus | $\frac{\beta + \pi}{\pi} \approx 1.82283$ | $\approx 2.15627$ |
 | [17](https://teorth.github.io/optimizationproblems/constants/17a.html) | Exponential growth constant of diagonal Ramsey numbers | $\sqrt{2} \approx 1.4142$ | 3.7919936995 |
+| [17b](https://teorth.github.io/optimizationproblems/constants/17b.html) | Asymptotic constant for the off-diagonal Ramsey numbers $R(3,k)$ | $\frac{1}{2}$ | $1$ |
 | [18](https://teorth.github.io/optimizationproblems/constants/18a.html) | Marton's conjecture constant (PFR) | 1.46601 | 9 |
 | [19](https://teorth.github.io/optimizationproblems/constants/19a.html) | Berry–Esseen constant | 0.4097321837 | 0.4690 (0.423*) |
 | [20a](https://teorth.github.io/optimizationproblems/constants/20a.html) | Thin shell conjecture constant | 2 | $< \infty$ |
@@ -136,6 +137,7 @@ Bounds for which the level of available verification is currently at minimal lev
 ## Recent progress
 
 
+- [17b](https://teorth.github.io/optimizationproblems/constants/17b.html) **new constant:** the asymptotic constant $C\_{17b} = \lim R(3,k) \log k / k^2$ ([Erdős problem #165](https://www.erdosproblems.com/165)), with $\frac{1}{2} \leq C\_{17b} \leq 1$ by [Z. Hefty, P. Horn, D. King and F. Pfender](https://arxiv.org/abs/2510.19718) (2025) and J. B. Shearer (1983). Page added 22 Oct 2026.
 - [84a](https://teorth.github.io/optimizationproblems/constants/84a.html) **improved lower bound (unverified):** $C\_{84a} \geq 1.04317$* by [E. Naslund](https://hexagonmath.org/2610.00016v2), 10 Oct 2026. Version 2 of the [Palomar-registered Lean formalization](https://palomar-registry.org/entry?id=PALOMAR-2026-10-01-000018&version=2) proves the exponent $1.04315$ conditional on one explicit zeta inequality, established separately by [interval certificates](https://github.com/enaslund/unit-distance-bound-0.0427/tree/b43f0c5bfd7a3276597c6a47ad99b9e5b8d3d21f/papers/0.043171/certificates).
 - [84a](https://teorth.github.io/optimizationproblems/constants/84a.html) **improved lower bound (unverified):** $C\_{84a} \geq 1.0427$* by [E. Naslund](https://hexagonmath.org/2610.00016v1), 2 Oct 2026. The [Palomar-registered Lean theorem](https://palomar-registry.org/entry?id=PALOMAR-2026-10-01-000018&version=1) is conditional on one explicit zeta inequality, established separately by [interval certificates](https://github.com/enaslund/unit-distance-bound-0.0427/tree/14289d9d528881efef7db051f0078f519d470c68/papers/0.04273/certificates).
 - [84a](https://teorth.github.io/optimizationproblems/constants/84a.html) **improved upper bound:** $C\_{84a} \leq 4/3 - \varepsilon$ for an absolute $\varepsilon > 0$ by [OpenAI](https://github.com/openai/math/tree/main/preprints/A-power-saving-for-planar-unit-distances-September-23-2026), 23 Sep 2026.
