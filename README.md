@@ -109,7 +109,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [65](https://teorth.github.io/optimizationproblems/constants/65a.html) | Linnik's constant | 1 | 5 (2.4*) |
 | [66](https://teorth.github.io/optimizationproblems/constants/66a.html) | Elliott-Halberstam level-of-distribution exponent | $\frac{1}{2}$ | 1 |
 | [67](https://teorth.github.io/optimizationproblems/constants/67a.html) | Brennan's conjecture exponent | 3.422 | 4 |
-| [68](https://teorth.github.io/optimizationproblems/constants/68a.html) | Korenblum's constant | 0.4263 (0.432*) | 0.6778994 |
+| [68](https://teorth.github.io/optimizationproblems/constants/68a.html) | Korenblum's constant | 0.4263 (0.446*) | 0.6778994 |
 | [69](https://teorth.github.io/optimizationproblems/constants/69a.html) | Sendov radius constant | 1 | 2 |
 | [70](https://teorth.github.io/optimizationproblems/constants/70a.html) | Reverse Brunn-Minkowski constant | 1.20194336* | $<\infty$ |
 | [71](https://teorth.github.io/optimizationproblems/constants/71a.html) | Fourier Entropy-Influence constant | 6.521845710923046575 | $\infty$ |
@@ -138,6 +138,7 @@ Bounds for which the level of available verification is currently at minimal lev
 
 ## Recent progress
 
+- [68](https://teorth.github.io/optimizationproblems/constants/68a.html) **improved lower bound (unrefereed):** $C\_{68} \geq 0.446$* by [V. Patankar](https://github.com/vidigoat/optimization-records/tree/1a76f9dd053d51cce531b57b2ad5a68e3205ca75/tao/certificates/c68), 26 Oct 2026: Wikström's moment criterion with Pinho's coefficient step, sharpened by a new flux (period) lemma for zeros on a common circle and a half-diameter enclosing lemma replacing hyperbolic Jung; exact-rational certificate checked by two independent checkers. The two lemmas are new and unrefereed.
 - [44](https://teorth.github.io/optimizationproblems/constants/44a.html) **improved upper bound (unrefereed):** $C\_{44} \leq 4.3576549226$* by [Ricardo Pinho](https://github.com/rpinho/c44-certificate/tree/f3fb25dfb88de3da8b1a0b30f03fdb51b78ccef9), 23 Oct 2026. A degree-three local-weight cap $5/4$ sharpens Wellens's recurrence using BakeLab/Épi's existing exact certificates; the exact recurrence gain is $1/128$. Both exact checkers were written by the same AI agent; author review was at summary level.
 - [68](https://teorth.github.io/optimizationproblems/constants/68a.html) **improved lower bound (unrefereed):** $C\_{68} \geq 0.432$* by [R. Pinho](https://github.com/rpinho/korenblum-c68-certificate), 19 Oct 2026: covering-strip Schwarz estimate, classical hyperbolic Jung, and Wikström’s moment criterion, with a twelve-atom rational certificate and two exact checkers. Also records Wikström’s preceding 0.4263 bound.
 - [42](https://teorth.github.io/optimizationproblems/constants/42a.html) **improved upper bound (unverified):** $C\_{42} \leq 0.6888863712$* by R. Pinho, 22 Oct 2026; [256-step rational certificate, unrefereed proof and interval/Arb checkers](https://github.com/rpinho/c42-certificate/tree/a8a9bc309bd1992413fa07595bd60c5e3fa1b65b).
