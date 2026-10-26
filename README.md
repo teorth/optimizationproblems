@@ -14,9 +14,9 @@ Bounds for which the level of available verification is currently at minimal lev
 
 | Number | Description | Best lower bound | Best upper bound |
 | ------ | ----------- | ---------------- | ---------------- |
-| [1a](https://teorth.github.io/optimizationproblems/constants/1a.html) | Sidon set autocorrelation constant | 1.2802 (1.292*) | 1.5027435 |
+| [1a](https://teorth.github.io/optimizationproblems/constants/1a.html) | Sidon set autocorrelation constant | 1.2802 (1.292*) | 1.5027435 (1.5027433563*) |
 | [1b](https://teorth.github.io/optimizationproblems/constants/1b.html) | Erdős minimum overlap constant | 0.379005 | 0.38085856 |
-| [1c](https://teorth.github.io/optimizationproblems/constants/1c.html) | Barnard–Steinerberger autocorrelation constant | 0.4103333* | 0.4107675 |
+| [1c](https://teorth.github.io/optimizationproblems/constants/1c.html) | Barnard–Steinerberger autocorrelation constant | 0.4103432812* | 0.4107675 |
 | [1d](https://teorth.github.io/optimizationproblems/constants/1d.html) | Signed third autocorrelation constant | 1 | 1.4630715826075594 |
 | [2](https://teorth.github.io/optimizationproblems/constants/2a.html) | Crouzeix constant | 2 | 2 |
 | [3a](https://teorth.github.io/optimizationproblems/constants/3a.html) | Gyarmati-Hennecart-Ruzsa sum-difference constant | 1.19102809 (1.19519192*) | 1.31237330 |
@@ -44,7 +44,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [14](https://teorth.github.io/optimizationproblems/constants/14a.html) | Smallest $n$ for which the value of $BB(n)$ is undecidable | 6 | 432 |
 | [15a](https://teorth.github.io/optimizationproblems/constants/15a.html) | Matrix multiplication exponent | 2 | 2.371177 |
 | [15b](https://teorth.github.io/optimizationproblems/constants/15b.html) | Dual matrix multiplication exponent | >0.321334 | 1 |
-| [16](https://teorth.github.io/optimizationproblems/constants/16a.html) | Brezis–Gallouet–Wainger remainder constant on the 2D torus | $\frac{\beta + \pi}{\pi} \approx 1.82283$ ($2.1562247706^\*$) | $2.1562256466^\*$ |
+| [16](https://teorth.github.io/optimizationproblems/constants/16a.html) | Brezis–Gallouet–Wainger remainder constant on the 2D torus | $\frac{\beta + \pi}{\pi} \approx 1.82283$ ($2.156225504^\*$) | $2.1562256466^\*$ |
 | [17](https://teorth.github.io/optimizationproblems/constants/17a.html) | Exponential growth constant of diagonal Ramsey numbers | $\sqrt{2} \approx 1.4142$ | 3.7919936995 |
 | [17b](https://teorth.github.io/optimizationproblems/constants/17b.html) | Asymptotic constant for the off-diagonal Ramsey numbers $R(3,k)$ | $\frac{1}{2}$ | $1$ |
 | [18](https://teorth.github.io/optimizationproblems/constants/18a.html) | Marton's conjecture constant (PFR) | 1.46601 | 9 |
@@ -128,16 +128,21 @@ Bounds for which the level of available verification is currently at minimal lev
 | [84a](https://teorth.github.io/optimizationproblems/constants/84a.html) | Erdős unit distance exponent | 1.014 (1.04317*) | $\frac{4}{3}-\varepsilon$ |
 | [84b](https://teorth.github.io/optimizationproblems/constants/84b.html) | Sum-product exponent for the reals | $\frac{4}{3}+\frac{10}{4407}\approx 1.3356$ | $<2$ (1.9993*) |
 | [85](https://teorth.github.io/optimizationproblems/constants/85a.html) | Exponent for commutators close to the identity | 1 | 4 |
-| [86](https://teorth.github.io/optimizationproblems/constants/86a.html) | Schur–Siegel–Smyth trace constant | 1.80203 | 1.8216 (1.8084990*) |
+| [86](https://teorth.github.io/optimizationproblems/constants/86a.html) | Schur–Siegel–Smyth trace constant | 1.80203 | 1.8216 (1.8081100*) |
 | [87](https://teorth.github.io/optimizationproblems/constants/87a.html) | Martinet's constant for totally real number fields | 60.8395 | 857.567 |
 | [88a](https://teorth.github.io/optimizationproblems/constants/88a.html) | Bounded prime gap constant | 2 | 186 |
 | [88b](https://teorth.github.io/optimizationproblems/constants/88b.html) | Exponent for bounded gaps between many primes | 0 | 3.8075 |
 | [90](https://teorth.github.io/optimizationproblems/constants/90a.html) | Maximum minimum modulus of a distinct covering system | 44* | 615999 |
-| [89](https://teorth.github.io/optimizationproblems/constants/89a.html) | Ramsey multiplicity constant of $K\_4$ | 0.0296 | 0.030145 (0.0301388857*) |
+| [89](https://teorth.github.io/optimizationproblems/constants/89a.html) | Ramsey multiplicity constant of $K\_4$ | 0.0296 | 0.030145 (0.0301388618*) |
 
 
 ## Recent progress
 
+- [16](https://teorth.github.io/optimizationproblems/constants/16a.html) **improved lower bound (unverified):** $C\_{16} \geq 2.156225504^\*$ by [V. Patankar](https://github.com/vidigoat/optimization-records/tree/08c6bfdfca86e7935ddaaa5766ced63abf2a17bc/tao/certificates/bgw_exact), 26 Oct 2026: the truncated conditional extremal at cutoff $40000$ ($5\cdot 10^9$ lattice points), every term floored exactly by 128-bit integer division. With the upper bound $2.1562256466^\*$ this places $C\_{16}$ in an interval of width $1.4\cdot 10^{-7}$.
+- [1c](https://teorth.github.io/optimizationproblems/constants/1c.html) **improved lower bound (unverified):** $C\_{1c} \geq 0.4103432812^\*$ by [V. Patankar](https://github.com/vidigoat/optimization-records/tree/08c6bfdfca86e7935ddaaa5766ced63abf2a17bc/tao/certificates/c1c), 26 Oct 2026: a step function on $K = 98304$ cells refined from that of D. Koshta (previously $0.4103333$); exact value checked by two independently written scorers.
+- [1a](https://teorth.github.io/optimizationproblems/constants/1a.html) **improved upper bound (unverified):** $C\_{1a} \leq 1.5027433563^\*$ by [V. Patankar](https://github.com/vidigoat/optimization-records/tree/08c6bfdfca86e7935ddaaa5766ced63abf2a17bc/tao/certificates/c1a), 26 Oct 2026: a $131{,}072$-step function refined from that of Atris (previously $1.5027434868$); exact value by one big-integer product.
+- [86](https://teorth.github.io/optimizationproblems/constants/86a.html) **improved upper bound (unverified):** $C\_{86} \leq 1.8081100^\*$ by [V. Patankar](https://github.com/vidigoat/optimization-records/tree/08c6bfdfca86e7935ddaaa5766ced63abf2a17bc/tao/certificates/c86), 26 Oct 2026: the [SO24] measure construction with the auxiliary polynomials extended to all $2954$ totally positive irreducible polynomials of degree $8$ with roots in $[0,5.3]$ and trace at most $16$ (previously $1.8084990$); checked with D. Koshta's independent verifier.
+- [89](https://teorth.github.io/optimizationproblems/constants/89a.html) **improved upper bound (unverified):** $C\_{89} \leq 0.0301388618^\*$ by [V. Patankar](https://github.com/vidigoat/optimization-records/tree/08c6bfdfca86e7935ddaaa5766ced63abf2a17bc/tao/certificates/c89), 26 Oct 2026: further L-BFGS refinement of J. SK's $3840$-block step graphon (previously $0.0301388794$); density computed exactly over every block by CRT over $12$ primes plus a check prime.
 - [44](https://teorth.github.io/optimizationproblems/constants/44a.html) **improved upper bound (unrefereed):** $C\_{44} \leq 4.3576549226$* by [Ricardo Pinho](https://github.com/rpinho/c44-certificate/tree/f3fb25dfb88de3da8b1a0b30f03fdb51b78ccef9), 23 Oct 2026. A degree-three local-weight cap $5/4$ sharpens Wellens's recurrence using BakeLab/Épi's existing exact certificates; the exact recurrence gain is $1/128$. Both exact checkers were written by the same AI agent; author review was at summary level.
 - [68](https://teorth.github.io/optimizationproblems/constants/68a.html) **improved lower bound (unrefereed):** $C\_{68} \geq 0.432$* by [R. Pinho](https://github.com/rpinho/korenblum-c68-certificate), 19 Oct 2026: covering-strip Schwarz estimate, classical hyperbolic Jung, and Wikström’s moment criterion, with a twelve-atom rational certificate and two exact checkers. Also records Wikström’s preceding 0.4263 bound.
 - [42](https://teorth.github.io/optimizationproblems/constants/42a.html) **improved upper bound (unverified):** $C\_{42} \leq 0.6888863712$* by R. Pinho, 22 Oct 2026; [256-step rational certificate, unrefereed proof and interval/Arb checkers](https://github.com/rpinho/c42-certificate/tree/a8a9bc309bd1992413fa07595bd60c5e3fa1b65b).
