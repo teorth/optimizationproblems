@@ -133,7 +133,8 @@ Bounds for which the level of available verification is currently at minimal lev
 | [88a](https://teorth.github.io/optimizationproblems/constants/88a.html) | Bounded prime gap constant | 2 | 186 |
 | [88b](https://teorth.github.io/optimizationproblems/constants/88b.html) | Exponent for bounded gaps between many primes | 0 | 3.8075 |
 | [90](https://teorth.github.io/optimizationproblems/constants/90a.html) | Maximum minimum modulus of a distinct covering system | 44* | 615999 |
-| [89](https://teorth.github.io/optimizationproblems/constants/89a.html) | Ramsey multiplicity constant of $K\_4$ | 0.0296 | 0.030145 (0.0301388857*) |
+| [89a](https://teorth.github.io/optimizationproblems/constants/89a.html) | Ramsey multiplicity constant of $K\_4$ | 0.0296 | 0.030145 (0.0301388857*) |
+| [89b](https://teorth.github.io/optimizationproblems/constants/89b.html) | Ramsey multiplicity constant of $K\_5$ | 0.001524 | 0.001708 (0.0016870052*) |
 
 
 ## Recent progress
@@ -252,6 +253,7 @@ Bounds for which the level of available verification is currently at minimal lev
 - [5a](https://teorth.github.io/optimizationproblems/constants/5a.html) **improved upper bound:** $C_{5a} \leq 0.9435$ by [J. Hou and H. Zhao](https://arxiv.org/abs/2607.01169), 1 Jul 2026, via vector-valued smoothing.
 - [5a](https://teorth.github.io/optimizationproblems/constants/5a.html) **improved upper bound:** $C_{5a} \leq 0.94304$ by [D. Carter, K. O'Bryant and T. Tao](https://arxiv.org/abs/2610.36207), 26 Oct 2026, from an explicit lower bound on the diameter of a Sidon set.
 - [5a](https://teorth.github.io/optimizationproblems/constants/5a.html) **improved upper bound (unverified):** $C_{5a} \leq 0.9428095$* by [J. Akwei](https://github.com/johnakwei/Science), reported in the [Erdos Problems forum](https://www.erdosproblems.com/forum/thread/30), 5 Oct 2026; unrefereed, and within $5	imes 10^{-7}$ of a claimed barrier for the method.
+- [89b](https://teorth.github.io/optimizationproblems/constants/89b.html) **new constant; improved upper bound (unverified):** the Ramsey multiplicity constant of $K\_5$, with $0.001524 \le C\_{89b}$ ([O. Parczyk, S. Pokutta, C. Spiegel, T. Szabó](https://arxiv.org/abs/2206.04036)) and $C\_{89b} \le 0.0016870052$* (previously $0.001708$) by J. SK ([certificate](https://github.com/JeetuSK0808/tao-constants-certificates/tree/82a6e4def9c63e9a7254bc2393f61a872891c480/c89b-k5-ramsey-multiplicity)), 26 Oct 2026: gradient refinement of their 192-vertex Cayley graph as a step graphon, with the density computed exactly.
 
 ## Maintainers
 
