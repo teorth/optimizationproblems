@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C₁b Double-Sided Squeeze Protocol</title>
+    <style>
+        body { background-color: #0d1117; color: #c9d1d9; font-family: 'Segoe UI', sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .container { width: 950px; background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 30px; box-shadow: 0 0 30px rgba(0, 243, 255, 0.05); }
+        .title { color: #58a6ff; font-size: 22px; font-weight: 600; border-bottom: 1px solid #30363d; padding-bottom: 12px; margin-bottom: 15px; }
+        .subtitle { font-size: 14px; color: #8b949e; margin-bottom: 20px; line-height: 1.6; }
+        .highlight { color: #f85149; font-weight: bold; }
+        .grid { stroke: #21262d; stroke-width: 1; }
+        .axis { stroke: #8b949e; stroke-width: 1.5; }
+        .band-bg { fill: rgba(0, 243, 255, 0.15); }
+        .band-line { stroke: #00f3ff; stroke-width: 2; stroke-dasharray: 4 2; }
+        .curve-upper { fill: none; stroke: #ff007f; stroke-width: 3; filter: drop-shadow(0 0 8px rgba(255, 0, 127, 0.6)); }
+        .curve-lower { fill: none; stroke: #39ff14; stroke-width: 3; filter: drop-shadow(0 0 8px rgba(57, 255, 20, 0.6)); }
+        text { font-family: 'Courier New', monospace; font-size: 13px; fill: #8b949e; }
+        .math-text { font-style: italic; fill: #e6edf3; font-weight: bold; }
+        .label-upper { fill: #ff007f; font-weight: bold; }
+        .label-lower { fill: #39ff14; font-weight: bold; }
+        .label-band { fill: #00f3ff; font-weight: bold; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="title">C₁b (Erdős Minimum Overlap): Double-Sided Squeeze</div>
+    <div class="subtitle">
+        Following <b>Appendix E</b>: Both endpoints are strictly increasing.<br>
+        The upper bound approaches from <span class="highlight">above</span> (\(\pi_k^-\)), while the lower bound approaches from <span class="highlight">below</span> (\(\pi_k^+\)).<br>
+        They lock the true band symmetrically without any crossing or artificial waves.
+    </div>
+    <svg viewBox="0 0 850 450" width="100%" xmlns="http://www.w3.org/2000/svg">
+        <g class="grid">
+            <path d="M 100 50 L 800 50 M 100 150 L 800 150 M 100 250 L 800 250 M 100 350 L 800 350" />
+            <path d="M 100 50 L 100 350 M 200 50 L 200 350 M 300 50 L 300 350 M 400 50 L 400 350 M 500 50 L 500 350 M 600 50 L 600 350 M 700 50 L 700 350 M 800 50 L 800 350" />
+        </g>
+        <rect x="100" y="222" width="700" height="6" class="band-bg" />
+        <line x1="100" y1="222" x2="800" y2="222" class="band-line" />
+        <text x="810" y="218" class="label-band">U₀ = 0.380422678</text>
+        <text x="810" y="235" class="label-band">L₀ = 0.380422666</text>
+        <text x="110" y="215" class="label-band">True Band (Width ~1.18e-8)</text>
+
+        <!-- 纯单调递减折线 (Upper bound) -->
+        <!-- Starts at Y=50, strictly goes down to Y=222 -->
+        <polyline points="200,50 250,120 300,180 400,215 500,221 800,222" class="curve-upper" />
+        <text x="210" y="40" class="label-upper">Upper Bound (π_k⁻) strictly descending</text>
+        
+        <!-- 纯单调递增折线 (Lower bound) -->
+        <!-- Starts at Y=350, strictly goes up to Y=228 -->
+        <polyline points="200,350 250,300 300,260 400,235 500,229 800,228" class="curve-lower" />
+        <text x="210" y="370" class="label-lower">Lower Bound (π_k⁺) strictly ascending</text>
+
+        <circle cx="500" cy="225" r="5" fill="#fff" />
+        <text x="515" y="245" class="math-text">Locked at N ≥ 10⁵</text>
+
+        <line x1="100" y1="350" x2="800" y2="350" class="axis" />
+        <text x="200" y="380" text-anchor="middle">N=10²</text>
+        <text x="300" y="380" text-anchor="middle">N=10³</text>
+        <text x="400" y="380" text-anchor="middle">N=10⁴</text>
+        <text x="500" y="380" text-anchor="middle">N=10⁵</text>
+        <text x="800" y="380" text-anchor="middle">N=10⁸</text>
+        <text x="450" y="410" text-anchor="middle" font-weight="bold">Riemann Sum Iteration N (Log Scale)</text>
+    </svg>
+</div>
+</body>
+</html>

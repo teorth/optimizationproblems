@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C₁a Scissors Squeeze Protocol</title>
+    <style>
+        body { background-color: #0d1117; color: #c9d1d9; font-family: 'Segoe UI', sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .container { width: 950px; background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 30px; box-shadow: 0 0 30px rgba(0, 243, 255, 0.05); }
+        .title { color: #58a6ff; font-size: 22px; font-weight: 600; border-bottom: 1px solid #30363d; padding-bottom: 12px; margin-bottom: 15px; }
+        .subtitle { font-size: 14px; color: #8b949e; margin-bottom: 20px; line-height: 1.6; }
+        .highlight { color: #f85149; font-weight: bold; }
+        .grid { stroke: #21262d; stroke-width: 1; }
+        .axis { stroke: #8b949e; stroke-width: 1.5; }
+        .band-bg { fill: rgba(0, 243, 255, 0.15); }
+        .band-line { stroke: #00f3ff; stroke-width: 2; stroke-dasharray: 4 2; }
+        .curve-upper { fill: none; stroke: #ff007f; stroke-width: 3; filter: drop-shadow(0 0 8px rgba(255, 0, 127, 0.6)); }
+        .curve-lower { fill: none; stroke: #39ff14; stroke-width: 3; filter: drop-shadow(0 0 8px rgba(57, 255, 20, 0.6)); }
+        .center-line { stroke: #7b1fa2; stroke-width: 2; stroke-dasharray: 5 5; }
+        .cross-point { fill: #ffffff; stroke: #7b1fa2; stroke-width: 3; }
+        text { font-family: 'Courier New', monospace; font-size: 13px; fill: #8b949e; }
+        .math-text { font-style: italic; fill: #e6edf3; font-weight: bold; }
+        .label-upper { fill: #ff007f; font-weight: bold; }
+        .label-lower { fill: #39ff14; font-weight: bold; }
+        .label-band { fill: #00f3ff; font-weight: bold; }
+        .label-center { fill: #d2a8ff; font-weight: bold; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="title">C₁a (Sidon Autocorrelation): Scissors Squeeze & Phase Flip</div>
+    <div class="subtitle">
+        Following <b>Appendix F</b>: The endpoints have opposite monotonicity.<br>
+        <b>Phase Flip:</b> The upper bound \(C_{1a}^+\) starts below 1.5 and rises, while the lower bound \(C_{1a}^-\) starts above 1.5 and falls. <br>
+        They cross exactly at <b>\(s^* = 1.5\)</b>. After crossing, the pink line correctly assumes the upper boundary, and the green line assumes the lower boundary.
+    </div>
+    <svg viewBox="0 0 850 450" width="100%" xmlns="http://www.w3.org/2000/svg">
+        <g class="grid">
+            <path d="M 100 50 L 800 50 M 100 150 L 800 150 M 100 250 L 800 250 M 100 350 L 800 350" />
+            <path d="M 100 50 L 100 350 M 200 50 L 200 350 M 300 50 L 300 350 M 400 50 L 400 350 M 500 50 L 500 350 M 600 50 L 600 350 M 700 50 L 700 350 M 800 50 L 800 350" />
+        </g>
+        
+        <!-- True Band [L0, U0] -->
+        <rect x="100" y="222" width="700" height="6" class="band-bg" />
+        <line x1="100" y1="222" x2="800" y2="222" class="band-line" />
+        <text x="810" y="218" class="label-band">U₀ = 1.50286</text>
+        <text x="810" y="235" class="label-band">L₀ = 1.49714</text>
+        
+        <line x1="100" y1="225" x2="800" y2="225" class="center-line" />
+        <text x="810" y="228" class="label-center">s* = 1.5</text>
+
+        <!-- 修正核心：UP (粉色) 从下方升起，交叉后抵达上方 -->
+        <!-- N=10 (Y=350, 1.40), Cross (Y=225, 1.5), U0 (Y=222, 1.502) -->
+        <polyline points="200,350 250,290 300,240 320,225 400,222 800,222" class="curve-upper" />
+        <text x="210" y="370" class="label-upper">C₁a⁺ starts LOW (1.408)</text>
+        <text x="450" y="210" class="label-upper">Rises to lock U₀</text>
+
+        <!-- 修正核心：LO (绿色) 从上方降落，交叉后抵达下方 -->
+        <!-- N=10 (Y=50, 1.59), Cross (Y=225, 1.5), L0 (Y=228, 1.497) -->
+        <polyline points="200,50 250,120 300,200 320,225 400,228 800,228" class="curve-lower" />
+        <text x="210" y="40" class="label-lower">C₁a⁻ starts HIGH (1.591)</text>
+        <text x="450" y="245" class="label-lower">Falls to lock L₀</text>
+
+        <!-- Crossing Point -->
+        <circle cx="320" cy="225" r="6" class="cross-point" />
+        <text x="320" y="210" text-anchor="middle" class="math-text" fill="#d2a8ff">δ = 0 (Phase Flip)</text>
+        
+        <!-- X-Axis -->
+        <line x1="100" y1="350" x2="800" y2="350" class="axis" />
+        <text x="200" y="380" text-anchor="middle">N=10¹</text>
+        <text x="300" y="380" text-anchor="middle">N=10³</text>
+        <text x="400" y="380" text-anchor="middle">N=10⁴</text>
+        <text x="500" y="380" text-anchor="middle">N=10⁵</text>
+        <text x="800" y="380" text-anchor="middle">N=10⁸</text>
+        <text x="450" y="410" text-anchor="middle" font-weight="bold">Riemann Sum Iteration N (Log Scale)</text>
+    </svg>
+</div>
+</body>
+</html>
