@@ -123,7 +123,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [79](https://teorth.github.io/optimizationproblems/constants/79a.html) | Asymptotic essential-dimension ratio of the symmetric groups | $\frac{1}{2}$ | 1 |
 | [80](https://teorth.github.io/optimizationproblems/constants/80a.html) | Ising perceptron capacity threshold | >0 (0.833*) | 0.847 (0.833*) |
 | [81](https://teorth.github.io/optimizationproblems/constants/81a.html) | Brun's constant | 1.840503 | 2.288513 |
-| [82](https://teorth.github.io/optimizationproblems/constants/82a.html) | Essential minimum of the Zhang-Zagier height | 0.24874 | 0.2536331090204145 (0.2534449*) |
+| [82](https://teorth.github.io/optimizationproblems/constants/82a.html) | Essential minimum of the Zhang-Zagier height | 0.24874 | 0.2536331090204145 (0.2534350402*) |
 | [83](https://teorth.github.io/optimizationproblems/constants/83a.html) | Wirsing Constant | 0.30366300 | 0.30366300 |
 | [84a](https://teorth.github.io/optimizationproblems/constants/84a.html) | Erdős unit distance exponent | 1.014 (1.04317*) | $\frac{4}{3}-\varepsilon$ |
 | [84b](https://teorth.github.io/optimizationproblems/constants/84b.html) | Sum-product exponent for the reals | $\frac{4}{3}+\frac{10}{4407}\approx 1.3356$ | $<2$ (1.9993*) |
@@ -138,6 +138,7 @@ Bounds for which the level of available verification is currently at minimal lev
 
 ## Recent progress
 
+- [82](https://teorth.github.io/optimizationproblems/constants/82a.html) **improved upper bound (unverified):** $C\_{82} < 0.2534350402$* by [V. Patankar](https://github.com/vidigoat/optimization-records/tree/32898ac1dc0d75bf7f6d8a4e0a779eea629467a4/tao/certificates/c82), 27 Oct 2026: Doche's limit-point construction on the [Pin26] factor library plus 17 new numerator factors found by an iterated LLL search on dual-weighted evaluation lattices (previously $0.2534449$*); certified by an Arb checker and by both of Pinho's checkers.
 - [44](https://teorth.github.io/optimizationproblems/constants/44a.html) **improved upper bound (unrefereed):** $C\_{44} \leq 4.3576549226$* by [Ricardo Pinho](https://github.com/rpinho/c44-certificate/tree/f3fb25dfb88de3da8b1a0b30f03fdb51b78ccef9), 23 Oct 2026. A degree-three local-weight cap $5/4$ sharpens Wellens's recurrence using BakeLab/Épi's existing exact certificates; the exact recurrence gain is $1/128$. Both exact checkers were written by the same AI agent; author review was at summary level.
 - [68](https://teorth.github.io/optimizationproblems/constants/68a.html) **improved lower bound (unrefereed):** $C\_{68} \geq 0.432$* by [R. Pinho](https://github.com/rpinho/korenblum-c68-certificate), 19 Oct 2026: covering-strip Schwarz estimate, classical hyperbolic Jung, and Wikström’s moment criterion, with a twelve-atom rational certificate and two exact checkers. Also records Wikström’s preceding 0.4263 bound.
 - [42](https://teorth.github.io/optimizationproblems/constants/42a.html) **improved upper bound (unverified):** $C\_{42} \leq 0.6888863712$* by R. Pinho, 22 Oct 2026; [256-step rational certificate, unrefereed proof and interval/Arb checkers](https://github.com/rpinho/c42-certificate/tree/a8a9bc309bd1992413fa07595bd60c5e3fa1b65b).
