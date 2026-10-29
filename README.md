@@ -133,11 +133,13 @@ Bounds for which the level of available verification is currently at minimal lev
 | [88a](https://teorth.github.io/optimizationproblems/constants/88a.html) | Bounded prime gap constant | 2 | 186 |
 | [88b](https://teorth.github.io/optimizationproblems/constants/88b.html) | Exponent for bounded gaps between many primes | 0 | 3.8075 |
 | [90](https://teorth.github.io/optimizationproblems/constants/90a.html) | Maximum minimum modulus of a distinct covering system | 44* | 615999 |
+| [91](https://teorth.github.io/optimizationproblems/constants/91a.html) | Average edit distance between two random binary strings | 0.17372 (0.216276*) | 0.315514 |
 | [89](https://teorth.github.io/optimizationproblems/constants/89a.html) | Ramsey multiplicity constant of $K\_4$ | 0.0296 | 0.030145 (0.0301388857*) |
 
 
 ## Recent progress
 
+- [91](https://teorth.github.io/optimizationproblems/constants/91a.html) **new constant:** the average edit distance between two random binary strings, with $0.216276$* $\leq C\_{91} \leq 0.315514$. The lower bound (previously $0.17372$, from Lueker's bound on $C\_{31a}$) is by [L. Jack](https://github.com/leandrejack-afk/chvatal-sankoff-bound/tree/574220e/edit-distance-lower), from a first-moment count of canonical optimal alignments with an exact rational certificate; the upper bound is M. Rosenfeld's (2024). Submitted to this repository, 26 Oct 2026.
 - [44](https://teorth.github.io/optimizationproblems/constants/44a.html) **improved upper bound (unrefereed):** $C\_{44} \leq 4.3576549226$* by [Ricardo Pinho](https://github.com/rpinho/c44-certificate/tree/f3fb25dfb88de3da8b1a0b30f03fdb51b78ccef9), 23 Oct 2026. A degree-three local-weight cap $5/4$ sharpens Wellens's recurrence using BakeLab/Épi's existing exact certificates; the exact recurrence gain is $1/128$. Both exact checkers were written by the same AI agent; author review was at summary level.
 - [68](https://teorth.github.io/optimizationproblems/constants/68a.html) **improved lower bound (unrefereed):** $C\_{68} \geq 0.432$* by [R. Pinho](https://github.com/rpinho/korenblum-c68-certificate), 19 Oct 2026: covering-strip Schwarz estimate, classical hyperbolic Jung, and Wikström’s moment criterion, with a twelve-atom rational certificate and two exact checkers. Also records Wikström’s preceding 0.4263 bound.
 - [42](https://teorth.github.io/optimizationproblems/constants/42a.html) **improved upper bound (unverified):** $C\_{42} \leq 0.6888863712$* by R. Pinho, 22 Oct 2026; [256-step rational certificate, unrefereed proof and interval/Arb checkers](https://github.com/rpinho/c42-certificate/tree/a8a9bc309bd1992413fa07595bd60c5e3fa1b65b).
