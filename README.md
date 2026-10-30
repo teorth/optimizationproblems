@@ -128,7 +128,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [84a](https://teorth.github.io/optimizationproblems/constants/84a.html) | Erdős unit distance exponent | 1.014 (1.04317*) | $\frac{4}{3}-\varepsilon$ |
 | [84b](https://teorth.github.io/optimizationproblems/constants/84b.html) | Sum-product exponent for the reals | $\frac{4}{3}+\frac{10}{4407}\approx 1.3356$ | $<2$ (1.9993*) |
 | [85](https://teorth.github.io/optimizationproblems/constants/85a.html) | Exponent for commutators close to the identity | 1 | 4 |
-| [86](https://teorth.github.io/optimizationproblems/constants/86a.html) | Schur–Siegel–Smyth trace constant | 1.80203 | 1.8216 (1.8084990*) |
+| [86](https://teorth.github.io/optimizationproblems/constants/86a.html) | Schur–Siegel–Smyth trace constant | 1.80203 | 1.8216 (1.80697883*) |
 | [87](https://teorth.github.io/optimizationproblems/constants/87a.html) | Martinet's constant for totally real number fields | 60.8395 | 857.567 |
 | [88a](https://teorth.github.io/optimizationproblems/constants/88a.html) | Bounded prime gap constant | 2 | 186 |
 | [88b](https://teorth.github.io/optimizationproblems/constants/88b.html) | Exponent for bounded gaps between many primes | 0 | 3.8075 |
@@ -138,6 +138,7 @@ Bounds for which the level of available verification is currently at minimal lev
 
 ## Recent progress
 
+- [86](https://teorth.github.io/optimizationproblems/constants/86a.html) **improved upper bound (unrefereed):** $C\_{86} \leq 1.80697883$* by [Ricardo Pinho](https://github.com/rpinho/c86-trace-certificate/tree/e4d9c640ebaf922b8869a81f275c798c09ab89b1/complex-auxiliaries), 30 Oct 2026. Complex-root auxiliary polynomials from Flammang and McKee in the Smith certificate.
 - [44](https://teorth.github.io/optimizationproblems/constants/44a.html) **improved upper bound (unrefereed):** $C\_{44} \leq 4.3576549226$* by [Ricardo Pinho](https://github.com/rpinho/c44-certificate/tree/f3fb25dfb88de3da8b1a0b30f03fdb51b78ccef9), 23 Oct 2026. A degree-three local-weight cap $5/4$ sharpens Wellens's recurrence using BakeLab/Épi's existing exact certificates; the exact recurrence gain is $1/128$. Both exact checkers were written by the same AI agent; author review was at summary level.
 - [68](https://teorth.github.io/optimizationproblems/constants/68a.html) **improved lower bound (unrefereed):** $C\_{68} \geq 0.432$* by [R. Pinho](https://github.com/rpinho/korenblum-c68-certificate), 19 Oct 2026: covering-strip Schwarz estimate, classical hyperbolic Jung, and Wikström’s moment criterion, with a twelve-atom rational certificate and two exact checkers. Also records Wikström’s preceding 0.4263 bound.
 - [42](https://teorth.github.io/optimizationproblems/constants/42a.html) **improved upper bound (unverified):** $C\_{42} \leq 0.6888863712$* by R. Pinho, 22 Oct 2026; [256-step rational certificate, unrefereed proof and interval/Arb checkers](https://github.com/rpinho/c42-certificate/tree/a8a9bc309bd1992413fa07595bd60c5e3fa1b65b).
