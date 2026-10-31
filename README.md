@@ -253,7 +253,7 @@ Bounds for which the level of available verification is currently at minimal lev
 - [5a](https://teorth.github.io/optimizationproblems/constants/5a.html) **improved upper bound:** $C_{5a} \leq 0.94304$ by [D. Carter, K. O'Bryant and T. Tao](https://arxiv.org/abs/2610.36207), 26 Oct 2026, from an explicit lower bound on the diameter of a Sidon set.
 - [5a](https://teorth.github.io/optimizationproblems/constants/5a.html) **improved upper bound (unverified):** $C_{5a} \leq 0.9428095$* by [J. Akwei](https://github.com/johnakwei/Science), reported in the [Erdos Problems forum](https://www.erdosproblems.com/forum/thread/30), 5 Oct 2026; unrefereed, and within $5	imes 10^{-7}$ of a claimed barrier for the method.
 - [20a](https://teorth.github.io/optimizationproblems/constants/20a.html) **sharp upper bound:** $C\_{20a} \leq 8$ by [Y. Chen and B. Klartag](https://arxiv.org/abs/2607.23307), 25 Jul 2026, matching the lower bound, so that $C\_{20a} = 8$.
-- [20c](https://teorth.github.io/optimizationproblems/constants/20c.html) **KLS conjecture proved:** $C\_{20c} < \infty$ by [Z. Song and X. Zhang](https://arxiv.org/abs/2610.01447) and by [P. Bizeul, B. Klartag and J. Lehec](https://arxiv.org/abs/2610.05474), 4 Oct 2026.
+- [20c](https://teorth.github.io/optimizationproblems/constants/20c.html) **KLS conjecture proved:** $C\_{20c} < \infty$ by [P. Bizeul, B. Klartag and J. Lehec](https://arxiv.org/abs/2610.05474) and by [Z. Song and X. Zhang](https://arxiv.org/abs/2610.01447), 4 Oct 2026.
 
 ## Maintainers
 
