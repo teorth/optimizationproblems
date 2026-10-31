@@ -49,9 +49,9 @@ Bounds for which the level of available verification is currently at minimal lev
 | [17b](https://teorth.github.io/optimizationproblems/constants/17b.html) | Asymptotic constant for the off-diagonal Ramsey numbers $R(3,k)$ | $\frac{1}{2}$ | $1$ |
 | [18](https://teorth.github.io/optimizationproblems/constants/18a.html) | Marton's conjecture constant (PFR) | 1.46601 | 9 |
 | [19](https://teorth.github.io/optimizationproblems/constants/19a.html) | Berry–Esseen constant | 0.4097321837 | 0.4690 (0.423*) |
-| [20a](https://teorth.github.io/optimizationproblems/constants/20a.html) | Thin shell conjecture constant | 8 | $< \infty$ |
+| [20a](https://teorth.github.io/optimizationproblems/constants/20a.html) | Thin shell conjecture constant | 8 | 8 |
 | [20b](https://teorth.github.io/optimizationproblems/constants/20b.html) | Isotropic constant of a log-concave probability measure | $1/e$ | $< \infty$ |
-| [20c](https://teorth.github.io/optimizationproblems/constants/20c.html) | KLS constant for log-concave probability measures | $\sqrt{3} \approx 1.73205$ | $\infty$ |
+| [20c](https://teorth.github.io/optimizationproblems/constants/20c.html) | KLS constant for log-concave probability measures | $\sqrt{3} \approx 1.73205$ | $< \infty$ |
 | [21](https://teorth.github.io/optimizationproblems/constants/21a.html) | de Bruijn–Newman constant | 0 | 0.2 (0.1595*) |
 | [22a](https://teorth.github.io/optimizationproblems/constants/22a.html) | Tight knot constant | 1.105 | 10.76 (10.02*) |
 | [22b](https://teorth.github.io/optimizationproblems/constants/22b.html) | Tight alternating knot constant | 0.017 | 7.31 (7.2013*) |
@@ -252,6 +252,8 @@ Bounds for which the level of available verification is currently at minimal lev
 - [5a](https://teorth.github.io/optimizationproblems/constants/5a.html) **improved upper bound:** $C_{5a} \leq 0.9435$ by [J. Hou and H. Zhao](https://arxiv.org/abs/2607.01169), 1 Jul 2026, via vector-valued smoothing.
 - [5a](https://teorth.github.io/optimizationproblems/constants/5a.html) **improved upper bound:** $C_{5a} \leq 0.94304$ by [D. Carter, K. O'Bryant and T. Tao](https://arxiv.org/abs/2610.36207), 26 Oct 2026, from an explicit lower bound on the diameter of a Sidon set.
 - [5a](https://teorth.github.io/optimizationproblems/constants/5a.html) **improved upper bound (unverified):** $C_{5a} \leq 0.9428095$* by [J. Akwei](https://github.com/johnakwei/Science), reported in the [Erdos Problems forum](https://www.erdosproblems.com/forum/thread/30), 5 Oct 2026; unrefereed, and within $5	imes 10^{-7}$ of a claimed barrier for the method.
+- [20a](https://teorth.github.io/optimizationproblems/constants/20a.html) **sharp upper bound:** $C\_{20a} \leq 8$ by [Y. Chen and B. Klartag](https://arxiv.org/abs/2607.23307), 25 Jul 2026, matching the lower bound, so that $C\_{20a} = 8$.
+- [20c](https://teorth.github.io/optimizationproblems/constants/20c.html) **KLS conjecture proved:** $C\_{20c} < \infty$ by [P. Bizeul, B. Klartag and J. Lehec](https://arxiv.org/abs/2610.05474) and by [Z. Song and X. Zhang](https://arxiv.org/abs/2610.01447), 4 Oct 2026.
 
 ## Maintainers
 
