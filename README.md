@@ -135,11 +135,12 @@ Bounds for which the level of available verification is currently at minimal lev
 | [90](https://teorth.github.io/optimizationproblems/constants/90a.html) | Maximum minimum modulus of a distinct covering system | 44* | 615999 |
 | [89a](https://teorth.github.io/optimizationproblems/constants/89a.html) | Ramsey multiplicity constant of $K\_4$ | 0.0296 | 0.030145 (0.0301388857*) |
 | [89b](https://teorth.github.io/optimizationproblems/constants/89b.html) | Ramsey multiplicity constant of $K\_5$ | 0.001524 | 0.001708 (0.0016870052*) |
-| [89c](https://teorth.github.io/optimizationproblems/constants/89c.html) | Ramsey multiplicity constant of $K\_6$ | $1/\binom{252}{6}$ | $0.7445 \cdot 2^{-14}$ ($0.7422548616 \cdot 2^{-14}$*) |
+| [89c](https://teorth.github.io/optimizationproblems/constants/89c.html) | Ramsey multiplicity constant of $K\_6$ | $1/\binom{252}{6}$ (0.000021083*) | $0.7445 \cdot 2^{-14}$ ($0.7422548616 \cdot 2^{-14}$*) |
 
 
 ## Recent progress
 
+- [89c](https://teorth.github.io/optimizationproblems/constants/89c.html) **improved lower bound (unrefereed):** $C\_{89c} \geq 0.000021083$* by [Ricardo Pinho](https://github.com/rpinho/math-certificates/tree/7226df047246ff06c3afeb953dddadfa196ed3cd/c89c-flag-certificate), 1 Nov 2026. An exact eight-vertex flag-algebra certificate, with no Ramsey-number input.
 - [44](https://teorth.github.io/optimizationproblems/constants/44a.html) **improved upper bound (unrefereed):** $C\_{44} \leq 4.3576549226$* by [Ricardo Pinho](https://github.com/rpinho/c44-certificate/tree/f3fb25dfb88de3da8b1a0b30f03fdb51b78ccef9), 23 Oct 2026. A degree-three local-weight cap $5/4$ sharpens Wellens's recurrence using BakeLab/Épi's existing exact certificates; the exact recurrence gain is $1/128$. Both exact checkers were written by the same AI agent; author review was at summary level.
 - [68](https://teorth.github.io/optimizationproblems/constants/68a.html) **improved lower bound (unrefereed):** $C\_{68} \geq 0.432$* by [R. Pinho](https://github.com/rpinho/korenblum-c68-certificate), 19 Oct 2026: covering-strip Schwarz estimate, classical hyperbolic Jung, and Wikström’s moment criterion, with a twelve-atom rational certificate and two exact checkers. Also records Wikström’s preceding 0.4263 bound.
 - [42](https://teorth.github.io/optimizationproblems/constants/42a.html) **improved upper bound (unverified):** $C\_{42} \leq 0.6888863712$* by R. Pinho, 22 Oct 2026; [256-step rational certificate, unrefereed proof and interval/Arb checkers](https://github.com/rpinho/c42-certificate/tree/a8a9bc309bd1992413fa07595bd60c5e3fa1b65b).
