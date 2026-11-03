@@ -67,7 +67,8 @@ Bounds for which the level of available verification is currently at minimal lev
 | [28](https://teorth.github.io/optimizationproblems/constants/28a.html) | Smallest dimension in which Borsuk’s conjecture fails | 4 | 63 (9*) |
 | [29](https://teorth.github.io/optimizationproblems/constants/29a.html) | Kissing number in dimension $5$ | 40 | 44 |
 | [30](https://teorth.github.io/optimizationproblems/constants/30a.html) | Stanley–Wilf limit for the permutation pattern $1324$ | 10.27 | 13.5 |
-| [31](https://teorth.github.io/optimizationproblems/constants/31a.html) | Chvátal–Sankoff constant for a binary alphabet | 0.792665992 (0.79970*) | 0.826280 (0.824120*) |
+| [31a](https://teorth.github.io/optimizationproblems/constants/31a.html) | Chvátal–Sankoff constant for a binary alphabet | 0.792665992 (0.79970*) | 0.826280 (0.824120*) |
+| [31b](https://teorth.github.io/optimizationproblems/constants/31b.html) | Chvátal–Sankoff constant for a four-letter alphabet | 0.614333 (0.617356*) | 0.708236 (0.679701*) |
 | [32](https://teorth.github.io/optimizationproblems/constants/32a.html) | Constant term of one-shot channel simulation | $-\log_2 \log_2 e \approx -0.53$ | $\sum_{k=1}^{\infty}2^{-k-1}k\log_{2}k-\log_{2}\log_{2}e \approx 0.76$ |
 | [33](https://teorth.github.io/optimizationproblems/constants/33a.html) | Ihara constant over $\mathbb{F}_2$ | 0.316999... | $\sqrt{2}-1 \approx 0.41421$ |
 | [34](https://teorth.github.io/optimizationproblems/constants/34a.html) | Falconer distance problem in $\mathbb{R}^2$ | 1 | $\frac{5}{4}$ |
@@ -138,6 +139,7 @@ Bounds for which the level of available verification is currently at minimal lev
 
 ## Recent progress
 
+- [31b](https://teorth.github.io/optimizationproblems/constants/31b.html) **new constant:** the Chvátal–Sankoff constant for a four-letter alphabet, with $0.617356$* $\leq C\_{31b} \leq 0.679701$* (previously $0.614333$ by Heineman et al. and $0.708236$ by Dančík) by [L. Jack](https://github.com/leandrejack-afk/chvatal-sankoff-bound), running Lueker's lower- and upper-bound methods one step deeper, submitted to this repository, 26 Oct 2026. The page also lists the bounds for 3 and 5 to 15 letters.
 - [44](https://teorth.github.io/optimizationproblems/constants/44a.html) **improved upper bound (unrefereed):** $C\_{44} \leq 4.3576549226$* by [Ricardo Pinho](https://github.com/rpinho/c44-certificate/tree/f3fb25dfb88de3da8b1a0b30f03fdb51b78ccef9), 23 Oct 2026. A degree-three local-weight cap $5/4$ sharpens Wellens's recurrence using BakeLab/Épi's existing exact certificates; the exact recurrence gain is $1/128$. Both exact checkers were written by the same AI agent; author review was at summary level.
 - [68](https://teorth.github.io/optimizationproblems/constants/68a.html) **improved lower bound (unrefereed):** $C\_{68} \geq 0.432$* by [R. Pinho](https://github.com/rpinho/korenblum-c68-certificate), 19 Oct 2026: covering-strip Schwarz estimate, classical hyperbolic Jung, and Wikström’s moment criterion, with a twelve-atom rational certificate and two exact checkers. Also records Wikström’s preceding 0.4263 bound.
 - [42](https://teorth.github.io/optimizationproblems/constants/42a.html) **improved upper bound (unverified):** $C\_{42} \leq 0.6888863712$* by R. Pinho, 22 Oct 2026; [256-step rational certificate, unrefereed proof and interval/Arb checkers](https://github.com/rpinho/c42-certificate/tree/a8a9bc309bd1992413fa07595bd60c5e3fa1b65b).
