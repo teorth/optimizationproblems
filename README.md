@@ -66,7 +66,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [27b](https://teorth.github.io/optimizationproblems/constants/27b.html) | Maximum Chromatic Number of Biplanar Graphs | 9 | 12 |
 | [28](https://teorth.github.io/optimizationproblems/constants/28a.html) | Smallest dimension in which Borsuk’s conjecture fails | 4 | 63 (9*) |
 | [29](https://teorth.github.io/optimizationproblems/constants/29a.html) | Kissing number in dimension $5$ | 40 | 44 |
-| [30](https://teorth.github.io/optimizationproblems/constants/30a.html) | Stanley–Wilf limit for the permutation pattern $1324$ | 10.412263 | 13.5 |
+| [30](https://teorth.github.io/optimizationproblems/constants/30a.html) | Stanley–Wilf limit for the permutation pattern $1324$ | 10.412263 (10.42*) | 13.5 |
 | [31](https://teorth.github.io/optimizationproblems/constants/31a.html) | Chvátal–Sankoff constant for a binary alphabet | 0.792665992 (0.79970*) | 0.826280 (0.824120*) |
 | [32](https://teorth.github.io/optimizationproblems/constants/32a.html) | Constant term of one-shot channel simulation | $-\log_2 \log_2 e \approx -0.53$ | $\sum_{k=1}^{\infty}2^{-k-1}k\log_{2}k-\log_{2}\log_{2}e \approx 0.76$ |
 | [33](https://teorth.github.io/optimizationproblems/constants/33a.html) | Ihara constant over $\mathbb{F}_2$ | 0.316999... | $\sqrt{2}-1 \approx 0.41421$ |
@@ -137,6 +137,8 @@ Bounds for which the level of available verification is currently at minimal lev
 
 
 ## Recent progress
+
+- [30](https://teorth.github.io/optimizationproblems/constants/30a.html) **candidate lower bound (unrefereed):** $C\_{30} \geq 521/50 = 10.42$*, conditional on unrefereed [Norton v3](https://arxiv.org/abs/2608.20292v3), following maximusrufus's [#313](https://github.com/teorth/optimizationproblems/pull/313); first-moment two-leaf bound with value-word lemma, built on BBEP and Norton (including v2 marginal equations). [AI-written packet under Ricardo Pinho's direction](https://github.com/rpinho/math-certificates/tree/4f0bbf8d13183432dffd8addfd53811e830916c5/c30/round1), 3 Nov 2026; two AI reviews, no human referee; Verification level: L0 (whole bound; finite parts L1-same-agent).
 
 - [17](https://teorth.github.io/optimizationproblems/constants/17a.html) **improved upper bound (unverified):** $C\_{17} \leq 3.6960839126$* by [E. Y. Wang et al.](https://arxiv.org/abs/2603.15617v2), v2, 10 Sep 2026. Appendix A.3 table entry; not checked here.
 - [30](https://teorth.github.io/optimizationproblems/constants/30a.html) **improved lower bound (unrefereed):** $C\_{30} \geq 10.412263$ by [C. C. Norton](https://arxiv.org/abs/2608.20292), 20 Aug 2026.
