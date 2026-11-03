@@ -44,7 +44,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [14](https://teorth.github.io/optimizationproblems/constants/14a.html) | Smallest $n$ for which the value of $BB(n)$ is undecidable | 6 | 432 |
 | [15a](https://teorth.github.io/optimizationproblems/constants/15a.html) | Matrix multiplication exponent | 2 | 2.371177 |
 | [15b](https://teorth.github.io/optimizationproblems/constants/15b.html) | Dual matrix multiplication exponent | >0.321334 | 1 |
-| [16](https://teorth.github.io/optimizationproblems/constants/16a.html) | Brezis–Gallouet–Wainger remainder constant on the 2D torus | $\frac{\beta + \pi}{\pi} \approx 1.82283$ ($2.1562247706^\*$) | $2.1562256466^\*$ |
+| [16](https://teorth.github.io/optimizationproblems/constants/16a.html) | Brezis–Gallouet–Wainger remainder constant on the 2D torus | $\frac{\beta + \pi}{\pi} \approx 1.82283$ ($2.156225528^\*$) | $2.1562256466^\*$ |
 | [17](https://teorth.github.io/optimizationproblems/constants/17a.html) | Exponential growth constant of diagonal Ramsey numbers | $\sqrt{2} \approx 1.4142$ | 3.7919936995 |
 | [17b](https://teorth.github.io/optimizationproblems/constants/17b.html) | Asymptotic constant for the off-diagonal Ramsey numbers $R(3,k)$ | $\frac{1}{2}$ | $1$ |
 | [18](https://teorth.github.io/optimizationproblems/constants/18a.html) | Marton's conjecture constant (PFR) | 1.46601 | 9 |
@@ -138,6 +138,7 @@ Bounds for which the level of available verification is currently at minimal lev
 
 ## Recent progress
 
+- [16](https://teorth.github.io/optimizationproblems/constants/16a.html) **improved lower bound (unverified):** $C\_{16} \geq 2.156225528$* (previously $2.1562247706$*), the conditional extremal of [BDZ2013] with no lattice cut-off, closed-form row sums in ball arithmetic, [certificate and checkers](https://github.com/Julsgaard/c16a-certificate/tree/1ee9ba32b4f5606d80b3b794956d72704defbe2b), prepared with Claude (Anthropic), 3 Nov 2026.
 - [44](https://teorth.github.io/optimizationproblems/constants/44a.html) **improved upper bound (unrefereed):** $C\_{44} \leq 4.3576549226$* by [Ricardo Pinho](https://github.com/rpinho/c44-certificate/tree/f3fb25dfb88de3da8b1a0b30f03fdb51b78ccef9), 23 Oct 2026. A degree-three local-weight cap $5/4$ sharpens Wellens's recurrence using BakeLab/Épi's existing exact certificates; the exact recurrence gain is $1/128$. Both exact checkers were written by the same AI agent; author review was at summary level.
 - [68](https://teorth.github.io/optimizationproblems/constants/68a.html) **improved lower bound (unrefereed):** $C\_{68} \geq 0.432$* by [R. Pinho](https://github.com/rpinho/korenblum-c68-certificate), 19 Oct 2026: covering-strip Schwarz estimate, classical hyperbolic Jung, and Wikström’s moment criterion, with a twelve-atom rational certificate and two exact checkers. Also records Wikström’s preceding 0.4263 bound.
 - [42](https://teorth.github.io/optimizationproblems/constants/42a.html) **improved upper bound (unverified):** $C\_{42} \leq 0.6888863712$* by R. Pinho, 22 Oct 2026; [256-step rational certificate, unrefereed proof and interval/Arb checkers](https://github.com/rpinho/c42-certificate/tree/a8a9bc309bd1992413fa07595bd60c5e3fa1b65b).
