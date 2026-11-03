@@ -71,7 +71,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [32](https://teorth.github.io/optimizationproblems/constants/32a.html) | Constant term of one-shot channel simulation | $-\log_2 \log_2 e \approx -0.53$ | $\sum_{k=1}^{\infty}2^{-k-1}k\log_{2}k-\log_{2}\log_{2}e \approx 0.76$ |
 | [33](https://teorth.github.io/optimizationproblems/constants/33a.html) | Ihara constant over $\mathbb{F}_2$ | 0.316999... | $\sqrt{2}-1 \approx 0.41421$ |
 | [34](https://teorth.github.io/optimizationproblems/constants/34a.html) | Falconer distance problem in $\mathbb{R}^2$ | 1 | $\frac{5}{4}$ |
-| [35](https://teorth.github.io/optimizationproblems/constants/35a.html) | Gradient Descent Exponent | $\log_2(1+\sqrt{2}) \approx 1.271$ | 2 |
+| [35](https://teorth.github.io/optimizationproblems/constants/35a.html) | Gradient Descent Exponent | $\log_2(1+\sqrt{2}) \approx 1.271$ | $\log_2(1+\sqrt{2}) \approx 1.2716$ |
 | [36](https://teorth.github.io/optimizationproblems/constants/36a.html) | Sphere packing density in $\mathbb{R}^4$ | $\pi^2/16 \approx 0.616850$ | 0.644421 |
 | [37](https://teorth.github.io/optimizationproblems/constants/37a.html) | The degree--sensitivity exponent | $\log_{3}(6) \approx 1.63093$ | 2 |
 | [38](https://teorth.github.io/optimizationproblems/constants/38a.html) | Square-lattice self-avoiding walk connective constant | 2.6273856 | 2.679193 |
@@ -138,6 +138,7 @@ Bounds for which the level of available verification is currently at minimal lev
 
 ## Recent progress
 
+- [35](https://teorth.github.io/optimizationproblems/constants/35a.html) **improved upper bound (unrefereed):** $C\_{35} \leq \log\_2(1+\sqrt{2})$ by [Y. Ye and K. Liu](https://arxiv.org/abs/2609.09152), 8 Sep 2026.
 - [44](https://teorth.github.io/optimizationproblems/constants/44a.html) **improved upper bound (unrefereed):** $C\_{44} \leq 4.3576549226$* by [Ricardo Pinho](https://github.com/rpinho/c44-certificate/tree/f3fb25dfb88de3da8b1a0b30f03fdb51b78ccef9), 23 Oct 2026. A degree-three local-weight cap $5/4$ sharpens Wellens's recurrence using BakeLab/Épi's existing exact certificates; the exact recurrence gain is $1/128$. Both exact checkers were written by the same AI agent; author review was at summary level.
 - [68](https://teorth.github.io/optimizationproblems/constants/68a.html) **improved lower bound (unrefereed):** $C\_{68} \geq 0.432$* by [R. Pinho](https://github.com/rpinho/korenblum-c68-certificate), 19 Oct 2026: covering-strip Schwarz estimate, classical hyperbolic Jung, and Wikström’s moment criterion, with a twelve-atom rational certificate and two exact checkers. Also records Wikström’s preceding 0.4263 bound.
 - [42](https://teorth.github.io/optimizationproblems/constants/42a.html) **improved upper bound (unverified):** $C\_{42} \leq 0.6888863712$* by R. Pinho, 22 Oct 2026; [256-step rational certificate, unrefereed proof and interval/Arb checkers](https://github.com/rpinho/c42-certificate/tree/a8a9bc309bd1992413fa07595bd60c5e3fa1b65b).
