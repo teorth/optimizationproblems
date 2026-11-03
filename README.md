@@ -105,7 +105,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [62a](https://teorth.github.io/optimizationproblems/constants/62a.html) | Lindelof (pointwise growth) exponent for the Riemann zeta function | 0 | $\frac{13}{84}$ |
 | [62b](https://teorth.github.io/optimizationproblems/constants/62b.html) | Burgess-quality subconvexity exponent for Dirichlet $L$-functions | 0 | $\frac{3}{16}$ |
 | [63](https://teorth.github.io/optimizationproblems/constants/63a.html) | Dirichlet divisor problem exponent | $\frac{1}{4}$ | $\frac{131}{416}$ |
-| [64](https://teorth.github.io/optimizationproblems/constants/64a.html) | Gauss circle problem exponent | 0 | $\frac{131}{208}$ |
+| [64](https://teorth.github.io/optimizationproblems/constants/64a.html) | Gauss circle problem exponent | 0 | 0.6289663519 |
 | [65](https://teorth.github.io/optimizationproblems/constants/65a.html) | Linnik's constant | 1 | 5 (2.4*) |
 | [66](https://teorth.github.io/optimizationproblems/constants/66a.html) | Elliott-Halberstam level-of-distribution exponent | $\frac{1}{2}$ | 1 |
 | [67](https://teorth.github.io/optimizationproblems/constants/67a.html) | Brennan's conjecture exponent | 3.422 | 4 |
@@ -125,10 +125,10 @@ Bounds for which the level of available verification is currently at minimal lev
 | [81](https://teorth.github.io/optimizationproblems/constants/81a.html) | Brun's constant | 1.840503 | 2.288513 |
 | [82](https://teorth.github.io/optimizationproblems/constants/82a.html) | Essential minimum of the Zhang-Zagier height | 0.24874 | 0.2536331090204145 (0.2534449*) |
 | [83](https://teorth.github.io/optimizationproblems/constants/83a.html) | Wirsing Constant | 0.30366300 | 0.30366300 |
-| [84a](https://teorth.github.io/optimizationproblems/constants/84a.html) | Erdős unit distance exponent | 1.014 (1.04317*) | $\frac{4}{3}-\varepsilon$ |
+| [84a](https://teorth.github.io/optimizationproblems/constants/84a.html) | Erdős unit distance exponent | 1.0152 (1.04317*) | $\frac{4}{3}-\varepsilon$ |
 | [84b](https://teorth.github.io/optimizationproblems/constants/84b.html) | Sum-product exponent for the reals | $\frac{4}{3}+\frac{10}{4407}\approx 1.3356$ | $<2$ (1.9993*) |
 | [85](https://teorth.github.io/optimizationproblems/constants/85a.html) | Exponent for commutators close to the identity | 1 | 4 |
-| [86](https://teorth.github.io/optimizationproblems/constants/86a.html) | Schur–Siegel–Smyth trace constant | 1.80203 | 1.8216 (1.8084990*) |
+| [86](https://teorth.github.io/optimizationproblems/constants/86a.html) | Schur–Siegel–Smyth trace constant | 1.80220 | 1.8216 (1.8084990*) |
 | [87](https://teorth.github.io/optimizationproblems/constants/87a.html) | Martinet's constant for totally real number fields | 60.8395 | 857.567 |
 | [88a](https://teorth.github.io/optimizationproblems/constants/88a.html) | Bounded prime gap constant | 2 | 186 |
 | [88b](https://teorth.github.io/optimizationproblems/constants/88b.html) | Exponent for bounded gaps between many primes | 0 | 3.8075 |
@@ -138,6 +138,9 @@ Bounds for which the level of available verification is currently at minimal lev
 
 ## Recent progress
 
+- [64](https://teorth.github.io/optimizationproblems/constants/64a.html) **improved upper bound:** $C\_{64} \leq 0.6289663519\ldots$ by [X. Li and X. Yang](https://arxiv.org/abs/2308.14859), 28 Aug 2023.
+- [84a](https://teorth.github.io/optimizationproblems/constants/84a.html) **improved unstarred lower bound (unrefereed):** $C\_{84a} \geq 1.0152$ by [M. T. M. Emmerich](https://arxiv.org/abs/2606.03419), 2 Jun 2026. Below the starred $1.04317$* entry.
+- [86](https://teorth.github.io/optimizationproblems/constants/86a.html) **improved lower bound (unrefereed):** $C\_{86} \geq 1.80220$ by [D. N. Giraudin](https://arxiv.org/abs/2609.29298), 24 Sep 2026.
 - [44](https://teorth.github.io/optimizationproblems/constants/44a.html) **improved upper bound (unrefereed):** $C\_{44} \leq 4.3576549226$* by [Ricardo Pinho](https://github.com/rpinho/c44-certificate/tree/f3fb25dfb88de3da8b1a0b30f03fdb51b78ccef9), 23 Oct 2026. A degree-three local-weight cap $5/4$ sharpens Wellens's recurrence using BakeLab/Épi's existing exact certificates; the exact recurrence gain is $1/128$. Both exact checkers were written by the same AI agent; author review was at summary level.
 - [68](https://teorth.github.io/optimizationproblems/constants/68a.html) **improved lower bound (unrefereed):** $C\_{68} \geq 0.432$* by [R. Pinho](https://github.com/rpinho/korenblum-c68-certificate), 19 Oct 2026: covering-strip Schwarz estimate, classical hyperbolic Jung, and Wikström’s moment criterion, with a twelve-atom rational certificate and two exact checkers. Also records Wikström’s preceding 0.4263 bound.
 - [42](https://teorth.github.io/optimizationproblems/constants/42a.html) **improved upper bound (unverified):** $C\_{42} \leq 0.6888863712$* by R. Pinho, 22 Oct 2026; [256-step rational certificate, unrefereed proof and interval/Arb checkers](https://github.com/rpinho/c42-certificate/tree/a8a9bc309bd1992413fa07595bd60c5e3fa1b65b).
