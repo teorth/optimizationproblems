@@ -45,7 +45,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [15a](https://teorth.github.io/optimizationproblems/constants/15a.html) | Matrix multiplication exponent | 2 | 2.371177 |
 | [15b](https://teorth.github.io/optimizationproblems/constants/15b.html) | Dual matrix multiplication exponent | >0.321334 | 1 |
 | [16](https://teorth.github.io/optimizationproblems/constants/16a.html) | Brezis–Gallouet–Wainger remainder constant on the 2D torus | $\frac{\beta + \pi}{\pi} \approx 1.82283$ ($2.1562247706^\*$) | $2.1562256466^\*$ |
-| [17](https://teorth.github.io/optimizationproblems/constants/17a.html) | Exponential growth constant of diagonal Ramsey numbers | $\sqrt{2} \approx 1.4142$ | 3.7919936995 |
+| [17](https://teorth.github.io/optimizationproblems/constants/17a.html) | Exponential growth constant of diagonal Ramsey numbers | $\sqrt{2} \approx 1.4142$ | 3.7919936995 (3.6960839126*) |
 | [17b](https://teorth.github.io/optimizationproblems/constants/17b.html) | Asymptotic constant for the off-diagonal Ramsey numbers $R(3,k)$ | $\frac{1}{2}$ | $1$ |
 | [18](https://teorth.github.io/optimizationproblems/constants/18a.html) | Marton's conjecture constant (PFR) | 1.46601 | 9 |
 | [19](https://teorth.github.io/optimizationproblems/constants/19a.html) | Berry–Esseen constant | 0.4097321837 | 0.4690 (0.423*) |
@@ -66,7 +66,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [27b](https://teorth.github.io/optimizationproblems/constants/27b.html) | Maximum Chromatic Number of Biplanar Graphs | 9 | 12 |
 | [28](https://teorth.github.io/optimizationproblems/constants/28a.html) | Smallest dimension in which Borsuk’s conjecture fails | 4 | 63 (9*) |
 | [29](https://teorth.github.io/optimizationproblems/constants/29a.html) | Kissing number in dimension $5$ | 40 | 44 |
-| [30](https://teorth.github.io/optimizationproblems/constants/30a.html) | Stanley–Wilf limit for the permutation pattern $1324$ | 10.27 | 13.5 |
+| [30](https://teorth.github.io/optimizationproblems/constants/30a.html) | Stanley–Wilf limit for the permutation pattern $1324$ | 10.412263 | 13.5 |
 | [31](https://teorth.github.io/optimizationproblems/constants/31a.html) | Chvátal–Sankoff constant for a binary alphabet | 0.792665992 (0.79970*) | 0.826280 (0.824120*) |
 | [32](https://teorth.github.io/optimizationproblems/constants/32a.html) | Constant term of one-shot channel simulation | $-\log_2 \log_2 e \approx -0.53$ | $\sum_{k=1}^{\infty}2^{-k-1}k\log_{2}k-\log_{2}\log_{2}e \approx 0.76$ |
 | [33](https://teorth.github.io/optimizationproblems/constants/33a.html) | Ihara constant over $\mathbb{F}_2$ | 0.316999... | $\sqrt{2}-1 \approx 0.41421$ |
@@ -74,7 +74,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [35](https://teorth.github.io/optimizationproblems/constants/35a.html) | Gradient Descent Exponent | $\log_2(1+\sqrt{2}) \approx 1.271$ | 2 |
 | [36](https://teorth.github.io/optimizationproblems/constants/36a.html) | Sphere packing density in $\mathbb{R}^4$ | $\pi^2/16 \approx 0.616850$ | 0.644421 |
 | [37](https://teorth.github.io/optimizationproblems/constants/37a.html) | The degree--sensitivity exponent | $\log_{3}(6) \approx 1.63093$ | 2 |
-| [38](https://teorth.github.io/optimizationproblems/constants/38a.html) | Square-lattice self-avoiding walk connective constant | 2.6273856 | 2.679193 |
+| [38](https://teorth.github.io/optimizationproblems/constants/38a.html) | Square-lattice self-avoiding walk connective constant | 2.6273856 | 2.662343 |
 | [39](https://teorth.github.io/optimizationproblems/constants/39a.html) | Hadwiger covering / illumination number in $\mathbb{R}^3$ | 8 | 14 |
 | [40a](https://teorth.github.io/optimizationproblems/constants/40a.html) | Lehmer’s Mahler measure constant | 1 | 1.176280... |
 | [40b](https://teorth.github.io/optimizationproblems/constants/40b.html) | Asymptotic Dobrowolski constant for Lehmer’s problem | $9/4$ | $\infty$ |
@@ -95,16 +95,16 @@ Bounds for which the level of available verification is currently at minimal lev
 | [54](https://teorth.github.io/optimizationproblems/constants/54a.html) | Beurling–Ahlfors transform constant | 1 | 1.575 |
 | [55](https://teorth.github.io/optimizationproblems/constants/55a.html) | Coefficient of the acyclic chromatic index | 1 | 3.142 |
 | [56](https://teorth.github.io/optimizationproblems/constants/56a.html) | $\mathrm{GL}_2$ Ramanujan conjecture exponent | 0 | $\tfrac{7}{64}=0.109375$ |
-| [57a](https://teorth.github.io/optimizationproblems/constants/57a.html) | Bloch’s constant | $\frac{\sqrt{3}}{4}+2\times 10^{-4}$ | $\dfrac{1}{\sqrt{1+\sqrt{3}}}\,\dfrac{\Gamma(1/3)\Gamma(11/12)}{\Gamma(1/4)}\approx 0.4719$ |
-| [57b](https://teorth.github.io/optimizationproblems/constants/57b.html) | Landau's constant | $\frac{1}{2}+10^{-335}$ | $\dfrac{\Gamma(1/3)\Gamma(5/6)}{\Gamma(1/6)}\approx 0.5433$ |
+| [57a](https://teorth.github.io/optimizationproblems/constants/57a.html) | Bloch’s constant | $\frac{\sqrt{3}}{4}+0.0153 \approx 0.448313$ | $\dfrac{1}{\sqrt{1+\sqrt{3}}}\,\dfrac{\Gamma(1/3)\Gamma(11/12)}{\Gamma(1/4)}\approx 0.4719$ |
+| [57b](https://teorth.github.io/optimizationproblems/constants/57b.html) | Landau's constant | 0.51 | $\dfrac{\Gamma(1/3)\Gamma(5/6)}{\Gamma(1/6)}\approx 0.5433$ |
 | [57c](https://teorth.github.io/optimizationproblems/constants/57c.html) | Univalent Bloch constant | 0.5708858 | 0.6563937 (0.65628589*) |
 | [58](https://teorth.github.io/optimizationproblems/constants/58a.html) | Zaremba’s conjecture constant | 5 | $\infty$ |
 | [59](https://teorth.github.io/optimizationproblems/constants/59a.html) | Bohr radius for the bidisc | 0.3006 | 0.302825279492 |
 | [60](https://teorth.github.io/optimizationproblems/constants/60a.html) | Favard-length decay exponent | $\frac{1}{6}$ | 1 |
 | [61](https://teorth.github.io/optimizationproblems/constants/61a.html) | Selberg congruence spectral-gap constant | 0 | $\frac{7}{64}$ |
 | [62a](https://teorth.github.io/optimizationproblems/constants/62a.html) | Lindelof (pointwise growth) exponent for the Riemann zeta function | 0 | $\frac{13}{84}$ |
-| [62b](https://teorth.github.io/optimizationproblems/constants/62b.html) | Burgess-quality subconvexity exponent for Dirichlet $L$-functions | 0 | $\frac{3}{16}$ |
-| [63](https://teorth.github.io/optimizationproblems/constants/63a.html) | Dirichlet divisor problem exponent | $\frac{1}{4}$ | $\frac{131}{416}$ |
+| [62b](https://teorth.github.io/optimizationproblems/constants/62b.html) | Burgess-quality subconvexity exponent for Dirichlet $L$-functions | 0 | $\frac{1}{6}$ |
+| [63](https://teorth.github.io/optimizationproblems/constants/63a.html) | Dirichlet divisor problem exponent | $\frac{1}{4}$ | 0.3144831759741 |
 | [64](https://teorth.github.io/optimizationproblems/constants/64a.html) | Gauss circle problem exponent | 0 | $\frac{131}{208}$ |
 | [65](https://teorth.github.io/optimizationproblems/constants/65a.html) | Linnik's constant | 1 | 5 (2.4*) |
 | [66](https://teorth.github.io/optimizationproblems/constants/66a.html) | Elliott-Halberstam level-of-distribution exponent | $\frac{1}{2}$ | 1 |
@@ -138,6 +138,13 @@ Bounds for which the level of available verification is currently at minimal lev
 
 ## Recent progress
 
+- [17](https://teorth.github.io/optimizationproblems/constants/17a.html) **improved upper bound (unverified):** $C\_{17} \leq 3.6960839126$* by [E. Y. Wang et al.](https://arxiv.org/abs/2603.15617v2), v2, 10 Sep 2026. Appendix A.3 table entry; not checked here.
+- [30](https://teorth.github.io/optimizationproblems/constants/30a.html) **improved lower bound (unrefereed):** $C\_{30} \geq 10.412263$ by [C. C. Norton](https://arxiv.org/abs/2608.20292), 20 Aug 2026.
+- [38](https://teorth.github.io/optimizationproblems/constants/38a.html) **improved upper bound:** $C\_{38} \leq 2.662343$ by [O. Couronné](https://arxiv.org/abs/2211.16146), 29 Nov 2022.
+- [57a](https://teorth.github.io/optimizationproblems/constants/57a.html) **improved lower bound (unrefereed):** $C\_{57a} \geq \frac{\sqrt{3}}{4}+0.0153$ by [F. Wikström](https://arxiv.org/abs/2608.17660), 18 Aug 2026.
+- [57b](https://teorth.github.io/optimizationproblems/constants/57b.html) **improved lower bound (unrefereed):** $C\_{57b} \gt 0.51$ by [F. Wikström](https://arxiv.org/abs/2609.23236), 19 Sep 2026.
+- [62b](https://teorth.github.io/optimizationproblems/constants/62b.html) **improved upper bound:** $C\_{62b} \leq \frac{1}{6}$ by [I. Petrow and M. P. Young](https://arxiv.org/abs/1908.10346), Duke Math. J. 2023.
+- [63](https://teorth.github.io/optimizationproblems/constants/63a.html) **improved upper bound:** $C\_{63} \leq 0.3144831759741\ldots$ by [X. Li and X. Yang](https://arxiv.org/abs/2308.14859), 28 Aug 2023.
 - [44](https://teorth.github.io/optimizationproblems/constants/44a.html) **improved upper bound (unrefereed):** $C\_{44} \leq 4.3576549226$* by [Ricardo Pinho](https://github.com/rpinho/c44-certificate/tree/f3fb25dfb88de3da8b1a0b30f03fdb51b78ccef9), 23 Oct 2026. A degree-three local-weight cap $5/4$ sharpens Wellens's recurrence using BakeLab/Épi's existing exact certificates; the exact recurrence gain is $1/128$. Both exact checkers were written by the same AI agent; author review was at summary level.
 - [68](https://teorth.github.io/optimizationproblems/constants/68a.html) **improved lower bound (unrefereed):** $C\_{68} \geq 0.432$* by [R. Pinho](https://github.com/rpinho/korenblum-c68-certificate), 19 Oct 2026: covering-strip Schwarz estimate, classical hyperbolic Jung, and Wikström’s moment criterion, with a twelve-atom rational certificate and two exact checkers. Also records Wikström’s preceding 0.4263 bound.
 - [42](https://teorth.github.io/optimizationproblems/constants/42a.html) **improved upper bound (unverified):** $C\_{42} \leq 0.6888863712$* by R. Pinho, 22 Oct 2026; [256-step rational certificate, unrefereed proof and interval/Arb checkers](https://github.com/rpinho/c42-certificate/tree/a8a9bc309bd1992413fa07595bd60c5e3fa1b65b).
