@@ -97,7 +97,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [56](https://teorth.github.io/optimizationproblems/constants/56a.html) | $\mathrm{GL}_2$ Ramanujan conjecture exponent | 0 | $\tfrac{7}{64}=0.109375$ |
 | [57a](https://teorth.github.io/optimizationproblems/constants/57a.html) | Bloch’s constant | $\frac{\sqrt{3}}{4}+2\times 10^{-4}$ | $\dfrac{1}{\sqrt{1+\sqrt{3}}}\,\dfrac{\Gamma(1/3)\Gamma(11/12)}{\Gamma(1/4)}\approx 0.4719$ |
 | [57b](https://teorth.github.io/optimizationproblems/constants/57b.html) | Landau's constant | $\frac{1}{2}+10^{-335}$ | $\dfrac{\Gamma(1/3)\Gamma(5/6)}{\Gamma(1/6)}\approx 0.5433$ |
-| [57c](https://teorth.github.io/optimizationproblems/constants/57c.html) | Univalent Bloch constant | 0.5708858 | 0.6563937 (0.65628589*) |
+| [57c](https://teorth.github.io/optimizationproblems/constants/57c.html) | Univalent Bloch constant | 0.612242 (0.61230*) | 0.6562681 |
 | [58](https://teorth.github.io/optimizationproblems/constants/58a.html) | Zaremba’s conjecture constant | 5 | $\infty$ |
 | [59](https://teorth.github.io/optimizationproblems/constants/59a.html) | Bohr radius for the bidisc | 0.3006 | 0.302825279492 |
 | [60](https://teorth.github.io/optimizationproblems/constants/60a.html) | Favard-length decay exponent | $\frac{1}{6}$ | 1 |
@@ -137,6 +137,8 @@ Bounds for which the level of available verification is currently at minimal lev
 
 
 ## Recent progress
+
+- [57c](https://teorth.github.io/optimizationproblems/constants/57c.html) **improved bounds:** $0.612242\leq C\_{57c}<0.6562681$ by Frank Wikström, [arXiv:2610.34580](https://arxiv.org/abs/2610.34580), 25 Oct 2026, Theorems 1.2 and 1.3. Also records **candidate, unrefereed** $C\_{57c}\geq 0.61230^\*$ by AI agents under Ricardo Pinho's direction, 3 Nov 2026 ([proof, certificate and separately written Arb checker by the same agent](https://github.com/rpinho/math-certificates/tree/5861cbdef47c16500a856ad1f1cfb1b0149b608e/c57c/round1)); gain $0.000058$ inside Wikström's framework, two AI reviews found no false step, no human referee.
 
 - [44](https://teorth.github.io/optimizationproblems/constants/44a.html) **improved upper bound (unrefereed):** $C\_{44} \leq 4.3576549226$* by [Ricardo Pinho](https://github.com/rpinho/c44-certificate/tree/f3fb25dfb88de3da8b1a0b30f03fdb51b78ccef9), 23 Oct 2026. A degree-three local-weight cap $5/4$ sharpens Wellens's recurrence using BakeLab/Épi's existing exact certificates; the exact recurrence gain is $1/128$. Both exact checkers were written by the same AI agent; author review was at summary level.
 - [68](https://teorth.github.io/optimizationproblems/constants/68a.html) **improved lower bound (unrefereed):** $C\_{68} \geq 0.432$* by [R. Pinho](https://github.com/rpinho/korenblum-c68-certificate), 19 Oct 2026: covering-strip Schwarz estimate, classical hyperbolic Jung, and Wikström’s moment criterion, with a twelve-atom rational certificate and two exact checkers. Also records Wikström’s preceding 0.4263 bound.
