@@ -74,7 +74,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [35](https://teorth.github.io/optimizationproblems/constants/35a.html) | Gradient Descent Exponent | $\log_2(1+\sqrt{2}) \approx 1.271$ | 2 |
 | [36](https://teorth.github.io/optimizationproblems/constants/36a.html) | Sphere packing density in $\mathbb{R}^4$ | $\pi^2/16 \approx 0.616850$ | 0.644421 |
 | [37](https://teorth.github.io/optimizationproblems/constants/37a.html) | The degree--sensitivity exponent | $\log_{3}(6) \approx 1.63093$ | 2 |
-| [38](https://teorth.github.io/optimizationproblems/constants/38a.html) | Square-lattice self-avoiding walk connective constant | 2.6273856 | 2.679193 |
+| [38](https://teorth.github.io/optimizationproblems/constants/38a.html) | Square-lattice self-avoiding walk connective constant | 2.6273856 (2.6275696*) | 2.679193 |
 | [39](https://teorth.github.io/optimizationproblems/constants/39a.html) | Hadwiger covering / illumination number in $\mathbb{R}^3$ | 8 | 14 |
 | [40a](https://teorth.github.io/optimizationproblems/constants/40a.html) | Lehmer’s Mahler measure constant | 1 | 1.176280... |
 | [40b](https://teorth.github.io/optimizationproblems/constants/40b.html) | Asymptotic Dobrowolski constant for Lehmer’s problem | $9/4$ | $\infty$ |
