@@ -3,7 +3,3 @@
 .DS_store
 /tmp
 .claude/
-doc-fetch-resources/
-draft_*_folder/
-constants/C1c_TwoWayPinching_out.txt
-constants/C1c_TwoWayPinching_data.json
