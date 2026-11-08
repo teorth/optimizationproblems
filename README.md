@@ -19,7 +19,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [1c](https://teorth.github.io/optimizationproblems/constants/1c.html) | Barnard–Steinerberger autocorrelation constant | 0.4103333* | 0.4107675 |
 | [1d](https://teorth.github.io/optimizationproblems/constants/1d.html) | Signed third autocorrelation constant | 1 | 1.4630715826075594 |
 | [2](https://teorth.github.io/optimizationproblems/constants/2a.html) | Crouzeix constant | 2 | 2 |
-| [3a](https://teorth.github.io/optimizationproblems/constants/3a.html) | Gyarmati-Hennecart-Ruzsa sum-difference constant | 1.19102809 (1.19519192*) | 1.31237330 |
+| [3a](https://teorth.github.io/optimizationproblems/constants/3a.html) | Gyarmati-Hennecart-Ruzsa sum-difference constant | 1.19230254 (1.19519192*) | 1.31237330 |
 | [3b](https://teorth.github.io/optimizationproblems/constants/3b.html) | Kakeya sums-differences constant | 1.77898884 | 1.83333 |
 | [3c](https://teorth.github.io/optimizationproblems/constants/3c.html) | 4-slope Kakeya-type sum-difference constant | 1.674894211307116 | 1.75 |
 | [3d](https://teorth.github.io/optimizationproblems/constants/3d.html) | Single-set sum-difference exponent | 2 | 2 |
@@ -252,6 +252,7 @@ Bounds for which the level of available verification is currently at minimal lev
 - [5a](https://teorth.github.io/optimizationproblems/constants/5a.html) **improved upper bound:** $C_{5a} \leq 0.9435$ by [J. Hou and H. Zhao](https://arxiv.org/abs/2607.01169), 1 Jul 2026, via vector-valued smoothing.
 - [5a](https://teorth.github.io/optimizationproblems/constants/5a.html) **improved upper bound:** $C_{5a} \leq 0.94304$ by [D. Carter, K. O'Bryant and T. Tao](https://arxiv.org/abs/2610.36207), 26 Oct 2026, from an explicit lower bound on the diameter of a Sidon set.
 - [5a](https://teorth.github.io/optimizationproblems/constants/5a.html) **improved upper bound (unverified):** $C_{5a} \leq 0.9428095$* by [J. Akwei](https://github.com/johnakwei/Science), reported in the [Erdos Problems forum](https://www.erdosproblems.com/forum/thread/30), 5 Oct 2026; unrefereed, and within $5	imes 10^{-7}$ of a claimed barrier for the method.
+- [3a](https://teorth.github.io/optimizationproblems/constants/3a.html) **independently replayed:** the $N = 10^{13}$, $q = 27995$ odd-base finite-depth certificate behind $C\_{3a} \geq 1.19230254$ ([M2026], [#236](https://github.com/teorth/optimizationproblems/pull/236)) re-derived from Theorems 1–4 of the package's README alone in 90-digit decimal interval arithmetic, with no code shared with the claimant, by [A. Canli](https://github.com/teorth/optimizationproblems/pull/236#issuecomment-6667854375) ([code](https://github.com/arhancanli/quantavane-replays/tree/fb86997fda34c7271f990b0ad603bb79c0482cc9/c3a), 5 Nov 2026) and independently confirmed in [V3R1T4S#485](https://github.com/elder-plinius/V3R1T4S/issues/485#issuecomment-6598537178) (3 Nov 2026); asterisk removed.
 
 ## Maintainers
 
