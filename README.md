@@ -45,7 +45,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [15a](https://teorth.github.io/optimizationproblems/constants/15a.html) | Matrix multiplication exponent | 2 | 2.371177 |
 | [15b](https://teorth.github.io/optimizationproblems/constants/15b.html) | Dual matrix multiplication exponent | >0.321334 | 1 |
 | [16](https://teorth.github.io/optimizationproblems/constants/16a.html) | Brezis–Gallouet–Wainger remainder constant on the 2D torus | $\frac{\beta + \pi}{\pi} \approx 1.82283$ ($2.1562247706^\*$) | $2.1562256466^\*$ |
-| [17](https://teorth.github.io/optimizationproblems/constants/17a.html) | Exponential growth constant of diagonal Ramsey numbers | $\sqrt{2} \approx 1.4142$ | 3.7919936995 (3.6960839126*) |
+| [17](https://teorth.github.io/optimizationproblems/constants/17a.html) | Exponential growth constant of diagonal Ramsey numbers | $\sqrt{2} \approx 1.4142$ | 3.7919936995 (3.6960839127*) |
 | [17b](https://teorth.github.io/optimizationproblems/constants/17b.html) | Asymptotic constant for the off-diagonal Ramsey numbers $R(3,k)$ | $\frac{1}{2}$ | $1$ |
 | [18](https://teorth.github.io/optimizationproblems/constants/18a.html) | Marton's conjecture constant (PFR) | 1.46601 | 9 |
 | [19](https://teorth.github.io/optimizationproblems/constants/19a.html) | Berry–Esseen constant | 0.4097321837 | 0.4690 (0.423*) |
@@ -138,7 +138,7 @@ Bounds for which the level of available verification is currently at minimal lev
 
 ## Recent progress
 
-- [17](https://teorth.github.io/optimizationproblems/constants/17a.html) **improved upper bound (unverified):** $C\_{17} \leq 3.6960839126$* by [E. Y. Wang et al.](https://arxiv.org/abs/2603.15617v2), v2, 10 Sep 2026. Appendix A.3 table entry; not checked here.
+- [17](https://teorth.github.io/optimizationproblems/constants/17a.html) **improved upper bound (unverified):** $C\_{17} \leq 3.6960839126\ldots$* by [E. Y. Wang et al.](https://arxiv.org/abs/2603.15617v2), v2, 10 Sep 2026. Appendix A.3 table entry; not checked here.
 - [30](https://teorth.github.io/optimizationproblems/constants/30a.html) **improved lower bound (unrefereed):** $C\_{30} \geq 10.412263$ by [C. C. Norton](https://arxiv.org/abs/2608.20292), 20 Aug 2026.
 - [38](https://teorth.github.io/optimizationproblems/constants/38a.html) **improved upper bound:** $C\_{38} \leq 2.662343$ by [O. Couronné](https://arxiv.org/abs/2211.16146), 29 Nov 2022.
 - [57a](https://teorth.github.io/optimizationproblems/constants/57a.html) **improved lower bound (unrefereed):** $C\_{57a} \geq \frac{\sqrt{3}}{4}+0.0153$* by [F. Wikström](https://arxiv.org/abs/2608.17660), 18 Aug 2026.
