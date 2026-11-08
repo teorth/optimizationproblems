@@ -8,7 +8,8 @@ It catches the defects that CONTRIBUTING.md describes and that have needed manua
   E3  constant page without a "## References" heading
   E4  an unresolved merge-conflict marker left in a tracked Markdown file
   W1  README bound value with no matching number on the constant's page (stale README cell or a typo).
-      Rounding in the last digit is allowed, and numbers given only as fractions or closed forms are skipped.
+      The sign is part of the value. Rounding in the last digit is allowed, and numbers given only
+      as fractions or closed forms are skipped.
   W2  "_" or "*" inside inline $...$ that kramdown will pair into emphasis, breaking the math
       (CONTRIBUTING, "Rendering")
   W3  a block whose every line has a bare "|", where a "|" sits inside inline math. kramdown renders the
@@ -27,6 +28,7 @@ import os
 import re
 import sys
 import unicodedata
+from decimal import Decimal
 
 
 
@@ -152,17 +154,19 @@ def broken_line(line):
 
 
 ROW = re.compile(r"^\|\s*\[([^\]]+)\]\((?:https://teorth\.github\.io/optimizationproblems/)?constants/([\w-]+)\.html\)\s*\|(.*)$")
-NUM = re.compile(r"(?<![\w.])\d+\.\d+")
+# The sign is part of the bound. Without it, README `-1.25` and page `1.25` compare equal.
+NUM = re.compile(r"(?<![\w.])-?\d+\.\d+")
 LIST = re.compile(r"^\s*(?:[-*+]|\d+\.)\s")
 
 
 def number_matches(x, page_nums):
     """True if some number on the page agrees with x to within one unit in the last digit of the less precise of the two."""
     dx = len(x.split(".")[1])
-    xv = float(x)
+    xv = Decimal(x)
+    tolerance_unit = Decimal(10)
     for p in page_nums:
         dp = len(p.split(".")[1])
-        if abs(float(p) - xv) <= 10 ** (-min(dx, dp)) * 1.0000001:
+        if abs(Decimal(p) - xv) <= tolerance_unit ** (-min(dx, dp)) * Decimal("1.0000001"):
             return True
     return False
 
@@ -219,9 +223,9 @@ def main(root):
                 for x in NUM.findall(cell):
                     if number_matches(x, page_nums):
                         continue
-                    near = [p for p in page_nums if abs(float(p) - float(x)) <= 0.05 * max(abs(float(x)), 1e-9)]
+                    near = [p for p in page_nums if abs(Decimal(p) - Decimal(x)) <= Decimal("0.05") * max(abs(Decimal(x)), Decimal("1e-9"))]
                     if near:  # a different nearby value is on the page: likely a stale cell or a typo
-                        problems.append(("W1", where, f"[{cid}] README value {x}; nearest on {fname}.md: {sorted(near, key=lambda p: abs(float(p) - float(x)))[0]}"))
+                        problems.append(("W1", where, f"[{cid}] README value {x}; nearest on {fname}.md: {sorted(near, key=lambda p: abs(Decimal(p) - Decimal(x)))[0]}"))
 
     for fname in sorted(os.listdir(const_dir)):
         if not fname.endswith(".md"):
