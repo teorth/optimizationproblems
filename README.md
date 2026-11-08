@@ -39,7 +39,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [11a](https://teorth.github.io/optimizationproblems/constants/11a.html) | $L^1$ Poincaré constant on the Hamming cube | $\sqrt{\pi/2} \approx 1.2533$ | $\pi/2 - 0.00013 \approx 1.5707$ |
 | [11b](https://teorth.github.io/optimizationproblems/constants/11b.html) | Critical exponent for isoperimetric inequality on the Hamming cube | 0.5 | 0.5 |
 | [12](https://teorth.github.io/optimizationproblems/constants/12a.html) | The Beardwood–Halton–Hammersley constant | 0.6277 | 0.8810 (0.8618*) |
-| [13a](https://teorth.github.io/optimizationproblems/constants/13a.html) | Moser's convex worm cover constant | 0.232239 (0.239*) | 0.2617993878 (0.24633*) |
+| [13a](https://teorth.github.io/optimizationproblems/constants/13a.html) | Moser's convex worm cover constant | 0.232239 (0.239*) | 0.2617993878 (0.24634*) |
 | [13b](https://teorth.github.io/optimizationproblems/constants/13b.html) | Lebesgue's convex universal cover constant | 0.832 (0.8344*) | 0.8440935944 |
 | [14](https://teorth.github.io/optimizationproblems/constants/14a.html) | Smallest $n$ for which the value of $BB(n)$ is undecidable | 6 | 432 |
 | [15a](https://teorth.github.io/optimizationproblems/constants/15a.html) | Matrix multiplication exponent | 2 | 2.371177 |
