@@ -31,7 +31,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [6](https://teorth.github.io/optimizationproblems/constants/6a.html) | Union-closed sets conjecture constant | 0.38271 | 0.5 |
 | [7a](https://teorth.github.io/optimizationproblems/constants/7a.html) | Irrationality measure of $\pi$ | 2 | $<7.101862832357$ |
 | [7b](https://teorth.github.io/optimizationproblems/constants/7b.html) | Irrationality measure of $\Gamma(1/4)$ | 2 | $10^{143}$ |
-| [8](https://teorth.github.io/optimizationproblems/constants/8a.html) | Classical zero-free region constant | 0.755106 | 4.896 |
+| [8](https://teorth.github.io/optimizationproblems/constants/8a.html) | Classical zero-free region constant | 0.755106 | 4.81406* |
 | [9](https://teorth.github.io/optimizationproblems/constants/9a.html) | Shannon capacity of the 7-cycle | 3.25883262 | 3.3177 |
 | [10a](https://teorth.github.io/optimizationproblems/constants/10a.html) | The real Grothendieck constant | $\frac{6\pi}{11}\approx 1.71360$ | $\frac{\pi}{2\log(1+\sqrt{2})} - 10^{-4} \approx 1.78211$ (1.7813*) |
 | [10b](https://teorth.github.io/optimizationproblems/constants/10b.html) | The complex Grothendieck constant | 1.338 | 1.40491 |
@@ -138,6 +138,7 @@ Bounds for which the level of available verification is currently at minimal lev
 
 ## Recent progress
 
+- [8](https://teorth.github.io/optimizationproblems/constants/8a.html) **improved upper bound (unrefereed):** $C\_{8} \leq 4.81406$* (previously $4.896$) by A. Varlamov, 9 Nov 2026: Kadiri's explicit-formula method with a polynomial kernel and separate multipliers on seven height bands, checked by interval arithmetic and formalized in Lean 4 over PNT+ with eight published results as explicit hypotheses ([paper, checker and Lean code](https://github.com/ArseniyVarlamov/zeta-zero-free-region/tree/8174537348c691eb969171d45673ca1b13682cc6)).
 - [44](https://teorth.github.io/optimizationproblems/constants/44a.html) **improved upper bound (unrefereed):** $C\_{44} \leq 4.3576549226$* by [Ricardo Pinho](https://github.com/rpinho/c44-certificate/tree/f3fb25dfb88de3da8b1a0b30f03fdb51b78ccef9), 23 Oct 2026. A degree-three local-weight cap $5/4$ sharpens Wellens's recurrence using BakeLab/Épi's existing exact certificates; the exact recurrence gain is $1/128$. Both exact checkers were written by the same AI agent; author review was at summary level.
 - [68](https://teorth.github.io/optimizationproblems/constants/68a.html) **improved lower bound (unrefereed):** $C\_{68} \geq 0.432$* by [R. Pinho](https://github.com/rpinho/korenblum-c68-certificate), 19 Oct 2026: covering-strip Schwarz estimate, classical hyperbolic Jung, and Wikström’s moment criterion, with a twelve-atom rational certificate and two exact checkers. Also records Wikström’s preceding 0.4263 bound.
 - [42](https://teorth.github.io/optimizationproblems/constants/42a.html) **improved upper bound (unverified):** $C\_{42} \leq 0.6888863712$* by R. Pinho, 22 Oct 2026; [256-step rational certificate, unrefereed proof and interval/Arb checkers](https://github.com/rpinho/c42-certificate/tree/a8a9bc309bd1992413fa07595bd60c5e3fa1b65b).
