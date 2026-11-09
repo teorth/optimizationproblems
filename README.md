@@ -128,7 +128,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [84a](https://teorth.github.io/optimizationproblems/constants/84a.html) | Erdős unit distance exponent | 1.014 (1.04317*) | $\frac{4}{3}-\varepsilon$ |
 | [84b](https://teorth.github.io/optimizationproblems/constants/84b.html) | Sum-product exponent for the reals | $\frac{4}{3}+\frac{10}{4407}\approx 1.3356$ | $<2$ (1.9993*) |
 | [85](https://teorth.github.io/optimizationproblems/constants/85a.html) | Exponent for commutators close to the identity | 1 | 4 |
-| [86](https://teorth.github.io/optimizationproblems/constants/86a.html) | Schur–Siegel–Smyth trace constant | 1.80203 | 1.8216 (1.80560940*) |
+| [86](https://teorth.github.io/optimizationproblems/constants/86a.html) | Schur–Siegel–Smyth trace constant | 1.80203 | 1.8216 (1.8054939963*) |
 | [87](https://teorth.github.io/optimizationproblems/constants/87a.html) | Martinet's constant for totally real number fields | 60.8395 | 857.567 |
 | [88a](https://teorth.github.io/optimizationproblems/constants/88a.html) | Bounded prime gap constant | 2 | 186 |
 | [88b](https://teorth.github.io/optimizationproblems/constants/88b.html) | Exponent for bounded gaps between many primes | 0 | 3.8075 |
@@ -138,7 +138,7 @@ Bounds for which the level of available verification is currently at minimal lev
 
 ## Recent progress
 
-- [86](https://teorth.github.io/optimizationproblems/constants/86a.html) **improved upper bound (unrefereed):** $C\_{86} \leq 1.80560940$* by [Ricardo Pinho](https://github.com/rpinho/math-certificates/tree/0d821621bab3d3d9408015f2679b89d5d5e9b379/c86/adaptive-cone), 2 Nov 2026. Classical auxiliary polynomials of Flammang and McKee on an adaptive density, by Smith's criterion.
+- [86](https://teorth.github.io/optimizationproblems/constants/86a.html) **improved upper bound (unrefereed):** $C\_{86} \leq 1.8054939963$\* by [Ricardo Pinho](https://github.com/rpinho/math-certificates/tree/34b1d32633a1aa089057b7fbde26c2bafe2955ac/c86/round5), 9 Nov 2026. Refined rational density with 31 auxiliaries, by Smith’s criterion; clean-room AI referee on a different model using its own checks. Starts from V. Patankar’s [#270](https://github.com/teorth/optimizationproblems/pull/270) density (1.8054956) and refines it by about $1.5 \cdot 10^{-6}$.
 - [44](https://teorth.github.io/optimizationproblems/constants/44a.html) **improved upper bound (unrefereed):** $C\_{44} \leq 4.3576549226$* by [Ricardo Pinho](https://github.com/rpinho/c44-certificate/tree/f3fb25dfb88de3da8b1a0b30f03fdb51b78ccef9), 23 Oct 2026. A degree-three local-weight cap $5/4$ sharpens Wellens's recurrence using BakeLab/Épi's existing exact certificates; the exact recurrence gain is $1/128$. Both exact checkers were written by the same AI agent; author review was at summary level.
 - [68](https://teorth.github.io/optimizationproblems/constants/68a.html) **improved lower bound (unrefereed):** $C\_{68} \geq 0.432$* by [R. Pinho](https://github.com/rpinho/korenblum-c68-certificate), 19 Oct 2026: covering-strip Schwarz estimate, classical hyperbolic Jung, and Wikström’s moment criterion, with a twelve-atom rational certificate and two exact checkers. Also records Wikström’s preceding 0.4263 bound.
 - [42](https://teorth.github.io/optimizationproblems/constants/42a.html) **improved upper bound (unverified):** $C\_{42} \leq 0.6888863712$* by R. Pinho, 22 Oct 2026; [256-step rational certificate, unrefereed proof and interval/Arb checkers](https://github.com/rpinho/c42-certificate/tree/a8a9bc309bd1992413fa07595bd60c5e3fa1b65b).
