@@ -13,6 +13,11 @@ It catches the defects that CONTRIBUTING.md describes and that have needed manua
       (CONTRIBUTING, "Rendering")
   W3  a block whose every line has a bare "|", where a "|" sits inside inline math. kramdown renders the
       block as a table (CONTRIBUTING: use \lvert, \rvert)
+  E5  a control character inside a line of a constant page (a mangled escape: "\r" in "\rvert" or "\a" in
+      "\approx" written out as a carriage return or a bell)
+  E6  a reference key defined twice under "## References" (a stale branch merged after the page moved on)
+  E7  a table row repeated with the same reference and the same description (same cause)
+  W4  a bold bullet heading ("- **Name.**") repeated within one section (same cause)
   I1  constants/ page not linked from the README (often intentional while a number is assigned)
 
 W2 and W3 follow how kramdown actually parses the pages (GFM input, as on GitHub Pages). W2 was checked
@@ -189,6 +194,50 @@ def conflict_markers(path, rel):
     return out
 
 
+REFKEY = re.compile(r"^- \[([^\]]+)\]")
+BULLET = re.compile(r"^- \*\*([^*]+)\*\*")
+
+
+def page_damage(path, rel):
+    """Damage a merge or a script can leave in a page: a control character inside a line (read without newline
+    translation, since universal newlines would split a stray carriage return into two lines), a reference key
+    defined twice under "## References", a table row repeated with the same reference and description, and a
+    bold bullet heading repeated within one section."""
+    out = []
+    raw = open(path, encoding="utf-8", newline="").read()
+    for ln, line in enumerate(raw.split("\n"), 1):
+        body = line[:-1] if line.endswith("\r") else line
+        bad = [c for c in body if ord(c) < 0x20 and c != "\t"]
+        if bad:
+            out.append(("E5", f"{rel}:{ln}", f"control character U+{ord(bad[0]):04X} inside the line (a mangled escape such as \\r or \\a?)"))
+    section, refs, rows, bullets = "", {}, {}, {}
+    for ln, line in enumerate(raw.replace("\r\n", "\n").split("\n"), 1):
+        st = line.strip()
+        if line.startswith("#"):
+            section, rows, bullets = st, {}, {}
+            continue
+        if not st:
+            rows = {}
+        m = REFKEY.match(line)
+        if m and re.match(r"^##\s+References\s*$", section):
+            if m.group(1) in refs:
+                out.append(("E6", f"{rel}:{ln}", f"reference [{m.group(1)}] is defined twice (first at line {refs[m.group(1)]})"))
+            refs.setdefault(m.group(1), ln)
+        if st.startswith("|") and not re.match(r"^\|\s*:?-", st):
+            cells = [c.strip() for c in st.strip("|").split("|")]
+            if len(cells) >= 3 and cells[1].startswith("[") and cells[2]:
+                key = (cells[1], cells[2][:80])
+                if key in rows:
+                    out.append(("E7", f"{rel}:{ln}", f"table row repeats the {cells[1]} row at line {rows[key]} (same reference and description)"))
+                rows.setdefault(key, ln)
+        m = BULLET.match(line)
+        if m:
+            if m.group(1) in bullets:
+                out.append(("W4", f"{rel}:{ln}", f"bullet '{m.group(1)}' repeats line {bullets[m.group(1)]} in the same section"))
+            bullets.setdefault(m.group(1), ln)
+    return out
+
+
 def main(root):
     problems = []
     readme_path = os.path.join(root, "README.md")
@@ -230,6 +279,7 @@ def main(root):
         text = open(os.path.join(const_dir, fname), encoding="utf-8").read()
         lines = text.split("\n")
         problems += conflict_markers(os.path.join(const_dir, fname), rel)
+        problems += page_damage(os.path.join(const_dir, fname), rel)
         if not re.search(r"^##\s+References\s*$", text, re.M):
             problems.append(("E3", rel, 'no "## References" heading'))
         if fname[:-3] not in linked:
