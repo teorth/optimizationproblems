@@ -10,6 +10,9 @@ It catches the defects that CONTRIBUTING.md describes and that have needed manua
   W1  README bound value with no matching number on the constant's page (stale README cell or a typo).
       The sign is part of the value. Rounding in the last digit is allowed, and numbers given only
       as fractions or closed forms are skipped.
+  W6  a constant page records a strictly better bound than the README shows, so a new row
+      landed on the page without its index cell. Rows whose comment marks them conditional
+      are skipped: the README deliberately carries the unconditional value (see 81a)
   W5  a README bound recorded as certified whose row on the page still carries the asterisk,
       or an asterisked README bound whose page row does not. The marker means the same thing
       in both places, so they have to agree (CONTRIBUTING, the asterisk rule)
@@ -290,6 +293,72 @@ def marker_disagreements(cid, cells, page_text, where):
     return out
 
 
+CONDITIONAL = re.compile(
+    r"conditional|assuming|under (?:the )?(?:G?RH|generali[sz]ed)|hypothesi|conjectur|unproven",
+    re.I)
+
+
+def table_bests(text):
+    """Best plain-decimal bound in each bounds table: (upper_min, lower_max), each
+    (value, starred) or None. Conditional rows and rows without a plain decimal are skipped."""
+    section, best = None, {"upper": None, "lower": None}
+    for line in text.split("\n"):
+        st = line.strip()
+        low = st.lower()
+        if st.startswith("##"):
+            section = ("upper" if "upper bound" in low else
+                       "lower" if "lower bound" in low else None)
+            continue
+        if section is None or not st.startswith("|"):
+            continue
+        cells = st.split("|")
+        if len(cells) < 4 or cells[1].strip().lower() in ("bound", "") or set(cells[1].strip()) <= set("- :"):
+            continue
+        if CONDITIONAL.search(" ".join(cells[2:])):
+            continue
+        nums = NUM.findall(cells[1])
+        if len(nums) != 1:            # closed forms, ranges and "< 1" style cells are not comparable
+            continue
+        # the cell must BE the number, so that closed forms like "$-\log_2\log_2 e\approx-0.53$"
+        # are skipped rather than read as their trailing decimal
+        bare = cells[1].replace("$", "").replace("*", "").replace(chr(92) + "*", "")
+        for tok in (chr(92) + "ge", chr(92) + "le", chr(92) + "approx", ">", "<", chr(92) + "!"):
+            bare = bare.replace(tok, "")
+        if bare.strip() != nums[0]:
+            continue
+        v, starred = Decimal(nums[0]), bool(STAR.search(cells[1]))
+        cur = best[section]
+        better = cur is None or (v < cur[0] if section == "upper" else v > cur[0])
+        if better:
+            best[section] = (v, starred)
+    return best
+
+
+def missing_from_readme(cid, cells, page_text, where):
+    """W6: the page has a strictly better bound than the README cell records."""
+    out = []
+    best = table_bests(page_text)
+    for which, cell in (("lower", cells[1]), ("upper", cells[2])):
+        b = best.get(which)
+        if b is None:
+            continue
+        v, starred = b
+        shown = NUM.findall(cell)
+        if not shown:
+            continue
+        # The README routinely rounds ("\sqrt{2} \approx 1.4142" for 1.4142135623...), so a value
+        # agreeing to the last printed digit counts as shown, as it does for W1.
+        if number_matches(str(v), shown) or any(number_matches(x, [str(v)]) for x in shown):
+            continue
+        ok = (any(Decimal(x) < v for x in shown) if which == "upper"
+              else any(Decimal(x) > v for x in shown))
+        if not ok:
+            mark = "*" if starred else ""
+            out.append(("W6", where, f"[{cid}] page has a better {which} bound {v}{mark} than the "
+                                     f"README cell records"))
+    return out
+
+
 def main(root):
     problems = []
     readme_path = os.path.join(root, "README.md")
@@ -318,6 +387,7 @@ def main(root):
             page_text = open(path, encoding="utf-8").read()
             page_nums = NUM.findall(page_text)
             problems += marker_disagreements(cid, cells[1:3], page_text, where)
+            problems += missing_from_readme(cid, cells, page_text, where)
             for cell in cells[1:3]:
                 for x in NUM.findall(cell):
                     if number_matches(x, page_nums):
