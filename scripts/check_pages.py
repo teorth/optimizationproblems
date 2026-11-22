@@ -10,6 +10,9 @@ It catches the defects that CONTRIBUTING.md describes and that have needed manua
   W1  README bound value with no matching number on the constant's page (stale README cell or a typo).
       The sign is part of the value. Rounding in the last digit is allowed, and numbers given only
       as fractions or closed forms are skipped.
+  W5  a README bound recorded as certified whose row on the page still carries the asterisk,
+      or an asterisked README bound whose page row does not. The marker means the same thing
+      in both places, so they have to agree (CONTRIBUTING, the asterisk rule)
   W2  "_" or "*" inside inline $...$ that kramdown will pair into emphasis, breaking the math
       (CONTRIBUTING, "Rendering")
   W3  a block whose every line has a bare "|", where a "|" sits inside inline math. kramdown renders the
@@ -242,6 +245,51 @@ def page_damage(path, rel):
     return out
 
 
+STAR = re.compile(r"\\?\*")
+# a value is asterisked when the marker follows it through at most $, ^, \ and spaces:
+# "0.824120*", "$2.15622$^\*$", "(0.824120*)" -- but not "0.826280 (0.824120*)" for the first number
+TRAILING_STAR = re.compile(r"[\$\^\\\s]*\*")
+
+
+def starred(text, at):
+    """Is the value ending at index `at` marked with an asterisk?"""
+    return bool(TRAILING_STAR.match(text[at:at + 8]))
+
+
+def bound_cells(text):
+    """First cell of every table row on a page, as (cell, starred-numbers set)."""
+    out = []
+    for line in text.split("\n"):
+        if not line.startswith("|"):
+            continue
+        cells = line.split("|")
+        if len(cells) < 4:
+            continue
+        cell = cells[1]
+        marks = {m.group(0): starred(cell, m.end()) for m in NUM.finditer(cell)}
+        out.append((cell, marks))
+    return out
+
+
+def marker_disagreements(cid, cells, page_text, where):
+    """W5: the asterisk has to mean the same thing in the README and on the page."""
+    out = []
+    rows = bound_cells(page_text)
+    for cell in cells:
+        for m in NUM.finditer(cell):
+            x, want = m.group(0), starred(cell, m.end())
+            hits = [marks[x] for _, marks in rows if x in marks]
+            if not hits:
+                continue
+            if not want and all(hits):
+                out.append(("W5", where, f"[{cid}] README records {x} as certified, but every row "
+                                         f"carrying it on the page is asterisked"))
+            elif want and not any(hits):
+                out.append(("W5", where, f"[{cid}] README marks {x} with an asterisk, but no row "
+                                         f"carrying it on the page is asterisked"))
+    return out
+
+
 def main(root):
     problems = []
     readme_path = os.path.join(root, "README.md")
@@ -267,7 +315,9 @@ def main(root):
         seen_file.setdefault(fname, ln)
         cells = [c.strip() for c in rest.split("|")]
         if os.path.exists(path) and len(cells) >= 3:
-            page_nums = NUM.findall(open(path, encoding="utf-8").read())
+            page_text = open(path, encoding="utf-8").read()
+            page_nums = NUM.findall(page_text)
+            problems += marker_disagreements(cid, cells[1:3], page_text, where)
             for cell in cells[1:3]:
                 for x in NUM.findall(cell):
                     if number_matches(x, page_nums):
