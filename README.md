@@ -32,7 +32,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [7a](https://teorth.github.io/optimizationproblems/constants/7a.html) | Irrationality measure of $\pi$ | 2 | $<7.101862832357$ |
 | [7b](https://teorth.github.io/optimizationproblems/constants/7b.html) | Irrationality measure of $\Gamma(1/4)$ | 2 | $10^{143}$ |
 | [8](https://teorth.github.io/optimizationproblems/constants/8a.html) | Classical zero-free region constant | 0.755106 | 4.896 |
-| [9](https://teorth.github.io/optimizationproblems/constants/9a.html) | Shannon capacity of the 7-cycle | 3.25883262 | 3.3177 |
+| [9](https://teorth.github.io/optimizationproblems/constants/9a.html) | Shannon capacity of the 7-cycle | 3.25883262 (3.25883870*) | 3.3177 |
 | [10a](https://teorth.github.io/optimizationproblems/constants/10a.html) | The real Grothendieck constant | 1.773* | $\frac{\pi}{2\log(1+\sqrt{2})} - 10^{-4} \approx 1.78211$ (1.77987164*) |
 | [10b](https://teorth.github.io/optimizationproblems/constants/10b.html) | The complex Grothendieck constant | 1.338 | 1.40491 |
 | [10c](https://teorth.github.io/optimizationproblems/constants/10c.html) | Spencer discrepancy constant (“six standard deviations suffice”) | 1.767767 | 4.1 (3.65*) |
