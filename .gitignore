@@ -3,3 +3,4 @@
 .DS_store
 /tmp
 .claude/
+__pycache__/
