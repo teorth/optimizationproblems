@@ -14,7 +14,7 @@ Bounds for which the level of available verification is currently at minimal lev
 
 | Number | Description | Best lower bound | Best upper bound |
 | ------ | ----------- | ---------------- | ---------------- |
-| [1a](https://teorth.github.io/optimizationproblems/constants/1a.html) | Sidon set autocorrelation constant | 1.2802 (1.292*) | 1.5027435 |
+| [1a](https://teorth.github.io/optimizationproblems/constants/1a.html) | Sidon set autocorrelation constant | 1.2802 (1.292*) | 1.5027435 (1.5027428*) |
 | [1b](https://teorth.github.io/optimizationproblems/constants/1b.html) | Erdős minimum overlap constant | 0.379005 | 0.38085856 |
 | [1c](https://teorth.github.io/optimizationproblems/constants/1c.html) | Barnard–Steinerberger autocorrelation constant | 0.4103333* | 0.4107675 |
 | [1d](https://teorth.github.io/optimizationproblems/constants/1d.html) | Signed third autocorrelation constant | 1 | 1.4630715826075594 |
@@ -138,6 +138,7 @@ Bounds for which the level of available verification is currently at minimal lev
 
 ## Recent progress
 
+- [1a](https://teorth.github.io/optimizationproblems/constants/1a.html) **improved upper bound (unverified):** $C\_{1a} \leq 1.5027427280$* (previously $1.5027434868$), a step function with $262144$ cells refined from the 10 Nov certificate of the open pull request [#270](https://github.com/teorth/optimizationproblems/pull/270), exact rational value, [certificate and checkers](https://github.com/arhancanli/quantavane-replays/tree/cc2c67deb49fb09bcdc1947d0ad0b6ee2b9106b5/improvements/c1a), prepared with AI assistance (Claude, Anthropic), 8 Nov 2026 (updated 10 Nov).
 - [44](https://teorth.github.io/optimizationproblems/constants/44a.html) **improved upper bound (unrefereed):** $C\_{44} \leq 4.3576549226$* by [Ricardo Pinho](https://github.com/rpinho/c44-certificate/tree/f3fb25dfb88de3da8b1a0b30f03fdb51b78ccef9), 23 Oct 2026. A degree-three local-weight cap $5/4$ sharpens Wellens's recurrence using BakeLab/Épi's existing exact certificates; the exact recurrence gain is $1/128$. Both exact checkers were written by the same AI agent; author review was at summary level.
 - [68](https://teorth.github.io/optimizationproblems/constants/68a.html) **improved lower bound (unrefereed):** $C\_{68} \geq 0.432$* by [R. Pinho](https://github.com/rpinho/korenblum-c68-certificate), 19 Oct 2026: covering-strip Schwarz estimate, classical hyperbolic Jung, and Wikström’s moment criterion, with a twelve-atom rational certificate and two exact checkers. Also records Wikström’s preceding 0.4263 bound.
 - [42](https://teorth.github.io/optimizationproblems/constants/42a.html) **improved upper bound (unverified):** $C\_{42} \leq 0.6888863712$* by R. Pinho, 22 Oct 2026; [256-step rational certificate, unrefereed proof and interval/Arb checkers](https://github.com/rpinho/c42-certificate/tree/a8a9bc309bd1992413fa07595bd60c5e3fa1b65b).
