@@ -251,7 +251,7 @@ Bounds for which the level of available verification is currently at minimal lev
 - [65](https://teorth.github.io/optimizationproblems/constants/65a.html) **improved upper bound (unverified):** $C\_{65} \leq 3.99$* by [E. Naslund](https://hexagonmath.org/2610.00018v1), 2 Oct 2026, with public computational certificates and a partial Lean formalization.
 - [5a](https://teorth.github.io/optimizationproblems/constants/5a.html) **improved upper bound:** $C_{5a} \leq 0.9435$ by [J. Hou and H. Zhao](https://arxiv.org/abs/2607.01169), 1 Jul 2026, via vector-valued smoothing.
 - [5a](https://teorth.github.io/optimizationproblems/constants/5a.html) **improved upper bound:** $C_{5a} \leq 0.94304$ by [D. Carter, K. O'Bryant and T. Tao](https://arxiv.org/abs/2610.36207), 26 Oct 2026, from an explicit lower bound on the diameter of a Sidon set.
-- [5a](https://teorth.github.io/optimizationproblems/constants/5a.html) **improved upper bound (unverified):** $C_{5a} \leq 0.9428095$* by [J. Akwei](https://github.com/johnakwei/Science), reported in the [Erdos Problems forum](https://www.erdosproblems.com/forum/thread/30), 5 Oct 2026; unrefereed, and within $5	imes 10^{-7}$ of a claimed barrier for the method.
+- [5a](https://teorth.github.io/optimizationproblems/constants/5a.html) **improved upper bound (unverified):** $C_{5a} \leq 0.9428095$* by [J. Akwei](https://github.com/johnakwei/Science), reported in the [Erdos Problems forum](https://www.erdosproblems.com/forum/thread/30), 5 Oct 2026; unrefereed, and within $5\times 10^{-7}$ of a claimed barrier for the method.
 
 ## Maintainers
 
