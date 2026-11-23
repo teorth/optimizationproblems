@@ -136,7 +136,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | [90](https://teorth.github.io/optimizationproblems/constants/90a.html) | Maximum minimum modulus of a distinct covering system | 44* | 615999 |
 | [89a](https://teorth.github.io/optimizationproblems/constants/89a.html) | Ramsey multiplicity constant of $K\_4$ | 0.0296 | 0.0301388794 |
 | [89b](https://teorth.github.io/optimizationproblems/constants/89b.html) | Ramsey multiplicity constant of $K\_5$ | 0.001524 | 0.001708 (0.001648970526*) |
-| [89c](https://teorth.github.io/optimizationproblems/constants/89c.html) | Ramsey multiplicity constant of $K\_6$ | $1/\binom{252}{6}$ | $0.7445 \cdot 2^{-14}$ ($0.7422548616 \cdot 2^{-14}$*) |
+| [89c](https://teorth.github.io/optimizationproblems/constants/89c.html) | Ramsey multiplicity constant of $K\_6$ | $1/\binom{252}{6}$ ($0.000033123924116$*) | $0.7445 \cdot 2^{-14}$ ($0.7422042116 \cdot 2^{-14}$*) |
 
 
 ## Recent progress
