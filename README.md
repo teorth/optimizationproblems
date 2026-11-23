@@ -16,7 +16,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | ------ | ----------- | ---------------- | ---------------- |
 | [1a](https://teorth.github.io/optimizationproblems/constants/1a.html) | Sidon set autocorrelation constant | 1.2802 (1.292*) | 1.5027435 |
 | [1b](https://teorth.github.io/optimizationproblems/constants/1b.html) | Erdős minimum overlap constant | 0.379005 | 0.38085856 |
-| [1c](https://teorth.github.io/optimizationproblems/constants/1c.html) | Barnard–Steinerberger autocorrelation constant | 0.4103333 | 0.4107675 |
+| [1c](https://teorth.github.io/optimizationproblems/constants/1c.html) | Barnard–Steinerberger autocorrelation constant | 0.410378195 | 0.4107675 |
 | [1d](https://teorth.github.io/optimizationproblems/constants/1d.html) | Signed third autocorrelation constant | 1 | 1.459989046905384 (1.4513061918499*) |
 | [2](https://teorth.github.io/optimizationproblems/constants/2a.html) | Crouzeix constant | 2 | 2 |
 | [3a](https://teorth.github.io/optimizationproblems/constants/3a.html) | Gyarmati-Hennecart-Ruzsa sum-difference constant | 1.19230254 (1.19519192*) | 1.31237330 |
