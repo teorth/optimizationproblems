@@ -14,7 +14,7 @@ Bounds for which the level of available verification is currently at minimal lev
 
 | Number | Description | Best lower bound | Best upper bound |
 | ------ | ----------- | ---------------- | ---------------- |
-| [1a](https://teorth.github.io/optimizationproblems/constants/1a.html) | Sidon set autocorrelation constant | 1.2802 (1.292*) | 1.5027435 |
+| [1a](https://teorth.github.io/optimizationproblems/constants/1a.html) | Sidon set autocorrelation constant | 1.2802 (1.292*) | 1.5027435 (1.502664829454530*) |
 | [1b](https://teorth.github.io/optimizationproblems/constants/1b.html) | Erdős minimum overlap constant | 0.379005 | 0.38085856 |
 | [1c](https://teorth.github.io/optimizationproblems/constants/1c.html) | Barnard–Steinerberger autocorrelation constant | 0.4103333 | 0.4107675 |
 | [1d](https://teorth.github.io/optimizationproblems/constants/1d.html) | Signed third autocorrelation constant | 1 | 1.459989046905384 (1.457854884921989*) |
@@ -139,6 +139,7 @@ Bounds for which the level of available verification is currently at minimal lev
 
 ## Recent progress
 
+- [1a](https://teorth.github.io/optimizationproblems/constants/1a.html) **improved upper bound (unverified):** $C\_{1a} \leq 1.502664829454530$* by Joe Black with Claude (Anthropic), 23 Nov 2026: a $262{,}144$-step function refined from the unposted intervalplace/frontier certificate (branch c1a-1.5026648295), exact value $735013052674165058348112707747577856/489139719162107651610797699158672969$; [certificate, checks and Lean proof](https://github.com/jblack874/c1a-n262144/tree/a8bf926). Previously $1.5027435$ on this page; $1.5026648332$* in the open pull request #367.
 - [69](https://teorth.github.io/optimizationproblems/constants/69a.html) **improved upper bound:** $C\_{69} \leq 1$, hence $C\_{69}=1$: Sendov's conjecture proved for all $n \ge 2$ by L. Mazur (AI-assisted, verified in Lean), [digested by T. Tao](https://terrytao.wordpress.com/2026/08/12/a-digestion-of-the-proof-of-sendovs-conjecture/), 12 Aug 2026, with a [Lean formalization](https://github.com/teorth/sendov).
 - [8](https://teorth.github.io/optimizationproblems/constants/8a.html) **solved (unverified):** $C\_{8} = 2/\log\gamma\_{1} \approx 0.755106$*, a corollary of [OpenAI's $7/8$ quasi-Riemann hypothesis](https://github.com/openai/math/tree/main/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026), 30 Sep 2026, and the verification of RH up to height $3\cdot 10^{12}$ by Platt and Trudgian; submitted to this repository, 16 Nov 2026.
 - [1d](https://teorth.github.io/optimizationproblems/constants/1d.html), [49](https://teorth.github.io/optimizationproblems/constants/49a.html) **asterisks removed:** the rows $C\_{1d} \le 1.460217284022874$ [STEPS2026], $C\_{1d} \le 1.459989046905384$ [AER2026], $C\_{49} \ge 1.5675517$ and $C\_{49} \ge 1.5678015$ [Syl2026], each replayed independently by presence1 (#326) and by [A. Canli](https://github.com/arhancanli/quantavane-replays/tree/495f58114272845037f5b991e163cfbb3fe2baaf), who confirmed the #326 replays in that thread.
