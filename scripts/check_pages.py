@@ -8,11 +8,26 @@ It catches the defects that CONTRIBUTING.md describes and that have needed manua
   E3  constant page without a "## References" heading
   E4  an unresolved merge-conflict marker left in a tracked Markdown file
   W1  README bound value with no matching number on the constant's page (stale README cell or a typo).
-      Rounding in the last digit is allowed, and numbers given only as fractions or closed forms are skipped.
+      The sign is part of the value. Rounding in the last digit is allowed, and numbers given only
+      as fractions or closed forms are skipped.
+  W6  a constant page records a strictly better bound than the README shows, so a new row
+      landed on the page without its index cell. Rows whose comment marks them conditional
+      are skipped: the README deliberately carries the unconditional value (see 81a)
+  W7  the unasterisked half of a README bound cell is worse than the best unasterisked row on
+      the page, so a branch older than an asterisk change has reverted it. W6 does not see
+      this: the best bound is still shown, in the asterisked half
+  W5  a README bound recorded as certified whose row on the page still carries the asterisk,
+      or an asterisked README bound whose page row does not. The marker means the same thing
+      in both places, so they have to agree (CONTRIBUTING, the asterisk rule)
   W2  "_" or "*" inside inline $...$ that kramdown will pair into emphasis, breaking the math
       (CONTRIBUTING, "Rendering")
   W3  a block whose every line has a bare "|", where a "|" sits inside inline math. kramdown renders the
       block as a table (CONTRIBUTING: use \lvert, \rvert)
+  E5  a control character inside a line of a constant page (a mangled escape: "\r" in "\rvert" or "\a" in
+      "\approx" written out as a carriage return or a bell)
+  E6  a reference key defined twice under "## References" (a stale branch merged after the page moved on)
+  E7  a table row repeated with the same reference and the same description (same cause)
+  W4  a bold bullet heading ("- **Name.**") repeated within one section (same cause)
   I1  constants/ page not linked from the README (often intentional while a number is assigned)
 
 W2 and W3 follow how kramdown actually parses the pages (GFM input, as on GitHub Pages). W2 was checked
@@ -27,6 +42,7 @@ import os
 import re
 import sys
 import unicodedata
+from decimal import Decimal
 
 
 
@@ -152,17 +168,19 @@ def broken_line(line):
 
 
 ROW = re.compile(r"^\|\s*\[([^\]]+)\]\((?:https://teorth\.github\.io/optimizationproblems/)?constants/([\w-]+)\.html\)\s*\|(.*)$")
-NUM = re.compile(r"(?<![\w.])\d+\.\d+")
+# The sign is part of the bound. Without it, README `-1.25` and page `1.25` compare equal.
+NUM = re.compile(r"(?<![\w.])-?\d+\.\d+")
 LIST = re.compile(r"^\s*(?:[-*+]|\d+\.)\s")
 
 
 def number_matches(x, page_nums):
     """True if some number on the page agrees with x to within one unit in the last digit of the less precise of the two."""
     dx = len(x.split(".")[1])
-    xv = float(x)
+    xv = Decimal(x)
+    tolerance_unit = Decimal(10)
     for p in page_nums:
         dp = len(p.split(".")[1])
-        if abs(float(p) - xv) <= 10 ** (-min(dx, dp)) * 1.0000001:
+        if abs(Decimal(p) - xv) <= tolerance_unit ** (-min(dx, dp)) * Decimal("1.0000001"):
             return True
     return False
 
@@ -186,6 +204,185 @@ def conflict_markers(path, rel):
     for ln, line in enumerate(open(path, encoding="utf-8").read().split("\n"), 1):
         if CONFLICT.match(line):
             out.append(("E4", f"{rel}:{ln}", f"merge-conflict marker {line.strip()[:9]!r}"))
+    return out
+
+
+REFKEY = re.compile(r"^- \[([^\]]+)\]")
+BULLET = re.compile(r"^- \*\*([^*]+)\*\*")
+
+
+def page_damage(path, rel):
+    """Damage a merge or a script can leave in a page: a control character inside a line (read without newline
+    translation, since universal newlines would split a stray carriage return into two lines), a reference key
+    defined twice under "## References", a table row repeated with the same reference and description, and a
+    bold bullet heading repeated within one section."""
+    out = []
+    raw = open(path, encoding="utf-8", newline="").read()
+    for ln, line in enumerate(raw.split("\n"), 1):
+        body = line[:-1] if line.endswith("\r") else line
+        bad = [c for c in body if ord(c) < 0x20 and c != "\t"]
+        if bad:
+            out.append(("E5", f"{rel}:{ln}", f"control character U+{ord(bad[0]):04X} inside the line (a mangled escape such as \\r or \\a?)"))
+    section, refs, rows, bullets = "", {}, {}, {}
+    for ln, line in enumerate(raw.replace("\r\n", "\n").split("\n"), 1):
+        st = line.strip()
+        if line.startswith("#"):
+            section, rows, bullets = st, {}, {}
+            continue
+        if not st:
+            rows = {}
+        m = REFKEY.match(line)
+        if m and re.match(r"^##\s+References\s*$", section):
+            if m.group(1) in refs:
+                out.append(("E6", f"{rel}:{ln}", f"reference [{m.group(1)}] is defined twice (first at line {refs[m.group(1)]})"))
+            refs.setdefault(m.group(1), ln)
+        if st.startswith("|") and not re.match(r"^\|\s*:?-", st):
+            cells = [c.strip() for c in st.strip("|").split("|")]
+            if len(cells) >= 3 and cells[1].startswith("[") and cells[2]:
+                key = (cells[1], cells[2][:80])
+                if key in rows:
+                    out.append(("E7", f"{rel}:{ln}", f"table row repeats the {cells[1]} row at line {rows[key]} (same reference and description)"))
+                rows.setdefault(key, ln)
+        m = BULLET.match(line)
+        if m:
+            if m.group(1) in bullets:
+                out.append(("W4", f"{rel}:{ln}", f"bullet '{m.group(1)}' repeats line {bullets[m.group(1)]} in the same section"))
+            bullets.setdefault(m.group(1), ln)
+    return out
+
+
+STAR = re.compile(r"\\?\*")
+# a value is asterisked when the marker follows it through at most $, ^, \ and spaces:
+# "0.824120*", "$2.15622$^\*$", "(0.824120*)" -- but not "0.826280 (0.824120*)" for the first number
+TRAILING_STAR = re.compile(r"[\$\^\\\s]*\*")
+
+
+def starred(text, at):
+    """Is the value ending at index `at` marked with an asterisk?"""
+    return bool(TRAILING_STAR.match(text[at:at + 8]))
+
+
+def bound_cells(text):
+    """First cell of every table row on a page, as (cell, starred-numbers set)."""
+    out = []
+    for line in text.split("\n"):
+        if not line.startswith("|"):
+            continue
+        cells = line.split("|")
+        if len(cells) < 4:
+            continue
+        cell = cells[1]
+        marks = {m.group(0): starred(cell, m.end()) for m in NUM.finditer(cell)}
+        out.append((cell, marks))
+    return out
+
+
+def marker_disagreements(cid, cells, page_text, where):
+    """W5: the asterisk has to mean the same thing in the README and on the page."""
+    out = []
+    rows = bound_cells(page_text)
+    for cell in cells:
+        for m in NUM.finditer(cell):
+            x, want = m.group(0), starred(cell, m.end())
+            hits = [marks[x] for _, marks in rows if x in marks]
+            if not hits:
+                continue
+            if not want and all(hits):
+                out.append(("W5", where, f"[{cid}] README records {x} as certified, but every row "
+                                         f"carrying it on the page is asterisked"))
+            elif want and not any(hits):
+                out.append(("W5", where, f"[{cid}] README marks {x} with an asterisk, but no row "
+                                         f"carrying it on the page is asterisked"))
+    return out
+
+
+CONDITIONAL = re.compile(
+    r"conditional|assuming|under (?:the )?(?:G?RH|generali[sz]ed)|hypothesi|conjectur|unproven",
+    re.I)
+
+
+def table_bests(text):
+    """Best plain-decimal bound in each bounds table: (upper_min, lower_max), each
+    (value, starred) or None. Conditional rows and rows without a plain decimal are skipped."""
+    section, best = None, {"upper": None, "lower": None}
+    for line in text.split("\n"):
+        st = line.strip()
+        low = st.lower()
+        if st.startswith("##"):
+            section = ("upper" if "upper bound" in low else
+                       "lower" if "lower bound" in low else None)
+            continue
+        if section is None or not st.startswith("|"):
+            continue
+        cells = st.split("|")
+        if len(cells) < 4 or cells[1].strip().lower() in ("bound", "") or set(cells[1].strip()) <= set("- :"):
+            continue
+        if CONDITIONAL.search(" ".join(cells[2:])):
+            continue
+        nums = NUM.findall(cells[1])
+        if len(nums) != 1:            # closed forms, ranges and "< 1" style cells are not comparable
+            continue
+        # the cell must BE the number, so that closed forms like "$-\log_2\log_2 e\approx-0.53$"
+        # are skipped rather than read as their trailing decimal
+        bare = cells[1].replace("$", "").replace("*", "").replace(chr(92) + "*", "")
+        for tok in (chr(92) + "ge", chr(92) + "le", chr(92) + "approx", ">", "<", chr(92) + "!"):
+            bare = bare.replace(tok, "")
+        if bare.strip() != nums[0]:
+            continue
+        v, starred = Decimal(nums[0]), bool(STAR.search(cells[1]))
+        for key, skip in ((section, False), (section + ":unstarred", starred)):
+            if skip:
+                continue
+            cur = best.get(key)
+            if cur is None or (v < cur[0] if section == "upper" else v > cur[0]):
+                best[key] = (v, starred)
+    return best
+
+
+def certified_half_stale(cid, cells, page_text, where):
+    """W7: the unmarked half of the cell must match the best unmarked row on the page."""
+    out = []
+    best = table_bests(page_text)
+    for which, cell in (("lower", cells[1]), ("upper", cells[2])):
+        b = best.get(which + ":unstarred")
+        if b is None:
+            continue
+        v = b[0]
+        # the values the README presents as certified: those without a trailing marker
+        shown = [x for x in NUM.findall(cell) if not starred(cell, cell.index(x) + len(x))]
+        if not shown:
+            continue
+        if number_matches(str(v), shown) or any(number_matches(x, [str(v)]) for x in shown):
+            continue
+        if any(Decimal(x) < v for x in shown) if which == "upper" else any(Decimal(x) > v for x in shown):
+            continue
+        out.append(("W7", where, f"[{cid}] README's certified {which} bound is weaker than the best "
+                                 f"unasterisked row on the page, {v}"))
+    return out
+
+
+def missing_from_readme(cid, cells, page_text, where):
+    """W6: the page has a strictly better bound than the README cell records."""
+    out = []
+    best = table_bests(page_text)
+    for which, cell in (("lower", cells[1]), ("upper", cells[2])):
+        b = best.get(which)
+        if b is None:
+            continue
+        v, starred = b
+        shown = NUM.findall(cell)
+        if not shown:
+            continue
+        # The README routinely rounds ("\sqrt{2} \approx 1.4142" for 1.4142135623...), so a value
+        # agreeing to the last printed digit counts as shown, as it does for W1.
+        if number_matches(str(v), shown) or any(number_matches(x, [str(v)]) for x in shown):
+            continue
+        ok = (any(Decimal(x) < v for x in shown) if which == "upper"
+              else any(Decimal(x) > v for x in shown))
+        if not ok:
+            mark = "*" if starred else ""
+            out.append(("W6", where, f"[{cid}] page has a better {which} bound {v}{mark} than the "
+                                     f"README cell records"))
     return out
 
 
@@ -214,14 +411,18 @@ def main(root):
         seen_file.setdefault(fname, ln)
         cells = [c.strip() for c in rest.split("|")]
         if os.path.exists(path) and len(cells) >= 3:
-            page_nums = NUM.findall(open(path, encoding="utf-8").read())
+            page_text = open(path, encoding="utf-8").read()
+            page_nums = NUM.findall(page_text)
+            problems += marker_disagreements(cid, cells[1:3], page_text, where)
+            problems += missing_from_readme(cid, cells, page_text, where)
+            problems += certified_half_stale(cid, cells, page_text, where)
             for cell in cells[1:3]:
                 for x in NUM.findall(cell):
                     if number_matches(x, page_nums):
                         continue
-                    near = [p for p in page_nums if abs(float(p) - float(x)) <= 0.05 * max(abs(float(x)), 1e-9)]
+                    near = [p for p in page_nums if abs(Decimal(p) - Decimal(x)) <= Decimal("0.05") * max(abs(Decimal(x)), Decimal("1e-9"))]
                     if near:  # a different nearby value is on the page: likely a stale cell or a typo
-                        problems.append(("W1", where, f"[{cid}] README value {x}; nearest on {fname}.md: {sorted(near, key=lambda p: abs(float(p) - float(x)))[0]}"))
+                        problems.append(("W1", where, f"[{cid}] README value {x}; nearest on {fname}.md: {sorted(near, key=lambda p: abs(Decimal(p) - Decimal(x)))[0]}"))
 
     for fname in sorted(os.listdir(const_dir)):
         if not fname.endswith(".md"):
@@ -230,6 +431,7 @@ def main(root):
         text = open(os.path.join(const_dir, fname), encoding="utf-8").read()
         lines = text.split("\n")
         problems += conflict_markers(os.path.join(const_dir, fname), rel)
+        problems += page_damage(os.path.join(const_dir, fname), rel)
         if not re.search(r"^##\s+References\s*$", text, re.M):
             problems.append(("E3", rel, 'no "## References" heading'))
         if fname[:-3] not in linked:
