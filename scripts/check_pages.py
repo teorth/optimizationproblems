@@ -13,6 +13,9 @@ It catches the defects that CONTRIBUTING.md describes and that have needed manua
   W6  a constant page records a strictly better bound than the README shows, so a new row
       landed on the page without its index cell. Rows whose comment marks them conditional
       are skipped: the README deliberately carries the unconditional value (see 81a)
+  W7  the unasterisked half of a README bound cell is worse than the best unasterisked row on
+      the page, so a branch older than an asterisk change has reverted it. W6 does not see
+      this: the best bound is still shown, in the asterisked half
   W5  a README bound recorded as certified whose row on the page still carries the asterisk,
       or an asterisked README bound whose page row does not. The marker means the same thing
       in both places, so they have to agree (CONTRIBUTING, the asterisk rule)
@@ -327,11 +330,35 @@ def table_bests(text):
         if bare.strip() != nums[0]:
             continue
         v, starred = Decimal(nums[0]), bool(STAR.search(cells[1]))
-        cur = best[section]
-        better = cur is None or (v < cur[0] if section == "upper" else v > cur[0])
-        if better:
-            best[section] = (v, starred)
+        for key, skip in ((section, False), (section + ":unstarred", starred)):
+            if skip:
+                continue
+            cur = best.get(key)
+            if cur is None or (v < cur[0] if section == "upper" else v > cur[0]):
+                best[key] = (v, starred)
     return best
+
+
+def certified_half_stale(cid, cells, page_text, where):
+    """W7: the unmarked half of the cell must match the best unmarked row on the page."""
+    out = []
+    best = table_bests(page_text)
+    for which, cell in (("lower", cells[1]), ("upper", cells[2])):
+        b = best.get(which + ":unstarred")
+        if b is None:
+            continue
+        v = b[0]
+        # the values the README presents as certified: those without a trailing marker
+        shown = [x for x in NUM.findall(cell) if not starred(cell, cell.index(x) + len(x))]
+        if not shown:
+            continue
+        if number_matches(str(v), shown) or any(number_matches(x, [str(v)]) for x in shown):
+            continue
+        if any(Decimal(x) < v for x in shown) if which == "upper" else any(Decimal(x) > v for x in shown):
+            continue
+        out.append(("W7", where, f"[{cid}] README's certified {which} bound is weaker than the best "
+                                 f"unasterisked row on the page, {v}"))
+    return out
 
 
 def missing_from_readme(cid, cells, page_text, where):
@@ -388,6 +415,7 @@ def main(root):
             page_nums = NUM.findall(page_text)
             problems += marker_disagreements(cid, cells[1:3], page_text, where)
             problems += missing_from_readme(cid, cells, page_text, where)
+            problems += certified_half_stale(cid, cells, page_text, where)
             for cell in cells[1:3]:
                 for x in NUM.findall(cell):
                     if number_matches(x, page_nums):
