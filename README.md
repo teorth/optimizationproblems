@@ -15,7 +15,7 @@ Bounds for which the level of available verification is currently at minimal lev
 | Number | Description | Best lower bound | Best upper bound |
 | ------ | ----------- | ---------------- | ---------------- |
 | [1a](https://teorth.github.io/optimizationproblems/constants/1a.html) | Sidon set autocorrelation constant | 1.2802 (1.292*) | 1.5027435 |
-| [1b](https://teorth.github.io/optimizationproblems/constants/1b.html) | Erdős minimum overlap constant | 0.379005 | 0.38085856 |
+| [1b](https://teorth.github.io/optimizationproblems/constants/1b.html) | Erdős minimum overlap constant | 0.379005 | 0.38085856 (0.3808556354300093*) |
 | [1c](https://teorth.github.io/optimizationproblems/constants/1c.html) | Barnard–Steinerberger autocorrelation constant | 0.410378195 | 0.4107675 |
 | [1d](https://teorth.github.io/optimizationproblems/constants/1d.html) | Signed third autocorrelation constant | 1 | 1.459989046905384 (1.4513061918499*) |
 | [2](https://teorth.github.io/optimizationproblems/constants/2a.html) | Crouzeix constant | 2 | 2 |
@@ -140,6 +140,8 @@ Bounds for which the level of available verification is currently at minimal lev
 
 
 ## Recent progress
+
+- [1b](https://teorth.github.io/optimizationproblems/constants/1b.html) **improved upper bound (unverified):** $C\_{1b} \leq 0.3808556354300093$* by J. P. Samar, 27 Nov 2026: a $37{,}632$-cell rational step function ($D = 10^{15}$, exact mass $1$, exact value $477745309083403621075297261602751 / 1254400000000000000000000000000000 = 0.38085563543000926425\dots$), refined from the $18{,}816$-cell certificate of open pull request [#419](https://github.com/teorth/optimizationproblems/pull/419) ($0.38085563543005381796\dots$) via exact-$t$-elimination Augmented Lagrangian + non-monotone BMR-SPG; [exact certificate and zero-float verifier](https://github.com/jsamar/erdos-min-overlap-record/tree/3d74740267b1895147cc0fd054e4654cc54977eb/c1b_37632). Previously $0.3808585504$ on this page.
 
 - [42](https://teorth.github.io/optimizationproblems/constants/42a.html) **improved upper bound:** $C\_{42} \leq 0.686360751$ by Nikolaos Vatopoulos, 4 Nov 2026, using the limit theorem of V. Bakeas (the row above) with a 33-piece phase profile and a new a posteriori certifier ([note, certificate and checkers](https://github.com/NikosVat/turan-c42/tree/9668a60edf8877814c316a4bb1d901eff0c3988e)). Independently replayed by Arhan Canli with his own standard-library evaluator ([Can2026b] on the constant page), which is why the row carries no asterisk.
 - [42](https://teorth.github.io/optimizationproblems/constants/42a.html) **improved upper bound:** $C\_{42} \leq 0.68637$ by V. Bakeas with Claude (Anthropic), 31 Oct 2026. The construction is Harcos's linearization with a first-block phase that varies continuously (first-block cut-off $\tau=0$). The argument is a proved limit theorem via a contraction, plus two independent Arb checkers ([note, certificate and checkers](https://github.com/Bakeas/turan-c42-bound/tree/dc9c491ccb0a9ee8de753739eb082fa84c25c091), [Zenodo](https://doi.org/10.5281/zenodo.23836302)). Independently replayed by Arhan Canli with his own standard-library evaluator ([Can2026] on the constant page), which is why the row carries no asterisk.
